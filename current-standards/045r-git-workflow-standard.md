@@ -4,11 +4,11 @@
 
 ## Metadata
 
-**Document:** 045r-git-workflow-standard.md
+**Document:** `045r-git-workflow-standard.md`
 
 **Type:** 📚 Reference Document
 
-**Companion Standard:** 050-git-workflow-standard.md
+**Companion Standard:** [045-git-workflow-standard.md](./045-git-workflow-standard.md)
 
 **Owner:** Engineering
 
@@ -424,13 +424,13 @@ The objective is to preserve:
 
 ## Companion Standard
 
-* 050-git-workflow-standard.md
+* [050-git-workflow-standard.md](./050-git-workflow-standard.md)
 
 ## Related Standards
 
-* 015-document-status-lifecycle.md
-* 025-document-naming-standard.md
-* 040-document-reference-standard.md
+* [015-document-status-lifecycle.md](./015-document-status-lifecycle.md)
+* [025-document-naming-standard.md](./025-document-naming-standard.md)
+* [040-document-reference-standard.md](./040-document-reference-standard.md)
 
 ## Future Standards
 

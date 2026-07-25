@@ -4,11 +4,11 @@
 
 ## Metadata
 
-**Document:** 025-document-naming-standard.md
+**Document:** `025-document-naming-standard.md`
 
 **Type:** 📘 Official Standard
 
-**Companion Reference:** 025r-document-naming-standard.md
+**Companion Reference:** [025r-document-naming-standard.md](./025r-document-naming-standard.md)
 
 **Owner:** Engineering
 
@@ -196,15 +196,15 @@ xlsx
 
 ## Prerequisites
 
-- 001-documentation-system-overview.md
-- 005-documentation-level-standard.md
-- 010-document-numbering-standard.md
+- [001-documentation-system-overview.md](./001-documentation-system-overview.md)
+- [005-documentation-level-standard.md](./005-documentation-level-standard.md)
+- [010-document-numbering-standard.md](./010-document-numbering-standard.md)
 
 ## Related
 
-- 020-document-template-standard.md
-- 035-terminology-standard.md
+- [020-document-template-standard.md](./020-document-template-standard.md)
+- [035-terminology-standard.md](./035-terminology-standard.md)
 
 ## Companion
 
-- 025r-document-naming-standard.md
+- [025r-document-naming-standard.md](./025r-document-naming-standard.md)

@@ -4,11 +4,11 @@
 
 ## Metadata
 
-**Document:** 040-document-reference-standard.md
+**Document:** `040-document-reference-standard.md`
 
 **Type:** 📘 Canonical Standard
 
-**Companion Reference:** 040r-document-reference-standard.md
+**Companion Reference:** [040r-document-reference-standard.md](./040r-document-reference-standard.md)
 
 **Owner:** Engineering
 

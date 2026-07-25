@@ -4,11 +4,11 @@
 
 ## Metadata
 
-**Document:** 020r-document-template-standard.md
+**Document:** `020r-document-template-standard.md`
 
 **Type:** 📖 Reference Document
 
-**Companion Standard:** 020-document-template-standard.md
+**Companion Standard:** [020-document-template-standard.md](./020-document-template-standard.md)
 
 **Owner:** Engineering
 
@@ -540,13 +540,12 @@ Changes should follow the document lifecycle process.
 
 ## Companion Standard
 
-* 020-document-template-standard.md
+* [020-document-template-standard.md](./020-document-template-standard.md)
 
 ## Related Standards
 
-* 001-documentation-system-overview.md
-* 005-documentation-level-standard.md
-* 015-document-status-lifecycle.md
-* 025-document-naming-standard.md
-* 030-document-icon-standard.md
-
+* [001-documentation-system-overview.md](./001-documentation-system-overview.md)
+* [005-documentation-level-standard.md](./005-documentation-level-standard.md)
+* [015-document-status-lifecycle.md](./015-document-status-lifecycle.md)
+* [025-document-naming-standard.md](./025-document-naming-standard.md)
+* [030-document-icons-and-statuses-standard.md](./030-document-icons-and-statuses-standard.md)

@@ -4,11 +4,11 @@
 
 ## Metadata
 
-**Document:** 040-document-reference-standard.md
+**Document:** `040-document-reference-standard.md`
 
 **Type:** 📘 Canonical Standard
 
-**Companion Reference:** 040r-document-reference-standard.md
+**Companion Reference:** [040r-document-reference-standard.md](./040r-document-reference-standard.md)
 
 **Owner:** Engineering
 
@@ -82,9 +82,9 @@ Avoid inline URLs unless referencing external resources.
 
 ## Related
 
-- 001-documentation-system-overview.md
-- 025-document-naming-standard.md
+- [001-documentation-system-overview.md](./001-documentation-system-overview.md)
+- [025-document-naming-standard.md](./025-document-naming-standard.md)
 
 ## Companion
 
-- 040r-document-reference-standard.md
+- [040r-document-reference-standard.md](./040r-document-reference-standard.md)

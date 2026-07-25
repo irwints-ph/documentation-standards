@@ -4,11 +4,11 @@
 
 ## Metadata
 
-**Document:** 035r-terminology-standard.md
+**Document:** `035r-terminology-standard.md`
 
 **Type:** 📖 Reference
 
-**Companion Standard:** 035-terminology-standard.md
+**Companion Standard:** [035-terminology-standard.md](./035-terminology-standard.md)
 
 **Owner:** Engineering
 
@@ -266,15 +266,15 @@ Key lessons include:
 
 ## Prerequisites
 
-- 001-documentation-system-overview.md
-- 005-documentation-level-standard.md
+- [001-documentation-system-overview.md](./001-documentation-system-overview.md)
+- [005-documentation-level-standard.md](./005-documentation-level-standard.md)
 
 ## Related
 
-- 020-document-template-standard.md
-- 025-document-naming-standard.md
-- 030-document-icon-standard.md
+- [020-document-template-standard.md](./020-document-template-standard.md)
+- [025-document-naming-standard.md](./025-document-naming-standard.md)
+- [030-document-icons-and-statuses-standard.md](./030-document-icons-and-statuses-standard.md)
 
 ## Companion
 
-- 035-terminology-standard.md
+- [035-terminology-standard.md](./035-terminology-standard.md)

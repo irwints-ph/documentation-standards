@@ -4,11 +4,11 @@
 
 ## Metadata
 
-**Document:** 005-documentation-level-standard.md
+**Document:** `005-documentation-level-standard.md`
 
 **Type:** 📘 Official Standard
 
-**Companion Reference:** 005r-documentation-level-standard.md
+**Companion Reference:** [005r-documentation-level-standard.md](./005r-documentation-level-standard.md)
 
 **Owner:** Engineering
 
@@ -110,15 +110,15 @@ The `r` suffix identifies the companion Reference document.
 
 ## Prerequisite
 
-* 001-documentation-system-overview.md
+* [001-documentation-system-overview.md](./001-documentation-system-overview.md)
 
 ## Related
 
-* 010-document-numbering-standard.md
-* 020-document-status-lifecycle.md
-* 030-document-template-standard.md
-* 040-document-naming-standard.md
+* [010-document-numbering-standard.md](./010-document-numbering-standard.md)
+* [015-document-status-lifecycle.md](./015-document-status-lifecycle.md)
+* [020-document-template-standard.md](./020-document-template-standard.md)
+* [025-document-naming-standard.md](./025-document-naming-standard.md)
 
 ## Companion
 
-* 005r-documentation-level-standard.md
+* [005r-documentation-level-standard.md](./005r-documentation-level-standard.md)

@@ -4,11 +4,11 @@
 
 ## Metadata
 
-**Document:** 010r-document-numbering-standard.md
+**Document:** `010r-document-numbering-standard.md`
 
 **Type:** 📖 Reference
 
-**Companion Standard:** 010-document-numbering-standard.md
+**Companion Standard:** [010-document-numbering-standard.md](./010-document-numbering-standard.md)
 
 **Owner:** Engineering
 
@@ -317,16 +317,16 @@ These additions should build upon the numbering standard rather than replace it.
 
 ## Prerequisites
 
-* 000-where-we-are-now.md
-* 001-documentation-system-overview.md
-* 005-documentation-level-standard.md
+* [where-we-are-now.md](../where-we-are-now.md)
+* [001-documentation-system-overview.md](./001-documentation-system-overview.md)
+* [005-documentation-level-standard.md](./005-documentation-level-standard.md)
 
 ## Related
 
-* 030-document-template-standard.md
-* 035-document-icon-standard.md
-* 040-document-naming-standard.md
+* [020-document-template-standard.md](./030-document-template-standard.md)
+* [030-document-icons-and-statuses-standard.md](./035-document-icon-standard.md)
+* [025-document-naming-standard.md](./040-document-naming-standard.md)
 
 ## Companion
 
-* 010-document-numbering-standard.md
+* [010-document-numbering-standard.md](./010-document-numbering-standard.md)

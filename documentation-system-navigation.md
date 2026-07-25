@@ -2,10 +2,49 @@
 
 ---
 
-## Documentation Flow
+## Purpose
+
+Provide a high-level overview of how the Engineering Documentation System is organized and the recommended path for navigating the repository.
+
+---
+
+# Documentation Flow
 
 ```text
-                    roadmap.md
+                    README.md
+
+Purpose:
+Why does this framework exist?
+
+Contains:
+- Repository overview
+- Documentation philosophy
+- Framework objectives
+- Getting started
+
+
+        │
+        ▼
+
+
+            where-we-are-now.md
+
+Purpose:
+Where are we today?
+
+Contains:
+- Current milestone
+- Current activity
+- Current focus
+- Resume point
+- Immediate next steps
+
+
+        │
+        ▼
+
+
+                  roadmap.md
 
 Purpose:
 Where are we going?
@@ -13,67 +52,108 @@ Where are we going?
 Contains:
 - Vision
 - Long-term goals
-- Milestones
-- Planned evolution
+- Planned milestones
+- Future evolution
 
 
         │
         ▼
 
 
-              where-we-are-now.md
+                   registry/
 
 Purpose:
-Where are we today?
+What engineering documents are available?
 
 Contains:
-- Current activity
-- Current milestone
-- Current focus
-- Resume point
-- Links to detailed records
+- current-standards.md
+- current-procedures.md
+- current-kb.md
 
 
         │
         ▼
 
 
-          registry/current-standards.md
+             current-standards/
 
 Purpose:
-What is currently accepted?
+What are the engineering rules?
 
 Contains:
-- Accepted standards
-- Companion documents
-- Supporting references
-- Standard status overview
+- Engineering standards
+- Companion references
+- Companion guides
 
 
         │
         ▼
 
 
-          current-standards/
+                procedures/
 
 Purpose:
-Where are the standards?
+How do I perform a task?
 
 Contains:
-- Official engineering standards
-- Companion reference documents
+- Step-by-step engineering procedures
+- Repeatable operational workflows
 
 
         │
         ▼
 
 
-             references/
+                     kb/
 
 Purpose:
-How do we perform common tasks?
+How do I solve a problem?
 
 Contains:
-- Command references
-- Operational guides
-- Quick references
+- Troubleshooting guides
+- Operational knowledge
+- Common engineering issues
+- Practical solutions
+```
+
+---
+
+# Navigation Summary
+
+| Start Here If You Want To...       | Document              |
+| ---------------------------------- | --------------------- |
+| Understand the framework           | `README.md`           |
+| Resume work                        | `where-we-are-now.md` |
+| Understand the long-term direction | `roadmap.md`          |
+| Discover available documents       | `registry/`           |
+| Learn the engineering rules        | `current-standards/`  |
+| Perform a task                     | `procedures/`         |
+| Solve a problem                    | `kb/`                 |
+
+---
+
+# Recommended Reading Order
+
+For new engineers and AI assistants:
+
+```text
+README.md
+      │
+      ▼
+where-we-are-now.md
+      │
+      ▼
+roadmap.md
+      │
+      ▼
+registry/
+      │
+      ▼
+Consult standards, procedures,
+and Knowledge Base articles
+only when needed.
+```
+
+The Engineering Documentation System is designed to support incremental learning.
+
+Engineers are not expected to read every document before becoming productive.

@@ -4,11 +4,11 @@
 
 ## Metadata
 
-**Document:** 005r-documentation-level-standard.md
+**Document:** `005r-documentation-level-standard.md`
 
 **Type:** 📖 Reference
 
-**Companion Standard:** 005-documentation-level-standard.md
+**Companion Standard:** [005-documentation-level-standard.md](./005-documentation-level-standard.md)
 
 **Owner:** Engineering
 
@@ -226,16 +226,16 @@ The documentation level model follows several guiding principles.
 
 ## Prerequisite
 
-* 001-documentation-system-overview.md
-* 005-documentation-level-standard.md
+* [001-documentation-system-overview.md](./)
+* [005-documentation-level-standard.md](./)
 
 ## Related
 
-* 010-document-numbering-standard.md
-* 020-document-status-lifecycle.md
-* 030-document-template-standard.md
-* 040-document-naming-standard.md
-* 045-terminology-standard.md
+* [010-document-numbering-standard.md](./010-document-numbering-standard.md)
+* [015-document-status-lifecycle.md](./015-document-status-lifecycle.md)
+* [020-document-template-standard.md](./020-document-template-standard.md)
+* [025-document-naming-standard.md](./025-document-naming-standard.md)
+* [035-terminology-standard.md](./035-terminology-standard.md)
 
 ## Companion
 

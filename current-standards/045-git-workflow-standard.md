@@ -4,11 +4,11 @@
 
 ## Metadata
 
-**Document:** 045-git-workflow-standard.md
+**Document:** `045-git-workflow-standard.md`
 
 **Type:** 📘 Canonical Standard
 
-**Companion Reference:** 050r-git-workflow-standard.md
+**Companion Reference:** [045r-git-workflow-standard.md](./045r-git-workflow-standard.md)
 
 **Owner:** Engineering
 
@@ -279,13 +279,13 @@ v1.0.0 stable release
 
 ## Companion
 
-* 050r-git-workflow-standard.md
+* [045r-git-workflow-standard.md](./045r-git-workflow-standard.md)
 
 ## Related
 
-* 015-document-status-lifecycle.md
-* 025-document-naming-standard.md
-* 040-document-reference-standard.md
+* [015-document-status-lifecycle.md](./015-document-status-lifecycle.md)
+* [025-document-naming-standard.md](./025-document-naming-standard.md)
+* [040-document-reference-standard.md](./040-document-reference-standard.md)
 
 ## Future Standards
 

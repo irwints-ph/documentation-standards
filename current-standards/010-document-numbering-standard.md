@@ -4,11 +4,11 @@
 
 ## Metadata
 
-**Document:** 010-document-numbering-standard.md
+**Document:** `010-document-numbering-standard.md`
 
 **Type:** 📘 Official Standard
 
-**Companion Reference:** 010r-document-numbering-standard.md
+**Companion Reference:** [010r-document-numbering-standard.md](./010r-document-numbering-standard.md)
 
 **Owner:** Engineering
 
@@ -154,15 +154,15 @@ Exceptions may be made when a document explicitly states different prerequisites
 
 ## Prerequisite
 
-* 001-documentation-system-overview.md
-* 005-documentation-level-standard.md
+* [001-documentation-system-overview.md](./001-documentation-system-overview.md)
+* [005-documentation-level-standard.md](./005-documentation-level-standard.md)
 
 ## Related
 
-* 020-document-status-lifecycle.md
-* 030-document-template-standard.md
-* 040-document-naming-standard.md
+* [015-document-status-lifecycle.md](./015-document-status-lifecycle.md)
+* [020-document-template-standard.md](./020-document-template-standard.md)
+* [025-document-naming-standard.md](./025-document-naming-standard.md)
 
 ## Companion
 
-* 010r-document-numbering-standard.md
+* [010r-document-numbering-standard.md](./010r-document-numbering-standard.md)

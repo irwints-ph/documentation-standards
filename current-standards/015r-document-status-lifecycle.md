@@ -4,11 +4,11 @@
 
 ## Metadata
 
-**Document:** 015r-document-status-lifecycle.md
+**Document:** `015r-document-status-lifecycle.md`
 
 **Type:** 📖 Reference Document
 
-**Companion Standard:** 015-document-status-lifecycle.md
+**Companion Standard:** [015-document-status-lifecycle.md](./015-document-status-lifecycle.md)
 
 **Owner:** Engineering
 
@@ -392,20 +392,20 @@ Future enhancements should extend the lifecycle without changing the meaning of 
 
 ## Prerequisites
 
-* 001-documentation-system-overview.md
-* 005-documentation-level-standard.md
+* [001-documentation-system-overview.md](./001-documentation-system-overview.md)
+* [005-documentation-level-standard.md](./005-documentation-level-standard.md)
 
 ## Related
 
-* 010-document-numbering-standard.md
-* 020-document-template-standard.md
-* 030-document-icon-standard.md
-* 040-document-reference-standard.md
+* [010-document-numbering-standard.md](./010-document-numbering-standard.md)
+* [020-document-template-standard.md](./020-document-template-standard.md)
+* [030-document-icons-and-statuses-standard.md](./030-document-icons-and-statuses-standard.md)
+* [040-document-reference-standard.md](./040-document-reference-standard.md)
 
 ## Registry
 
-* registry/current-standards.md
+* [registry/current-standards.md](../registry/current-standards.md)
 
 ## Companion
 
-* 015-document-status-lifecycle.md
+* [015-document-status-lifecycle.md](./015-document-status-lifecycle.md)

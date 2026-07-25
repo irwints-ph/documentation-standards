@@ -4,11 +4,11 @@
 
 ## Metadata
 
-**Document:** 001-documentation-system-overview.md
+**Document:** `001-documentation-system-overview.md`
 
 **Type:** 📘 Canonical Standard
 
-**Companion Reference:** 001r-documentation-system-overview.md
+**Companion Reference:** [001r-documentation-system-overview.md](./001r-documentation-system-overview.md)
 
 **Owner:** Engineering
 
@@ -101,11 +101,11 @@ The `r` suffix identifies the companion Reference document for a Canonical stand
 
 ## Related
 
-- 005-documentation-level-standard.md
-- 010-document-numbering-standard.md
-- 030-document-template-standard.md
-- 040-document-naming-standard.md
+- [005-documentation-level-standard.md](./005-documentation-level-standard.md)
+- [010-document-numbering-standard.md](./010-document-numbering-standard.md)
+- [030-document-template-standard.md](./030-document-template-standard.md)
+- [040-document-naming-standard.md](./040-document-naming-standard.md)
 
 ## Companion
 
-- 001r-documentation-system-overview.md
+- [001r-documentation-system-overview.md](./001r-documentation-system-overview.md)

@@ -6,7 +6,7 @@ A reusable documentation framework for software engineering projects.
 
 ## Status
 
-**As of:** 07.25.2026 08:30 PHT
+**As of:** 07.26.2026 10:00 PHT
 
 🚧 In Progress
 
@@ -14,24 +14,32 @@ A reusable documentation framework for software engineering projects.
 
 # Purpose
 
-The Engineering Documentation System defines a consistent framework for organizing, writing, reviewing, and maintaining engineering documentation.
+The Engineering Documentation System defines a reusable framework for organizing, writing, reviewing, and maintaining engineering documentation.
 
-Rather than documenting a single software project, this repository defines reusable documentation standards that can be adopted by future projects regardless of language, framework, or platform.
+Rather than documenting a single software project, this repository establishes engineering documentation standards that can be adopted across projects regardless of language, framework, or platform.
+
+**Yes... this includes application developers too. 🙂**
+
+Documentation isn't usually the exciting part of engineering. Most of us would rather build software.
+
+But after you've spent hours tracking down an old design decision, explaining the same architecture for the fifth time, or wondering why something was built a certain way, you'll appreciate having good documentation.
+
+**Future you—and everyone who works on your project—will thank present you.**
 
 The framework is designed to be:
 
-- Human-friendly
-- AI-friendly
-- Easy to navigate
-- Easy to maintain
-- Consistent across repositories
-- Sustainable for long-term engineering projects
+* Human-friendly
+* AI-friendly
+* Easy to navigate
+* Easy to maintain
+* Consistent across repositories
+* Sustainable for long-term engineering projects
 
 ---
 
 # Start Here
 
-If this is your first time visiting the repository, follow this recommended reading order.
+If this is your first visit to the repository, follow this recommended reading order.
 
 ```text
 README.md
@@ -43,48 +51,32 @@ where-we-are-now.md
 roadmap.md
     │
     ▼
-current-standards/
+registry/current-standards.md
     │
     ▼
-001-documentation-system-overview.md
+current-standards/
 ```
 
 ---
 
-# Repository Layout
+# Repository Overview
 
 ```text
-docs/
-
-├── README.md
+README.md
+│
 ├── where-we-are-now.md
 ├── roadmap.md
+├── documentation-system-navigation.md
 │
-├── current-standards/
-│   ├── Official Standards
-│   ├── Reference Documents
-│   └── Companion Documents
+├── registry/
+│   └── current-standards.md
 │
-├── history/
-│   ├── architecture/
-│   ├── session/
-│   ├── git/
-│   └── command/
-│
-├── review/
-│
-├── engineering/
-│
-├── templates/
-│
-├── procedures/
-│
-├── knowledge/
-│
-├── glossary/
-│
-└── kb/
+└── current-standards/
 ```
+
+The repository is organized around a small set of navigation documents.
+
+Detailed engineering guidance is maintained within the standards themselves.
 
 ---
 
@@ -92,117 +84,79 @@ docs/
 
 The Engineering Documentation System follows a few simple principles.
 
-- Standards should be concise.
-- Supporting information belongs in companion reference documents.
-- Historical decisions should be preserved.
-- Documentation should evolve alongside engineering.
-- Documentation should be equally useful for humans and AI assistants.
+* Standards define engineering rules.
+* Companion documents provide explanation and guidance.
+* Operational references provide practical how-to information.
+* Documentation should evolve alongside engineering.
+* Documentation should be equally useful for humans and AI assistants.
+* Keep documentation concise, discoverable, and maintainable.
 
 ---
 
-# Current Standards
+# Standards
 
-The current engineering standards are maintained in:
-
-```text
-current-standards/
-```
-
-Recommended reading order:
+The current registry of engineering standards is maintained in:
 
 ```text
-001-documentation-system-overview.md
-
-↓
-
-005-documentation-level-standard.md
-
-↓
-
-010-document-numbering-standard.md
-
-↓
-
-015-document-status-lifecycle.md
-
-↓
-
-020-document-template-standard.md
-
-↓
-
-025-document-naming-standard.md
-
-↓
-
-030-document-icon-standard.md
-
-↓
-
-035-terminology-standard.md
+registry/current-standards.md
 ```
 
-Each document builds upon the previous standards.
+The registry provides:
+
+* Current engineering standards
+* Companion documents
+* Operational references
+* Lifecycle status
+
+Individual documents remain the source of truth.
 
 ---
 
-# Current Project Status
+# Current Progress
 
-The current project dashboard is maintained in:
+The current engineering checkpoint is maintained in:
 
 ```text
 where-we-are-now.md
 ```
 
-This document provides:
+This document records:
 
-- Current project status
-- Resume point
-- AI context
+* Last completed milestone
+* Current activity
+* Next steps
+* Resume point
 
 ---
 
 # Roadmap
 
-The long-term vision for the Engineering Documentation System is maintained in:
+The long-term direction of the Engineering Documentation System is maintained in:
 
 ```text
 roadmap.md
 ```
 
-The roadmap describes planned milestones, future enhancements, and the overall direction of the framework.
-
----
-
-# Review Process
-
-Proposed documentation changes should be submitted through the review process.
-
-Repository leads review proposed updates and, when approved, incorporate them into the current standards and update:
-
-```text
-where-we-are-now.md
-```
+The roadmap describes future milestones, planned enhancements, and the overall evolution of the framework.
 
 ---
 
 # Vision
 
-The long-term objective is to build a reusable Engineering Documentation Framework that can be adopted by any software project.
+Build a reusable Engineering Documentation System that can be adopted by any software engineering project.
 
-New repositories should inherit a complete documentation system and focus only on documenting project-specific knowledge rather than reinventing documentation standards.
+New repositories should inherit an established documentation framework, allowing engineering teams to focus on documenting project-specific knowledge rather than reinventing documentation practices.
+
+The goal is simple:
+
+> Spend less time rediscovering knowledge and more time building great software.
 
 ---
 
 # Related Documents
 
-## Project
-
-- [where-we-are-now.md](where-we-are-now.md)
-- [roadmap.md](roadmap.md)
-
-## Standards
-
-- [001-documentation-system-overview.md](current-standards/001-documentation-system-overview.md)
-- [005-documentation-level-standard.md](current-standards/005-documentation-level-standard.md)
-- [010-document-numbering-standard.md](current-standards/010-document-numbering-standard.md)
+* [README.md](README.md)
+* [where-we-are-now.md](where-we-are-now.md)
+* [roadmap.md](roadmap.md)
+* [documentation-system-navigation.md](documentation-system-navigation.md)
+* [registry/current-standards.md](registry/current-standards.md)

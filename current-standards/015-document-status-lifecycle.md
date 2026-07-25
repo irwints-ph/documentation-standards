@@ -4,11 +4,11 @@
 
 ## Metadata
 
-**Document:** 015-document-status-lifecycle.md
+**Document:** `015-document-status-lifecycle.md`
 
 **Type:** 📘 Canonical Standard
 
-**Companion Reference:** 015r-document-status-lifecycle.md
+**Companion Reference:** [015r-document-status-lifecycle.md](./015r-document-status-lifecycle.md)
 
 **Owner:** Engineering
 
@@ -269,7 +269,7 @@ Status changes should represent meaningful maturity changes, not routine edits.
 
 * 010-document-numbering-standard.md
 * 020-document-template-standard.md
-* 030-document-icon-standard.md
+* 030-document-icons-and-statuses-standard.md
 * 040-document-reference-standard.md
 
 ## Companion

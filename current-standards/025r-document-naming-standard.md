@@ -4,11 +4,11 @@
 
 ## Metadata
 
-**Document:** 025r-document-naming-standard.md
+**Document:** `025r-document-naming-standard.md`
 
 **Type:** 📖 Reference
 
-**Companion Standard:** 025-document-naming-standard.md
+**Companion Standard:** [025-document-naming-standard.md](./025-document-naming-standard.md)
 
 **Owner:** Engineering
 
@@ -352,16 +352,16 @@ Yes, but only when there is a compelling engineering reason. Renaming should be 
 
 ## Prerequisites
 
-- 001-documentation-system-overview.md
-- 005-documentation-level-standard.md
-- 010-document-numbering-standard.md
+- [001-documentation-system-overview.md](./001-documentation-system-overview.md)
+- [005-documentation-level-standard.md](./005-documentation-level-standard.md)
+- [010-document-numbering-standard.md](./010-document-numbering-standard.md)
 
 ## Related
 
-- 015-document-status-lifecycle.md
-- 020-document-template-standard.md
-- 035-terminology-standard.md
+- [015-document-status-lifecycle.md](./015-document-status-lifecycle.md)
+- [020-document-template-standard.md](./020-document-template-standard.md)
+- [035-terminology-standard.md](./035-terminology-standard.md)
 
 ## Companion
 
-- 025-document-naming-standard.md
+- [025-document-naming-standard.md](./025-document-naming-standard.md)

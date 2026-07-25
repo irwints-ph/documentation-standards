@@ -4,11 +4,11 @@
 
 ## Metadata
 
-**Document:** 035-terminology-standard.md
+**Document:** `035-terminology-standard.md`
 
 **Type:** 📘 Official Standard
 
-**Companion Reference:** 035r-terminology-standard.md
+**Companion Reference:** [035r-terminology-standard.md](./035r-terminology-standard.md)
 
 **Owner:** Engineering
 
@@ -117,10 +117,10 @@ When a preferred term changes:
 
 ## Related
 
-- 001-documentation-system-overview.md
-- 020-document-template-standard.md
-- 025-document-naming-standard.md
+- [001-documentation-system-overview.md](./001-documentation-system-overview.md)
+- [020-document-template-standard.md](./020-document-template-standard.md)
+- [025-document-naming-standard.md](./025-document-naming-standard.md)
 
 ## Companion
 
-- 035r-terminology-standard.md
+- [035r-terminology-standard.md](./035r-terminology-standard.md)

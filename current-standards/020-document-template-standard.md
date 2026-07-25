@@ -4,11 +4,11 @@
 
 ## Metadata
 
-**Document:** 020-document-template-standard.md
+**Document:** `020-document-template-standard.md`
 
 **Type:** 📘 Canonical Standard
 
-**Companion Reference:** 020r-document-template-standard.md
+**Companion Reference:** [020r-document-template-standard.md](./020r-document-template-standard.md)
 
 **Owner:** Engineering
 
@@ -20,7 +20,7 @@
 
 **As of:** 07.26.2026 HH:MM TZ
 
-📦 Official
+✅ Accepted
 
 ---
 
@@ -219,16 +219,16 @@ Title:
 
 ## Prerequisites
 
-* 001-documentation-system-overview.md
-* 005-documentation-level-standard.md
-* 010-document-numbering-standard.md
-* 015-document-status-lifecycle.md
+* [001-documentation-system-overview.md](./001-documentation-system-overview.md)
+* [005-documentation-level-standard.md](./005-documentation-level-standard.md)
+* [010-document-numbering-standard.md](./010-document-numbering-standard.md)
+* [015-document-status-lifecycle.md](./015-document-status-lifecycle.md)
 
 ## Related
 
-* 025-document-naming-standard.md
-* 030-document-icon-standard.md
+* [025-document-naming-standard.md](./025-document-naming-standard.md)
+* [030-document-icons-and-statuses-standard.md](./030-document-icons-and-statuses-standard.md)
 
 ## Companion
 
-* 020r-document-template-standard.md
+* [020r-document-template-standard.md](./020r-document-template-standard.md)
