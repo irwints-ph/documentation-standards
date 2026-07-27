@@ -1,120 +1,203 @@
-# 📄 Engineering Documentation System
+# 📄 Engineering Documentation System (EDS)
 
-A reusable documentation framework for software engineering projects.
+> **Discover. Document. Validate. Preserve.**
 
 ---
 
 ## Status
 
-**As of:** 07.26.2026 10:00 PHT
-
-🚧 In Progress
+🚧 Active Development
 
 ---
 
 # Purpose
 
-The Engineering Documentation System defines a reusable framework for organizing, writing, reviewing, and maintaining engineering documentation.
+The **Engineering Documentation System (EDS)** provides a reusable framework for documenting software systems in a consistent, maintainable, and AI-friendly way.
 
-Rather than documenting a single software project, this repository establishes engineering documentation standards that can be adopted across projects regardless of language, framework, or platform.
+Rather than documenting a single project, EDS defines reusable engineering standards that can be adopted across repositories regardless of language, framework, platform, or technology stack.
 
-**Yes... this includes application developers too. 🙂**
+EDS was created from a simple observation:
 
-Documentation isn't usually the exciting part of engineering. Most of us would rather build software.
+> **Engineering knowledge is often lost faster than software is written.**
 
-But after you've spent hours tracking down an old design decision, explaining the same architecture for the fifth time, or wondering why something was built a certain way, you'll appreciate having good documentation.
+The objective is to preserve that knowledge before it disappears.
 
-**Future you—and everyone who works on your project—will thank present you.**
-
-The framework is designed to be:
-
-* Human-friendly
-* AI-friendly
-* Easy to navigate
-* Easy to maintain
-* Consistent across repositories
-* Sustainable for long-term engineering projects
+**Yes... you can enjoy documenting too. 🙂**
 
 ---
 
-# Start Here
+# Vision
 
-If this is your first visit to the repository, follow this recommended reading order.
+Build engineering documentation that helps teams understand software before they change it.
 
-```text
-README.md
-    │
-    ▼
-where-we-are-now.md
-    │
-    ▼
-roadmap.md
-    │
-    ▼
-registry/current-standards.md
-    │
-    ▼
-current-standards/
-```
+Documentation should become a long-term engineering asset rather than a short-lived project artifact.
 
 ---
 
-# Repository Overview
+# Core Principles
+
+* Discovery before modification
+* Documentation through understanding
+* Validation through evidence
+* Knowledge over memory
+* AI-assisted collaboration
+* Reusable engineering standards
+
+---
+
+# Engineering Ecosystem
+
+The Engineering Documentation System is part of a broader engineering ecosystem.
 
 ```text
-README.md
+Engineering Ecosystem
+
 │
-├── where-we-are-now.md
-├── roadmap.md
-├── documentation-system-navigation.md
+
+├── Engineering Documentation System (EDS)
+│       Document engineering knowledge.
 │
-├── registry/
-│   └── current-standards.md
+├── Engineering Knowledge System (EKS)
+│       Understand how engineering knowledge
+│       is created, validated, preserved,
+│       and transferred.
 │
-└── current-standards/
+└── Assisted Flow of Knowledge (AFK)
+        An AI-assisted collaboration methodology
+        that transforms engineering work into
+        reusable organizational knowledge.
 ```
 
-The repository is organized around a small set of navigation documents.
+Each initiative has a distinct responsibility while supporting the others.
 
-Detailed engineering guidance is maintained within the standards themselves.
+---
+
+# Framework Layers
+
+```text
+Engineering Documentation System
+
+│
+
+├── Core Documentation Standards
+│
+├── Engineering Standards
+│
+└── Project Discovery Documentation
+```
+
+## Core Documentation Standards
+
+Define how engineering documentation is written.
+
+Examples include:
+
+* Document templates
+* Naming conventions
+* Metadata
+* References
+* Lifecycle
+* Repository organization
+
+---
+
+## Engineering Standards
+
+Define how software systems are discovered, documented, analyzed, and validated.
+
+Examples include:
+
+* Source documentation
+* Folder registries
+* Component documentation
+* Discovery workflow
+* Folder validation
+* Architecture findings
+
+---
+
+## Project Discovery Documentation
+
+Applies the standards to real software systems.
+
+Discovery captures:
+
+* Current implementation
+* Component responsibilities
+* Folder organization
+* Architectural understanding
+* Engineering findings
+* Future review opportunities
+
+---
+
+# Relationship to EKS
+
+The **Engineering Knowledge System (EKS)** expands beyond documentation.
+
+While EDS focuses on documenting engineering knowledge, EKS explores:
+
+* Engineering learning
+* Knowledge extraction
+* Validation methodologies
+* Knowledge preservation
+* Organizational knowledge
+* AI-assisted engineering practices
+
+EDS serves as one practical implementation within the broader EKS vision.
+
+---
+
+# Relationship to AFK
+
+**AFK (Assisted Flow of Knowledge)** is the emerging methodology that guides how engineering knowledge flows from discovery into documentation and eventually into reusable organizational knowledge.
+
+Rather than simply producing documents, AFK encourages engineers to:
+
+* Learn before implementing
+* Understand before modifying
+* Preserve before forgetting
+* Share before knowledge is lost
+
+AFK complements EDS by providing the engineering mindset behind the documentation process.
 
 ---
 
 # Documentation Philosophy
 
-The Engineering Documentation System follows a few simple principles.
+Documentation is not the goal.
 
-* Standards define engineering rules.
-* Companion documents provide explanation and guidance.
-* Operational references provide practical how-to information.
-* Documentation should evolve alongside engineering.
-* Documentation should be equally useful for humans and AI assistants.
-* Keep documentation concise, discoverable, and maintainable.
+**Understanding is.**
+
+Documentation is one of the artifacts produced by understanding.
 
 ---
 
 # Standards
 
-The current registry of engineering standards is maintained in:
+The Engineering Documentation System is organized around reusable engineering standards.
 
 ```text
-registry/current-standards.md
+registry/
+
+├── core-standards.md
+└── engineering-standards.md
 ```
 
-The registry provides:
+The registries provide:
 
-* Current engineering standards
+* Current standards
 * Companion documents
-* Operational references
 * Lifecycle status
+* Framework navigation
 
-Individual documents remain the source of truth.
+Individual standards remain the authoritative source of engineering guidance.
 
 ---
 
 # Current Progress
 
-The current engineering checkpoint is maintained in:
+Current engineering progress is maintained in:
 
 ```text
 where-we-are-now.md
@@ -122,8 +205,8 @@ where-we-are-now.md
 
 This document records:
 
-* Last completed milestone
-* Current activity
+* Current milestone
+* Active work
 * Next steps
 * Resume point
 
@@ -131,32 +214,104 @@ This document records:
 
 # Roadmap
 
-The long-term direction of the Engineering Documentation System is maintained in:
+The long-term evolution of the framework is maintained in:
 
 ```text
 roadmap.md
 ```
 
-The roadmap describes future milestones, planned enhancements, and the overall evolution of the framework.
+The roadmap describes:
+
+* Planned milestones
+* Framework evolution
+* Future engineering capabilities
 
 ---
 
-# Vision
+# Design Principles
 
-Build a reusable Engineering Documentation System that can be adopted by any software engineering project.
+The Engineering Documentation System is built upon several principles.
 
-New repositories should inherit an established documentation framework, allowing engineering teams to focus on documenting project-specific knowledge rather than reinventing documentation practices.
+* Documentation should evolve alongside engineering.
+* Discovery should precede modification.
+* Architecture should be validated through evidence.
+* Standards should encourage consistency without limiting flexibility.
+* Documentation should remain equally useful for humans and AI assistants.
+* Knowledge should outlive individual contributors.
+* Documentation should support future modernization efforts.
 
-The goal is simple:
+---
 
-> Spend less time rediscovering knowledge and more time building great software.
+# Future Direction
+
+The Engineering Documentation System will continue expanding beyond documentation conventions.
+
+Future Engineering Standards include:
+
+* Software discovery
+* Architecture validation
+* Component documentation
+* Knowledge extraction
+* Engineering review
+* Engineering methodologies
+* AI-assisted engineering workflows
+
+The framework is designed to remain reusable regardless of engineering discipline or technology stack.
+
+---
+
+# Related Engineering Initiatives
+
+## Engineering Documentation System (EDS)
+
+The current repository.
+
+Focuses on documenting engineering knowledge through reusable engineering standards.
+
+---
+
+## Engineering Knowledge System (EKS)
+
+Explores how engineering knowledge is created, validated, preserved, transferred, and continuously improved.
+
+```text
+_EngineeringKnowledgeSystem/
+```
+
+---
+
+## Assisted Flow of Knowledge (AFK)
+
+An AI-assisted collaboration methodology focused on transforming engineering work into reusable organizational knowledge.
+
+```text
+_EngineeringKnowledgeSystem/
+└── afk/
+```
 
 ---
 
 # Related Documents
 
-* [README.md](README.md)
-* [where-we-are-now.md](where-we-are-now.md)
-* [roadmap.md](roadmap.md)
-* [documentation-system-navigation.md](documentation-system-navigation.md)
-* [registry/current-standards.md](registry/current-standards.md)
+* `README.md`
+* `where-we-are-now.md`
+* `roadmap.md`
+* `documentation-system-navigation.md`
+* `registry/core-standards.md`
+* `registry/engineering-standards.md`
+
+---
+
+# A Note to Future You
+
+> **Good documentation isn't for present you.**
+>
+> **It's a gift to future you.**
+
+**Yes... even us developers. 🙂**
+
+---
+
+> **Every undocumented system has a story.**
+>
+> **Let's AFK it before it's forgotten.**

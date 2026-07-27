@@ -239,7 +239,7 @@ If multiple documents conflict:
 The current status of engineering standards should be tracked through:
 
 ```text
-registry/current-standards.md
+registry/core-standards.md
 ```
 
 The registry provides a summary view.

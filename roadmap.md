@@ -120,7 +120,7 @@ Where are we today?
         │
         ▼
 
-registry/current-standards.md
+registry/core-standards.md
 
 Purpose:
 What is currently accepted?
@@ -128,7 +128,7 @@ What is currently accepted?
         │
         ▼
 
-current-standards/
+core-standards/
 
 Purpose:
 What defines the framework?
@@ -151,12 +151,12 @@ Each document has a single responsibility, reducing duplication and making the f
 ```text
 documentation-standards/
 
-├── current-standards/
+├── core-standards/
 │
 ├── references/
 │
 ├── registry/
-│   └── current-standards.md
+│   └── core-standards.md
 │
 ├── documentation-system-navigation.md
 │
@@ -182,7 +182,7 @@ The Engineering Documentation Foundation establishes the reusable documentation 
 The complete list of accepted standards is maintained in:
 
 ```text
-registry/current-standards.md
+registry/core-standards.md
 ```
 
 This milestone includes:

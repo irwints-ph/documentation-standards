@@ -66,7 +66,7 @@ Purpose:
 What engineering documents are available?
 
 Contains:
-- current-standards.md
+- core-standards.md
 - current-procedures.md
 - current-kb.md
 
@@ -75,7 +75,7 @@ Contains:
         ▼
 
 
-             current-standards/
+             core-standards/
 
 Purpose:
 What are the engineering rules?
@@ -126,7 +126,7 @@ Contains:
 | Resume work                        | `where-we-are-now.md` |
 | Understand the long-term direction | `roadmap.md`          |
 | Discover available documents       | `registry/`           |
-| Learn the engineering rules        | `current-standards/`  |
+| Learn the engineering rules        | `core-standards/`  |
 | Perform a task                     | `procedures/`         |
 | Solve a problem                    | `kb/`                 |
 

@@ -404,7 +404,7 @@ Future enhancements should extend the lifecycle without changing the meaning of 
 
 ## Registry
 
-* [registry/current-standards.md](../registry/current-standards.md)
+* [registry/core-standards.md](../registry/core-standards.md)
 
 ## Companion
 
