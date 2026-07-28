@@ -89,7 +89,7 @@ Continue Engineering
 
 # Step 1 — Initialize a Project
 
-Initialize a new Engineering Project using the [AFK Bootstrap Tool](../../../tools/afk-init.cmd)
+Initialize a new Engineering Project using the [AFK Bootstrap Tool](../../../_collaboration/afk-init.cmd)
 
 Example:
 
@@ -144,7 +144,7 @@ Example:
 
 Open ChatGPT (or another AI Collaborator).
 
-Use the [Collaboration Prompt provided by AFK.](../../templates/01-boot-prompt-template.md)
+Use the [Collaboration Prompt provided by AFK.](../../../_collaboration/01-boot-prompt-template.md)
 
 The prompt introduces the collaborator to AFK before introducing the project.
 
@@ -513,9 +513,9 @@ You now understand:
 
 # Continue your learning
 
-* [Learn AFK Collaboration](../afk/README.md)
-* Explore the Engineering Documentation System [EDS](../eds/README.md)
-* Explore the Engineering Knowledge System [EKS](../eks/README.md)
+* [Learn AFK Collaboration](../../README.md)
+* Explore the Engineering Documentation System [EDS](../../../eds/README.md)
+* Explore the Engineering Knowledge System [EKS](../../../eks/README.md)
 
 Or begin your next engineering wish.
 

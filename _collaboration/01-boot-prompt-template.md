@@ -44,7 +44,7 @@ I would like to begin an engineering collaboration using the Assisted Flow of Kn
 
 Please begin by reviewing the AFK documentation located here:
 
-<AFK Repository URL>
+https://github.com/irwints-ph/documentation-standards/tree/main/afk
 
 After reviewing the documentation:
 
