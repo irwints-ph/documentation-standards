@@ -1,0 +1,97 @@
+/* Layout styling for full-width content */
+body[for="html-export"] {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+
+/* Burger Menu Toggle Button */
+.menu-toggle {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 101;
+  background-color: #0366d6;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  font-size: 1.25rem;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: left 0.3s ease-in-out;
+}
+
+/* Sidebar Drawer Styling (Wider: 340px) */
+.docs-sidebar {
+  width: 440px;
+  height: 100vh;
+  background-color: #f8f9fa;
+  border-right: 1px solid #e1e4e8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  padding: 4.5rem 1.5rem 2rem 1.5rem;
+  box-sizing: border-box;
+  z-index: 100;
+  transform: translateX(-100%);
+  box-shadow: 4px 0 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Active class toggled via JavaScript to slide sidebar over the document */
+.docs-sidebar.active {
+  transform: translateX(0);
+}
+
+.docs-sidebar h3 {
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #24292e;
+  border-bottom: 2px solid #eaecef;
+  padding-bottom: 0.5rem;
+}
+
+.docs-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.docs-sidebar li {
+  margin-bottom: 0.75rem;
+}
+
+.docs-sidebar a {
+  color: #0366d6;
+  text-decoration: none;
+  font-size: 0.95rem;
+  display: block;
+  padding: 0.25rem 0;
+  transition: color 0.2s ease;
+}
+
+.docs-sidebar a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Main content container remains full width underneath */
+.crossnote.markdown-preview {
+  margin-left: 0;
+  padding: 2rem 3rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .docs-sidebar {
+    width: 85vw; /* Responsive width on mobile screens */
+  }
+  .crossnote.markdown-preview {
+    padding: 4rem 1.5rem 1.5rem 1.5rem;
+  }
+}
