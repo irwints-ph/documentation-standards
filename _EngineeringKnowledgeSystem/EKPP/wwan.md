@@ -1,231 +1,211 @@
-# 📍 Where We Are Now
-
----
-
-# Engineering Knowledge Publishing Portal (EKPP)
+# 📍 Where We Are Now (WWAN)
 
 ---
 
 ## Status
 
-**As of:** 07.28.2026 23:59 PHT
-
-🚧 Initial Build
-
----
-
-# Purpose
-
-EKPP is the validation platform for publishing engineering knowledge produced through AFK.
-
-The platform is intentionally being built incrementally.
-
-Rather than implementing anticipated features, each iteration focuses on granting one active wish and learning from the outcome.
+| Field         | Value                                          |
+| ------------- | ---------------------------------------------- |
+| As of         | 07.28.2026 06:45 PHT                           |
+| Project       | Engineering Knowledge Publishing Portal (EKPP) |
+| Status        | 🚧 In Progress                                 |
+| Current Phase | Discovery                                      |
+| Active Wish   | EKPP-W002                                      |
 
 ---
 
-# Current Phase
+# Current Focus
 
-## 🛠️ Initial Implementation
-
-The Discovery phase for the first implementation has been completed.
-
-The project now transitions into Build.
-
-The objective is to grant the first active wish through the smallest implementation capable of producing meaningful operational feedback.
+Engineering Knowledge Publishing Portal (EKPP)
 
 ---
 
-# Current Active Wish
+# Current Wish
 
-## 💭 EKPP-W001
+## EKPP-W002
+
+> **I wish EKPP could automatically publish engineering knowledge.**
+
+**Status**
+
+🚧 Discovery
+
+---
+
+# Recently Granted
+
+## EKPP-W001
 
 > **I wish I could see the initial output of EKPP.**
 
-Status
+**Status**
 
-🟢 Active
+✅ Granted
 
-Everything currently planned supports granting this wish.
+### Grant Summary
+
+The Engineering Knowledge Publishing Portal successfully produced its first observable Website Shell.
+
+The implementation enabled meaningful engineering observations and established a visual foundation for future publishing capabilities.
+
+Knowledge produced during W001 will guide subsequent wishes rather than extend W001 itself.
+
+See:
+
+`docs/registry/wishes/001-ekpp-w001-initial-output.md`
 
 ---
 
-# Discovery Status
+# Current State
 
-Discovery is considered complete for EKPP-W001.
+## Discovery
 
-Completed Discovery artifacts include:
+✅ Completed
+
+Project vision established.
+
+Architecture direction defined.
+
+Publishing concept identified.
+
+---
+
+## Website Shell
+
+✅ Completed
+
+The Website Shell has completed two implementation cycles.
+
+### Cycle 1
+
+Produced the first observable implementation.
+
+### Cycle 2
+
+Refined the experience using Reader Journey observations.
+
+Evidence preserved under:
+
+`implementation/evidence/`
+
+---
+
+## Reader Journey
+
+🚧 Emerging Knowledge
+
+Reader Journey observations now form part of EKPP's engineering knowledge.
+
+Current principles include:
+
+* Knowledge should be comfortable to read anywhere.
+* Reading is the primary interaction.
+* Content is the primary interface.
+* Responsive design should support reading rather than dominate it.
+
+These principles will continue influencing future implementation.
+
+---
+
+# Current Platform
+
+Documentation describing the current publishing environment has been established.
+
+Current platform documentation includes:
 
 * Current Platform
-* Platform Validation
-* Wish List
-* Grant Strategy
-* Initial Architecture
-* Build Plan
+* AWS Files Folder
+* Current Platform Registry
 
-The detailed inventory is maintained in:
+Current platform relationship:
 
-**📚 Registry**
-
-`docs/registry/current-discovery.md`
+* `aws-files/` → Current production website
+* `website/` → Active implementation
+* `implementation/evidence/` → Historical implementation artifacts
 
 ---
 
-# Current Architecture
+# Current Objective
 
-The current architecture intentionally remains simple.
+Discovery for EKPP-W002.
 
-```text id="6d8vmj"
-Markdown
+Current engineering focus:
 
-↓
+Understand how EKPP should transform engineering documentation into a published website.
 
-HTML Generation
+Current discovery areas include:
 
-↓
+* publishing pipeline,
+* Markdown processing,
+* document rendering,
+* navigation generation,
+* metadata rendering,
+* asset management,
+* incremental publishing.
 
-Shared Resources
+Implementation will begin only after sufficient understanding has been established.
 
-↓
+---
 
-Static Website
+# Current Repository State
 
-↓
+```text
+EKPP
 
-Amazon S3
+Discovery
+    ✅ Complete
 
-↓
+Website Shell
+    ✅ Granted
 
-Readers
+Reader Journey
+    🚧 Growing
+
+Publishing Engine
+    🚧 Discovery
 ```
 
-No additional complexity has been justified through operational experience.
+---
+
+# Current Next Step
+
+Continue Discovery for EKPP-W002.
+
+Design the Engineering Knowledge Publisher capable of transforming maintained engineering documentation into publishable website content.
 
 ---
 
-# Current Scope
+# Recent AFK Learnings
 
-## Included
+Recent work reinforced several engineering observations.
 
-* Landing page
-* Shared navigation
-* Published EDS
-* Published EKS
-* Published AFK
-* Shared styling
-* Shared JavaScript
-* Static deployment
+* Wishes establish engineering direction.
+* Observations refine implementation.
+* Multiple implementation cycles may contribute toward granting a single wish.
+* Engineering knowledge grows while granting wishes.
+* Reader experience should emerge from observation rather than assumption.
 
-## Deliberately Deferred
+---
 
-The following are intentionally outside the scope of EKPP-W001:
+# Longer-Term Direction
 
+Future wishes are expected to include:
+
+* Publishing Engine
+* Navigation Generation
+* Knowledge Relationships
 * Search
-* Analytics
-* Versioning
-* Comments
-* Publishing automation
-* CloudFront
-* CI/CD
-* Authentication
+* Reader Experience Validation
+* Publishing Automation
 
-These are not rejected.
-
-They simply have not yet become active wishes.
-
----
-
-# Build Philosophy
-
-During implementation every engineering decision should ask:
-
-> **Does this help grant EKPP-W001?**
-
-If yes...
-
-Build it.
-
-If no...
-
-Record the observation.
-
-Continue building.
-
----
-
-# Emerging Wishes
-
-Implementation may naturally reveal additional wishes.
-
-When this happens:
-
-* Record the observation.
-* Continue granting the current wish.
-* Evaluate new wishes after operational experience.
-
-AFK intentionally avoids expanding scope during implementation.
-
----
-
-# Immediate Next Work
-
-Begin implementing EKPP according to the approved Build Plan.
-
-Initial work focuses on:
-
-* Site foundation
-* Shared navigation
-* Documentation publishing
-* Initial reader journey
-* Static deployment
-
-The objective is to produce a usable first version for experimentation.
-
----
-
-# Success Criteria
-
-The current implementation will be considered successful when:
-
-* EKPP is publicly accessible.
-* Readers can complete the intended journey.
-* Operational observations have been collected.
-* The team determines whether EKPP-W001 has been granted.
-
-Success is measured by granting the active wish rather than implementing additional features.
-
----
-
-# Current Validation
-
-EKPP now serves as the primary operational validation project for AFK.
-
-Rather than attempting to justify AFK theoretically, EKPP allows the methodology to be evaluated through real engineering work.
-
-Future improvements to both EKPP and AFK should emerge from observation rather than assumption.
-
----
-
-# Notes
-
-Discovery has ended.
-
-Building begins.
-
-The next lessons should come from reality.
-
-Not speculation.
+These wishes will build upon the knowledge established during EKPP-W001 and EKPP-W002.
 
 ---
 
 # Closing Thought
 
-Every build grants a wish.
+The first wish demonstrated that EKPP could exist.
 
-Every granted wish teaches something new.
+The current wish explores whether EKPP can become a true Engineering Knowledge Publisher.
 
-Every lesson improves both EKPP and AFK.
-
-As always:
-
-> **Experiment. Observe. Learn. Improve.**
+Every observation continues to strengthen both the platform and the methodology guiding its evolution.

@@ -1,250 +1,195 @@
-# 📍 Where We Are Now
+# 📍 Where We Are Now (WWAN)
 
 ---
 
-# Assisted Flow of Knowledge (AFK)
+## Metadata
 
----
+**Project:** Assisted Flow of Knowledge (AFK)
 
-## Status
+**Status:** 🚧 Growing
 
-**Project Status**
+**Current Phase:** Operational Validation
 
-🚧 Research & Validation
-
-**Methodology Status**
-
-Discovery & Evolution
-
----
-
-# Purpose
-
-AFK is an emerging methodology for AI-assisted engineering collaboration.
-
-The methodology is intentionally being discovered through real engineering work rather than theoretical design.
-
-Every engineering activity serves two purposes:
-
-1. Complete the engineering objective.
-2. Improve AFK itself.
-
-AFK continues to discover itself through practice.
+**Last Updated:** 2026-07-28
 
 ---
 
 # Current Focus
 
-AFK is transitioning from a single introductory document into a modular body of knowledge.
+AFK is currently validating its Build methodology through the Engineering Knowledge Publishing Portal (EKPP).
 
-The objective is to improve:
+The objective is not to prove the methodology correct.
 
-* readability
-* maintainability
-* discoverability
-* long-term evolution
-
-Rather than continuously expanding the README, AFK will be organized into focused documents grouped by purpose.
-
-Current structure is evolving toward:
-
-* Methodology
-* Culture
-* Future Concepts
-* Examples
+The objective is to observe how collaboration naturally evolves and preserve the resulting engineering knowledge.
 
 ---
 
-# Current Discovery
+# Current Milestone
 
-Recent discoveries include:
+## Milestone — Build Methodology Validation
 
-* WWAN as Operational Context rather than historical documentation.
+**Status:** 🚧 In Progress
 
-* Recognition that WWAN is becoming the natural entry point into AFK rather than the traditional README.
-
-* Context Bootstrap Documents.
-
-* Operational vs Knowledge Artifacts.
-
-* EKPP validating AFK through a real engineering project.
-
-* Wish Engineering (Future Concept).
-
-* Curiosity Engineering (Future Concept).
-
-* AFK Session Bootstrap as the formal beginning of every AFK collaboration.
-
-* Collaborative Validation becoming part of AFK Culture.
-
-* Discovery naturally progressing through:
-
-  * Wish
-  * Grant Strategy
-  * Architecture
-  * Build
-  * Experiment
-  * Observe
-  * Learn
-
-* Discovery that projects with a maintained WWAN are not "stopped"—they are simply paused until the next collaboration.
-
-* Recognition that AFK should be validated through operational experience rather than theoretical justification.
-
-* Recognition that AFK should not claim applicability beyond engineering until operational evidence supports it.
-
-* Recognition that AFK is less about inventing entirely new ideas and more about recognizing enduring human collaborative practices and organizing them into a coherent methodology for AI-assisted collaboration.
-* Discovery that many AFK concepts (Operational Continuity, Validation, Knowledge Preservation, Session Bootstrap) have existed independently across different disciplines; AFK provides a unified methodology rather than isolated practices.
-
-Several of these intentionally remain experimental and continue to reside under Future Concepts until sufficient operational evidence exists.
+Operational validation continues using real engineering work rather than isolated theoretical examples.
 
 ---
 
-# Current Working Principles
+# Current State
 
-Current principles guiding AFK include:
+The following Build artifacts have now been created and validated.
 
-* Understand before implementing.
-* Evidence before assumptions.
-* Experiment and observe.
-* Preserve knowledge.
-* Challenge ideas respectfully.
-* Validate collaboratively.
-* Collaborate, don't delegate.
-* Understand before accepting.
-* Allow architecture to emerge through understanding.
-* Preserve interesting discoveries before deciding whether they become methodology.
-- Recognize before reinventing.
----
+## Build Documents
 
-# Current Culture
+* ✅ Build Bootstrap
+* ✅ Build Knowledge Package
 
-AFK has begun documenting the collaborative culture that naturally emerged during development.
-
-Current cultural observations include:
-
-* Engineering is collaborative.
-* AI is an engineering companion.
-* Curiosity precedes discovery.
-* Validation improves ideas.
-* Documentation cultivates understanding.
-* Culture should become habit rather than instruction.
-- Every idea deserves collaboration before evaluation.
-
-The objective is not for engineers to memorize AFK.
-
-The objective is for engineers to naturally practice it.
+These documents now form the foundation of an AFK Build session.
 
 ---
 
-# Immediate Next Work
+## Reference Artifacts
 
-Continue restructuring AFK into modular documents.
+The operational evolution of the methodology has been preserved.
+
+* 📖 001-build-bootstrap-reference-session.md
+* 📖 002-build-knowledge-package.md
+* 📖 003-build-knowledge-package-experiment-2.md
+
+These artifacts capture how AFK learned rather than prescribing how AFK should behave.
+
+---
+
+# Current Discoveries
+
+## Discovery
+
+Engineering collaboration appears to progress through distinct operational stages.
+
+Current observed flow:
+
+```text
+Role
+
+↓
+
+Understanding
+
+↓
+
+Operational Context
+
+↓
+
+Authorization
+
+↓
+
+Implementation
+```
+
+This remains an operational observation and has not yet become accepted methodology.
+
+---
+
+## Discovery
+
+Collaboration quality appears to depend more upon preserved engineering understanding than prompt complexity.
+
+Operational evidence supporting this observation continues to grow.
+
+---
+
+## Discovery
+
+Operational authorization appears to transition collaboration from analysis into implementation.
+
+Evidence currently exists from multiple Build validation sessions.
+
+Additional validation is planned before standardization.
+
+---
+
+## Discovery
+
+Methodology evolves more reliably through operational evidence than through theoretical design.
+
+AFK continues to reinforce its own philosophy by observing before concluding.
+
+---
+
+# Emerging Practices
+
+Current emerging practices include:
+
+* Collaborative First Draft
+* Collaboration Bootstrap
+
+These practices remain under observation until additional operational evidence has been collected.
+
+---
+
+# Current Observations
+
+Today's validation demonstrated an important engineering behavior.
+
+A collaborator possessing sufficient understanding did not automatically begin implementation.
+
+Implementation naturally followed only after explicit operational authorization.
+
+This observation may influence future AFK methodology.
+
+---
+
+# Parking Lot
+
+The following ideas have emerged but intentionally remain outside the current methodology.
+
+* AI-readable Engineering Knowledge Publishing Portal (EKPP).
+* Published engineering knowledge as operational context for AI collaborators.
+* Generated Knowledge Bundles for Build sessions.
+* Formal treatment of Operational Authorization as a collaboration stage.
+
+These ideas remain preserved as future discoveries rather than current methodology.
+
+---
+
+# Next Planned Work
+
+Continue operational validation through real engineering projects.
 
 Current priorities are:
 
-## Methodology
-
-* 000-afk-session-bootstrap.md
-* 001-afk-purpose.md
-* 005-afk-philosophy.md
-* 010-afk-principles.md
-* 015-afk-collaboration.md
-* 020-afk-discovery.md
-* 025-afk-operational-continuity.md
-* 030-afk-ai-companion.md
-* 035-afk-canon-events.md
-* 040-afk-validation.md
-* 045-afk-glossary.md
-
-## Culture
-
-* 001-afk-culture.md (Growing)
-
-Future Culture documents may naturally emerge through operational experience.
+* Continue validating Build methodology.
+* Compare future Build sessions against current observations.
+* Determine whether Operational Authorization should become formal methodology.
+* Continue preserving discoveries as Reference Artifacts.
+* Allow methodology to evolve through accumulated operational evidence.
 
 ---
 
-# Current Validation
+# Exit Condition
 
-EKPP now serves as the primary validation project for AFK.
+AFK does not pause because it has reached certainty.
 
-The EKPP Discovery phase has completed successfully and has transitioned into Build.
+It pauses because sufficient observations have been preserved for future collaborators to continue the investigation.
 
-Future AFK evolution will increasingly be driven by observing the outcomes of real engineering work rather than designing methodology in isolation.
+The next collaborator should begin by reviewing:
 
-The continued use of WWAN has also validated Operational Continuity as one of AFK's strongest emerging practices.
+* Current WWAN
+* Current Methodology
+* Current Emerging Practices
+* Current Reference Artifacts
 
-Rather than restarting projects, collaborators resume them.
-
-Future validation outside engineering remains a long-term aspiration rather than a current objective.
-
----
-
-# Success Criteria
-
-Current work is considered successful if:
-
-* AFK becomes easier to understand.
-* Individual concepts become easier to maintain.
-* New discoveries can be incorporated naturally.
-* Readers can navigate the methodology incrementally.
-* The methodology reflects how AFK actually evolved.
-* AFK continues to be refined through operational experience rather than assumption.
-
----
-
-# Notes
-
-AFK intentionally avoids claiming certainty.
-
-Instead it:
-
-* preserves discoveries,
-* validates them through engineering practice,
-* observes operational outcomes,
-* and allows the methodology to evolve naturally.
-
-Some discoveries will eventually become methodology.
-
-Some will become culture.
-
-Some will remain Future Concepts.
-
-All contribute to the evolution of AFK.
-
-AFK increasingly views progress as continuous rather than interrupted.
-
-A paused project is not a failed project.
-
-As long as understanding is preserved, discovery can continue.
-
-AFK increasingly recognizes that many of its emerging concepts are not entirely new.
-
-Rather than attempting to invent engineering from scratch, AFK seeks to recognize, connect, simplify, and preserve practices that have consistently helped humans collaborate and transfer knowledge.
-
-The methodology evolves by discovering relationships between ideas rather than claiming ownership of them.
+before continuing operational validation.
 
 ---
 
 # Closing Thought
 
-Every idea deserves the opportunity to be understood before it is judged.
+AFK did not spend today proving a methodology.
 
-Some become methodology.
+It spent today learning from one.
 
-Some become culture.
+Every preserved observation reduces future assumptions.
 
-Some remain future concepts.
-
-Some quietly disappear.
-
-All contribute to discovery.
-
-As long as we continue collaborating...
-
-There are no wasted ideas.
-
-Only opportunities to learn.
-
-**Let's AFK it together.**
+And every future collaborator begins a little further along the path of understanding.
