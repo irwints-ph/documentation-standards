@@ -89,7 +89,7 @@ Continue Engineering
 
 # Step 1 — Initialize a Project
 
-Initialize a new Engineering Project using the [AFK Bootstrap Tool](../../../_collaboration/afk-init.cmd)
+Initialize a new Engineering Project using the [AFK Bootstrap Tool](../../../_tools/afk-init.cmd)
 
 Example:
 
