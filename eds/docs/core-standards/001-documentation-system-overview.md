@@ -1,111 +1,176 @@
 # 📘 Documentation System Overview
 
----
-
-## Metadata
-
-**Document:** `001-documentation-system-overview.md`
-
-**Type:** 📘 Canonical Standard
-
-**Companion Reference:** [001r-documentation-system-overview.md](./001r-documentation-system-overview.md)
-
-**Owner:** Engineering
-
-**Version:** 1.0
-
----
-
-## Status
-
-**As of:** 07.25.2026 05:31 PHT
-
-✅ Accepted
+> **Engineering knowledge is preserved through understanding before implementation.**
 
 ---
 
 # Purpose
 
-Define the overall structure, organization, and philosophy of the engineering documentation system.
+Define the structure, philosophy, and organization of the Engineering Documentation System (EDS).
 
-This document serves as the entry point for understanding how documentation is organized across all engineering repositories.
+This document is the authoritative source for understanding how engineering documentation is organized, why the framework exists, and how the standards relate to one another.
 
----
-
-# Standard
-
-The engineering documentation system is divided into two documentation levels.
-
-## Level 1 — Canonical
-
-Canonical documents define engineering standards.
-
-Characteristics
-
-- Short and concise
-- AI optimized
-- Human quick reference
-- Readable in under 30 seconds
-- Typically one to two pages
-- Contains only current standards
-- May be used directly as ChatGPT project context
-
-Canonical documents answer:
-
-- What is the standard?
-- How should it be implemented?
-- Where can additional information be found?
+For quick implementation guidance, refer to the companion reference document.
 
 ---
 
-## Level 2 — Reference
+# Documentation Model
 
-Reference documents provide detailed supporting information.
+The Engineering Documentation System intentionally separates **learning** from **execution**.
+
+```text
+Engineering Documentation Standard
+
+│
+
+├── Standard
+│       Explains
+│       • What
+│       • Why
+│       • Philosophy
+│       • Examples
+│       • Rationale
+│
+└── Reference
+        Summarizes
+        • Rules
+        • Checklists
+        • Templates
+        • Quick lookup
+```
+
+The Standard develops understanding.
+
+The Reference supports implementation.
+
+Together they create documentation that is both durable and practical.
+
+---
+
+# Engineering Standards
+
+Every Engineering Documentation Standard consists of two companion documents.
+
+## 📘 Standard
+
+The Standard is the authoritative engineering document.
+
+Its purpose is to explain the standard completely.
 
 Characteristics
 
-- Human optimized
-- Unlimited length
-- Contains rationale and historical context
-- Includes examples, FAQs, migration guides, and lessons learned
-- Supplements, but never replaces, the canonical document
+- Authoritative source
+- Human-readable
+- AI-readable
+- Explains concepts
+- Provides rationale
+- May include examples
+- Evolves alongside engineering practice
 
-Reference documents answer:
+The Standard answers questions such as:
 
-- Why was this standard created?
-- How did it evolve?
-- What alternatives were considered?
-- What are common implementation patterns?
+- What is this standard?
+- Why does it exist?
+- How should it be applied?
+- What should engineers understand before using it?
+
+---
+
+## 📑 Reference
+
+The Reference is the operational companion.
+
+Its purpose is to support implementation with minimal reading.
+
+Characteristics
+
+- Quick lookup
+- Implementation-focused
+- AI-friendly
+- Checklist-oriented
+- Template-oriented
+- Copy-and-use friendly
+
+The Reference answers questions such as:
+
+- What do I need to do?
+- Which template should I use?
+- What are the required rules?
+- What should I copy into my project?
 
 ---
 
 # Naming Convention
 
-Canonical document
+Every Engineering Standard follows a consistent naming pattern.
+
+Engineering Standard
 
 ```text
 001-documentation-system-overview.md
 ```
 
-Reference document
+Companion Reference
 
 ```text
 001r-documentation-system-overview.md
 ```
 
-The `r` suffix identifies the companion Reference document for a Canonical standard.
+The `r` suffix identifies the operational reference associated with the Engineering Standard.
 
 ---
 
-# Related Documents
+# Design Philosophy
 
-## Related
+Engineers do not always require the complete explanation during daily work.
 
-- [005-documentation-level-standard.md](./005-documentation-level-standard.md)
-- [010-document-numbering-standard.md](./010-document-numbering-standard.md)
-- [030-document-template-standard.md](./030-document-template-standard.md)
-- [040-document-naming-standard.md](./040-document-naming-standard.md)
+Most of the time they need the rules.
 
-## Companion
+However, engineering frameworks only remain sustainable when their rationale is preserved.
 
-- [001r-documentation-system-overview.md](./001r-documentation-system-overview.md)
+The Engineering Documentation System therefore keeps both:
+
+- complete engineering knowledge (Standard)
+- practical implementation guidance (Reference)
+
+This separation encourages learning without slowing implementation.
+
+---
+
+# Relationship to Other Standards
+
+This document provides the foundation for the remainder of the Engineering Documentation System.
+
+Related Standards include:
+
+- Documentation Levels
+- Document Numbering
+- Document Template
+- Document Naming
+- Document References
+- Git Workflow
+
+Each standard follows the same Standard + Reference structure.
+
+---
+
+# Companion Reference
+
+For day-to-day implementation guidance, templates, and quick lookup, see:
+
+**`001r-documentation-system-overview.md`**
+
+---
+
+## Metadata
+
+| Field | Value |
+|------|------|
+| Document | `001-documentation-system-overview.md` |
+| Category | Engineering Documentation System |
+| Type | 📘 Engineering Standard |
+| Companion | `001r-documentation-system-overview.md` |
+| Version | 2.0 |
+| Status | ✅ Accepted |
+| As Of | 07.29.2026 |
+| Owner | Engineering |

@@ -1,4 +1,4 @@
-# 📘 WWAN — Operational Context Standard
+# 📖 WWAN — Operational Context Reference
 
 ---
 
@@ -6,11 +6,11 @@
 
 | Field | Value |
 |--------|-------|
-| Document | `080-wwan-operational-context-standard.md` |
+| Document | `080r-wwan-operational-context-standard.md` |
 | Category | Engineering Standards |
-| Type | Canonical Standard |
+| Type | Reference |
 | Status | 🚧 Draft |
-| Companion | `080r-wwan-operational-context-standard.md` |
+| Companion Standard | `080-wwan-operational-context-standard.md` |
 | Owner | Engineering |
 | Version | 0.1 |
 
@@ -18,192 +18,338 @@
 
 # Purpose
 
-Define the standard structure, purpose, and usage of the **WWAN (Where We Are Now)** document.
+This document explains the philosophy, evolution, and practical application of the **WWAN (Where We Are Now)** concept.
 
-A WWAN provides the operational context required for engineers and AI assistants to resume productive work with minimal onboarding.
-
-Rather than documenting an entire project, a WWAN captures the project's current operational state.
+Unlike the companion standard, which defines the required structure of a WWAN, this document explains why WWAN exists, how it evolved, and why it has become one of the central concepts within the Assisted Flow of Knowledge (AFK) methodology.
 
 ---
 
-# Standard
+# Background
 
-## One WWAN Per Workstream
-
-Each active engineering workstream should maintain one current WWAN document.
+Traditional engineering documentation often focuses on describing software.
 
 Examples include:
 
-- Engineering Documentation System
-- Frontend Discovery
-- AFK Pilot
-- Architecture Modernization
-- API Migration
+- Requirements
+- Architecture
+- Design
+- APIs
+- Components
 
-A workstream may archive historical WWANs as milestones are completed.
+These documents explain **what the system is**.
 
----
+However, they rarely answer a different engineering question:
 
-## WWAN Is the Context Bootstrap Document
+> **Where do we continue today?**
 
-A WWAN serves as the **Context Bootstrap Document** for a project or workstream.
+As projects become larger and engineering work spans weeks, months, or years, reconstructing the current project context becomes increasingly expensive.
 
-It shall provide sufficient operational context for:
-
-- returning engineers
-- newly onboarded engineers
-- AI assistants
-- future maintainers
-
-The objective is to minimize context reconstruction.
+The WWAN concept emerged as a practical solution to this problem.
 
 ---
 
-## Primary Audience
+# Discovery of WWAN
 
-A WWAN shall be understandable without requiring previous conversations or undocumented knowledge.
+WWAN was not originally intended to become an engineering standard.
 
-It is written for:
+During development of the Engineering Documentation System (EDS), a small operational document was maintained simply to record current progress.
 
-- Humans
-- AI companions
-- Future contributors
+Its original purpose was project tracking.
 
----
+Over time, an unexpected pattern emerged.
 
-## Operational Focus
+Every new engineering session began with the same activity:
 
-A WWAN shall describe the **present**.
+- Read the WWAN.
+- Understand the current context.
+- Continue working.
 
-It is not intended to become:
+When AI-assisted collaboration became part of the workflow, another observation appeared.
 
-- project history
-- design documentation
-- architecture documentation
-- meeting minutes
-- engineering journal
+Instead of relying on conversation history, the AI assistant could resume productive collaboration using only the WWAN.
 
-Historical information should be maintained elsewhere.
+The document had unintentionally become something much more valuable than a status report.
+
+It had become a **Context Bootstrap Document**.
 
 ---
 
-## Required Sections
+# The Canon Event
 
-A WWAN should normally include:
+Within the AFK methodology, this realization became the defining moment for WWAN.
 
-- Metadata
-- Current Focus
-- Current Milestone
-- Current Objectives
-- Current State
-- Immediate Next Work
-- Resume From
-- Related Documents
+The question changed from:
 
-Additional sections may be added when appropriate.
+> "How do we record project status?"
 
----
+to
 
-## Resume Point
+> "How do we transfer operational knowledge between engineering sessions?"
 
-Every WWAN shall contain a clearly defined **Resume From** section.
-
-The Resume From section identifies the immediate next activity that should occur when work resumes.
-
-The objective is to eliminate unnecessary project rediscovery.
+That shift transformed WWAN from documentation into an operational engineering artifact.
 
 ---
 
-## Currency
+# Context Bootstrap Document
 
-WWAN documents should be updated whenever meaningful progress occurs.
+A WWAN is best understood as a **Context Bootstrap Document**.
 
-Typical updates include:
+Its purpose is not to describe everything that has happened.
 
-- milestone completion
-- objective changes
-- discovery progress
-- roadmap adjustments
-- priority changes
+Its purpose is to provide just enough verified operational context to allow productive work to resume immediately.
 
-WWAN should always reflect the current engineering state.
+Instead of reconstructing weeks or months of engineering history, an engineer—or an AI assistant—can begin from a shared operational snapshot.
 
 ---
 
-## AI Companion Instructions
+# Why Not Conversation History?
 
-A WWAN may include a short instruction block intended for AI assistants.
+AI systems often maintain conversational context during a single session.
 
-Example:
+Engineering projects, however, frequently span far longer than any individual conversation.
 
-```text
-Assume no prior knowledge of this project.
+Conversation history also has practical limitations:
 
-Use this WWAN as the operational context for the current session.
+- sessions end
+- context windows are limited
+- information becomes difficult to locate
+- important decisions become buried inside discussions
 
-Do not assume previous conversations.
+WWAN externalizes operational knowledge into a version-controlled engineering artifact.
 
-Identify missing information rather than making assumptions.
+Knowledge belongs to the project rather than to the conversation.
+
+---
+
+# WWAN and AFK
+
+Within the Assisted Flow of Knowledge methodology, WWAN acts as the bridge between engineering sessions.
+
+```
+Yesterday
+
+    │
+
+    ▼
+
+Engineering Work
+
+    │
+
+    ▼
+
+WWAN
+
+    │
+
+    ▼
+
+Today
+
+    │
+
+    ▼
+
+Engineer + AI
+
+    │
+
+    ▼
+
+Continue Working
 ```
 
-This instruction allows AI assistants to begin productive collaboration using documented context rather than conversational memory.
+Rather than depending on memory, AFK depends on documented operational context.
 
 ---
 
-## Relationship to AFK
+# Primary Audience
 
-Within the Assisted Flow of Knowledge (AFK) methodology, WWAN functions as the project's operational knowledge package.
+WWAN intentionally serves multiple audiences.
 
-It enables engineering knowledge to flow consistently between:
+## Returning Engineer
 
-- engineering sessions
-- engineers
-- AI assistants
-- future maintainers
-
-without depending on individual memory.
+Allows an engineer to quickly regain project context after time away.
 
 ---
 
-# Principles
+## New Engineer
 
-A WWAN shall be:
+Provides an operational starting point during onboarding.
 
-- Current
-- Short
-- Actionable
-- Easy to update
-- Easy to understand
-- Version controlled
-- Human friendly
-- AI friendly
+---
 
-Its purpose is operational continuity.
+## AI Companion
+
+Provides the initial engineering context for AI-assisted collaboration.
+
+A WWAN is typically the first document shared with the AI at the beginning of a new session.
+
+---
+
+## Future Maintainer
+
+Reduces the effort required to understand the project's current direction.
+
+---
+
+# What WWAN Is Not
+
+A WWAN should not become:
+
+- a project history
+- meeting minutes
+- architecture documentation
+- design documentation
+- implementation documentation
+- daily journal
+
+Those artifacts have their own purpose.
+
+WWAN summarizes only the operational state required to continue work.
+
+---
+
+# Engineering Learning
+
+One unexpected benefit of WWAN is that it encourages deliberate engineering learning.
+
+Maintaining a WWAN requires engineers to periodically stop implementation and answer questions such as:
+
+- What have we learned?
+- What remains uncertain?
+- What should happen next?
+- What knowledge should not be lost?
+
+This reflection naturally improves engineering understanding.
+
+---
+
+# Relationship to EDS
+
+The Engineering Documentation System (EDS) defines how engineering documentation is written.
+
+WWAN is one engineering standard within that framework.
+
+EDS provides the structure.
+
+WWAN provides operational continuity.
+
+---
+
+# Relationship to EKS
+
+The Engineering Knowledge System (EKS) studies how engineering knowledge is created, validated, preserved, and reused.
+
+WWAN demonstrates one practical mechanism for preserving operational knowledge.
+
+Lessons learned through WWAN contribute directly to the evolution of EKS.
+
+---
+
+# Relationship to AFK
+
+AFK extends the concept even further.
+
+Instead of viewing documentation as the final product, AFK views documentation as one stage within a larger flow of knowledge.
+
+```
+Engineering Work
+
+        │
+
+        ▼
+
+Discovery
+
+        │
+
+        ▼
+
+Documentation
+
+        │
+
+        ▼
+
+WWAN
+
+        │
+
+        ▼
+
+Engineering Knowledge
+
+        │
+
+        ▼
+
+Organizational Knowledge
+```
+
+WWAN is therefore one of the operational artifacts that enables knowledge to continue flowing.
 
 ---
 
 # Engineering Philosophy
 
-Engineering work should not pause because knowledge exists only inside someone's head.
+A project should never depend on a single person's memory.
 
-A WWAN preserves enough operational understanding that another engineer—or an AI companion—can continue productive work with minimal onboarding.
+Operational understanding should exist independently of individual contributors.
 
-The objective is continuity rather than memory.
+WWAN helps achieve that goal by preserving current engineering context as a shared artifact.
+
+Knowledge becomes part of the project rather than remaining inside conversations or individuals.
+
+---
+
+# Future Evolution
+
+Future versions of WWAN may evolve to include:
+
+- standardized AI Companion Instructions
+- automated WWAN generation
+- milestone templates
+- workstream linking
+- multi-project operational dashboards
+
+The fundamental purpose is expected to remain unchanged.
+
+WWAN exists to minimize context reconstruction.
+
+---
+
+# Closing Thought
+
+The most valuable engineering knowledge is often not hidden in architecture diagrams or source code.
+
+It is the operational understanding of **where the project is today**.
+
+WWAN preserves that understanding.
+
+It allows engineers—and AI companions—to spend less time reconstructing context and more time creating value.
 
 ---
 
 # Related Documents
 
-## Prerequisites
+## Companion Standard
 
-- `001-documentation-system-overview.md`
-- `020-document-template-standard.md`
+- `080-wwan-operational-context-standard.md`
 
 ## Related
 
-- `015-document-status-lifecycle.md`
+- `001-documentation-system-overview.md`
+- `020-document-template-standard.md`
 - `040-document-reference-standard.md`
 
-## Companion
+## Methodology
 
-- `080r-wwan-operational-context-standard.md`
+- AFK README
+- EKS README
+
+---
+
+> **A WWAN is not a status report. It is a Context Bootstrap Document.**
+
+> **Every undocumented system has a story. Let's AFK it before it's forgotten.**

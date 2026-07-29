@@ -1,277 +1,259 @@
 # 📘 Document Status Lifecycle
 
----
-
-## Metadata
-
-**Document:** `015-document-status-lifecycle.md`
-
-**Type:** 📘 Canonical Standard
-
-**Companion Reference:** [015r-document-status-lifecycle.md](./015r-document-status-lifecycle.md)
-
-**Owner:** Engineering
-
-**Version:** 1.0
-
----
-
-## Status
-
-**As of:** 07.26.2026 HH:MM PHT
-
-✅ Accepted
+> **Document status reflects engineering maturity—not repository history.**
 
 ---
 
 # Purpose
 
-Define the standard lifecycle for engineering documentation.
+Define the lifecycle used to communicate the maturity of Engineering Documentation System (EDS) documents.
 
-A document's status indicates its current maturity level and helps readers determine whether the document is being developed, reviewed, accepted, officially adopted, replaced, or archived.
+A document's status helps readers understand whether the document is being developed, reviewed, validated, adopted, retired, or preserved for historical purposes.
 
----
-
-# Standard
-
-Every engineering document shall include a **Status** section immediately after the metadata section.
-
-Example:
-
-```markdown
-## Status
-
-**As of:** MM.DD.YYYY HH:MM TZ
-
-🚧 In Progress
-```
-
-The status should represent the current maturity and lifecycle stage of the document.
-
-The status does not represent Git history.
-
-A document committed to a repository is not automatically considered Official.
+The lifecycle communicates the engineering confidence behind a document, not simply its existence in version control.
 
 ---
 
-# Status Lifecycle
+# Lifecycle Philosophy
 
-Documents generally progress through the following lifecycle.
+Engineering documentation evolves.
+
+A document is rarely created in its final form.
+
+Instead, it progresses through stages of discovery, refinement, validation, and long-term adoption.
 
 ```text
-📝 Planning
-      │
-      ▼
-🚧 In Progress
-      │
-      ▼
-👀 Under Review
-      │
-      ▼
-✅ Accepted
-      │
-      ▼
-📦 Official
+Idea
+
+↓
+
+Draft
+
+↓
+
+Review
+
+↓
+
+Accepted
+
+↓
+
+Official
+
+↓
+
+Historical
 ```
 
-Not every document must pass through every stage.
-
-The lifecycle represents the normal maturity path for engineering standards.
+Each stage communicates the document's current level of engineering confidence.
 
 ---
 
-# Standard Statuses
+# Lifecycle Stages
 
-| Status          | Meaning                                                                                        |
-| --------------- | ---------------------------------------------------------------------------------------------- |
-| 📝 Planning     | Document has been proposed but work has not started.                                           |
-| 🚧 In Progress  | Document is actively being developed or revised.                                               |
-| 👀 Under Review | Document is complete enough for engineering review and feedback.                               |
-| ✅ Accepted      | Document has been approved as a valid baseline and is ready for adoption and validation.       |
-| 📦 Official     | Document has matured through validation and is the current authoritative engineering standard. |
-| 🔄 Superseded   | Document has been replaced by a newer standard or version.                                     |
-| ⏸️ On Hold      | Work has been temporarily paused.                                                              |
-| ⚠️ Blocked      | Progress depends on an external issue or decision.                                             |
-| 🧪 Experimental | Document describes a prototype or exploratory approach.                                        |
-| ❌ Cancelled     | Work has been abandoned and will not continue.                                                 |
-| 🗃️ Archived    | Historical document retained for reference only.                                               |
+## 📝 Planning
+
+The document has been proposed but development has not yet begun.
+
+Typical activities include:
+
+- identifying the need
+- defining scope
+- creating backlog items
 
 ---
 
-# Status Definitions
+## 🚧 In Progress
 
-## Working Statuses
+The document is actively being written or revised.
 
-These indicate documents that are still evolving.
-
-* 📝 Planning
-* 🚧 In Progress
-* 👀 Under Review
-* 🧪 Experimental
-* ⚠️ Blocked
-* ⏸️ On Hold
+The content should not yet be considered stable.
 
 ---
 
-## Adoption Statuses
+## 👀 Under Review
 
-These indicate approved engineering guidance.
+The document is sufficiently complete for engineering review.
 
-### ✅ Accepted
+Feedback is actively being gathered.
 
-An Accepted document:
-
-* has completed review,
-* represents an approved baseline,
-* is ready to be used by projects,
-* may still evolve based on real-world feedback.
-
-Accepted documents are candidates for future Official status.
+Changes are expected.
 
 ---
 
-### 📦 Official
+## ✅ Accepted
 
-An Official document:
+The document has completed review and represents an approved engineering baseline.
 
-* has been validated through usage,
-* represents mature engineering guidance,
-* is the current authoritative standard.
+Accepted documents:
 
-Official status indicates adoption maturity, not simply approval.
+- may be adopted by projects,
+- are expected to receive real-world validation,
+- may continue evolving through engineering experience.
+
+Acceptance represents approval—not maturity.
 
 ---
 
-## Historical Statuses
+## 📦 Official
 
-These indicate documents that are no longer active.
+The document has demonstrated long-term stability through practical engineering use.
 
-* 🔄 Superseded
-* ❌ Cancelled
-* 🗃️ Archived
+Official documents:
+
+- have been validated,
+- represent mature engineering guidance,
+- become the authoritative engineering standard.
+
+Official status is earned through evidence, not simply approval.
+
+---
+
+## Historical States
+
+Historical states indicate that a document is no longer actively maintained.
+
+### 🔄 Superseded
+
+A newer Engineering Standard replaces this document.
+
+The document is retained for historical traceability.
+
+---
+
+### ❌ Cancelled
+
+Work has been abandoned.
+
+The document remains only as historical context.
+
+---
+
+### 🗃️ Archived
+
+The document is preserved for historical or educational purposes.
+
+No further development is expected.
+
+---
+
+# Supporting States
+
+Additional operational states may be used when appropriate.
+
+| Status | Meaning |
+|--------|---------|
+| 🧪 Experimental | Exploring an idea that has not yet been validated. |
+| ⚠️ Blocked | Progress depends on an external dependency or decision. |
+| ⏸️ On Hold | Work has been intentionally paused. |
 
 ---
 
 # Accepted vs Official
 
-Accepted and Official represent different maturity levels.
+These two states are intentionally different.
 
 ```text
-Accepted
+Engineering Review
 
-Approved baseline
+↓
 
-      │
+✅ Accepted
 
-      │ Real project usage
-      │ Feedback
-      │ Refinement
+↓
 
-      ▼
+Real Project Usage
 
-Official
+↓
 
-Validated engineering standard
+Validation
+
+↓
+
+📦 Official
 ```
 
-A document should not become Official only because:
+A document should **not** become Official simply because:
 
-* it has been committed to Git,
-* it exists in the repository,
-* it has been reviewed once.
+- it has been committed to Git,
+- it exists in the repository,
+- it has been reviewed once.
 
-Official status represents maturity gained through practical validation.
+Official status reflects demonstrated engineering confidence.
 
 ---
 
-# Git Relationship
+# Relationship to Version Control
 
-Git records document history.
+Version control records document history.
 
-Document status records document maturity.
+Document status records engineering maturity.
 
-These are related but separate concepts.
-
-Example:
+These concepts complement one another but should never be confused.
 
 ```text
-Git Commit
+Git
 
-"docs: establish documentation foundation v1"
+↓
 
-        │
+Repository History
 
-        ▼
-
-Repository history
-
-        +
++
 
 Document Status
 
-        ▼
+↓
 
-✅ Accepted
+Engineering Confidence
 ```
 
-The commit creates a historical checkpoint.
+---
 
-The lifecycle determines whether the guidance has reached Official maturity.
+# Updating Status
+
+Document status should change only when the engineering maturity of the document changes.
+
+Routine edits do not necessarily require a status change.
+
+Whenever the status changes:
+
+- update the **As Of** date,
+- record the new lifecycle stage,
+- ensure the status accurately reflects current engineering confidence.
 
 ---
 
-# Official Documents
+# Relationship to Other Standards
 
-Documents with the **📦 Official** status define mature engineering standards.
+This standard defines how document maturity is communicated throughout the Engineering Documentation System.
 
-Documents with the **✅ Accepted** status define approved baseline standards that may be adopted while undergoing validation.
+Related Standards include:
 
-If multiple documents conflict:
-
-1. 📦 Official takes precedence.
-2. ✅ Accepted takes precedence over drafts.
-3. Older or superseded documents should not override current standards.
-
----
-
-# Status Registry
-
-The current status of engineering standards should be tracked through:
-
-```text
-registry/core-standards.md
-```
-
-The registry provides a summary view.
-
-Individual documents remain the source of truth for their own status.
+- Documentation Levels
+- Document Template
+- Document Icons & Status
+- Document References
 
 ---
 
-# Status Changes
+# Companion Reference
 
-Document status should be updated whenever the document reaches a new lifecycle stage.
+For quick lookup of lifecycle stages and usage guidance, see:
 
-The **As of** timestamp should also be updated whenever the status changes.
-
-Status changes should represent meaningful maturity changes, not routine edits.
+**`015r-document-status-lifecycle.md`**
 
 ---
 
-# Related Documents
+## Metadata
 
-## Prerequisites
-
-* 001-documentation-system-overview.md
-* 005-documentation-level-standard.md
-
-## Related
-
-* 010-document-numbering-standard.md
-* 020-document-template-standard.md
-* 030-document-icons-and-statuses-standard.md
-* 040-document-reference-standard.md
-
-## Companion
-
-* 015r-document-status-lifecycle.md
+| Field | Value |
+|------|------|
+| Document | `015-document-status-lifecycle.md` |
+| Category | Engineering Documentation System |
+| Type | 📘 Engineering Standard |
+| Companion | `015r-document-status-lifecycle.md` |
+| Version | 2.0 |
+| Status | ✅ Accepted |
+| As Of | 07.29.2026 |
+| Owner | Engineering |

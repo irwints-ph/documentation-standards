@@ -1,84 +1,59 @@
-# 📘 Document Reference Standard
+# 📖 Document Reference Reference
 
----
-
-## Metadata
-
-**Document:** `040-document-reference-standard.md`
-
-**Type:** 📘 Canonical Standard
-
-**Companion Reference:** [040r-document-reference-standard.md](./040r-document-reference-standard.md)
-
-**Owner:** Engineering
-
-**Version:** 1.0
-
----
-
-## Status
-
-**As of:** 07.25.2026 07:20 PHT
-
-✅ Accepted
+> **Reference documents to expand knowledge, not duplicate it.**
 
 ---
 
 # Purpose
 
-This standard defines how engineering documents reference one another.
+This document summarizes how engineering documents should reference one another.
 
-Consistent references allow documentation to evolve into a connected
-knowledge system instead of isolated files.
+The companion Standard defines the complete specification.
 
-Every reference should communicate why another document is relevant,
-not merely provide a link.
+This Reference provides the practical guidance most engineers need during day-to-day documentation work.
 
 ---
 
-# Goals
+# Why References Matter
 
-The reference system shall:
+Engineering documentation should function as a connected knowledge system rather than a collection of independent documents.
 
-• Reduce duplicated information
+Instead of repeating information across multiple files, documents should guide readers toward the appropriate source.
 
-• Encourage reuse of existing standards
+Good references make documentation:
 
-• Keep documents small and focused
-
-• Make document navigation predictable
-
-• Support future documentation automation
-
----
-
-# Reference Principles
-
-A document should contain only the information
-required for its purpose.
-
-When additional information exists elsewhere,
-reference that document rather than duplicating it.
-
-Good documentation is connected.
-
-Not repeated.
+- easier to maintain,
+- easier to navigate,
+- easier to validate,
+- easier for AI to understand,
+- easier to evolve over time.
 
 ---
 
-# Reference Types
+# The Reference Philosophy
+
+Each document should focus on a single responsibility.
+
+When additional context already exists elsewhere:
+
+**Reference it.**
+
+Don't duplicate it.
+
+Knowledge grows through relationships.
+
+---
+
+# Standard Reference Types
 
 ## Required Reading
 
-Documents that must be understood first.
+Documents that should be understood first.
 
 Example
 
-Required Reading
-
-• 005 Documentation Levels
-
-• 020 Document Template
+- 005 Documentation Level Standard
+- 020 Document Template Standard
 
 ---
 
@@ -88,199 +63,184 @@ Documents that expand or complement the current topic.
 
 Example
 
-Related
-
-• 025 Document Naming
-
-• 035 Terminology
+- 025 Document Naming Standard
+- 035 Documentation Terminology Standard
 
 ---
 
 ## Implements
 
-Implementation documents that follow this standard.
-
-Example
-
-Implements
-
-• Frontend Documentation Guide
-
-• Backend Documentation Guide
+Engineering documents or project artifacts that implement the current standard.
 
 ---
 
-## References
+## External References
 
-External specifications or authoritative sources.
+Authoritative resources maintained outside the Engineering Documentation System.
 
-Examples
+Examples include:
 
-• Python Documentation
-
-• React Documentation
-
-• RFC Documents
-
-• Microsoft Documentation
+- Official language documentation
+- Framework documentation
+- Industry specifications
+- RFCs
 
 ---
 
-## Supersedes
+## Parent / Child Relationships
 
-Previous document replaced by this one.
-
-Example
-
-Supersedes
-
-• 015 Version 1
-
----
-
-## Superseded By
-
-Future replacement.
+Use Parent and Child relationships when documents naturally form a hierarchy.
 
 Example
 
-Superseded By
-
-• 015 Version 2
-
----
-
-## Parent Document
-
-Higher-level document.
-
-Example
-
-Parent
-
+```text
 001 Documentation System Overview
 
----
-
-## Child Documents
-
-Documents derived from this one.
-
-Example
-
-Children
-
-040a Examples
-
-040b Best Practices
-
-040c FAQ
+    ├──005 Documentation Level Standard
+    ├──010 Document Numbering Standard
+    └──020 Document Template Standard
+```
 
 ---
 
-# Reference Format
+# Referencing Best Practices
 
-Internal references use document number and title.
+Prefer:
 
-Example
+> See **020 Document Template Standard**.
 
-040 Document Reference Standard
+instead of:
 
-025 Document Naming Standard
+> See `020-document-template-standard.md`.
 
-035 Terminology Standard
+Document numbers and titles communicate meaning.
 
-Avoid using filenames in document text.
+Filenames exist only to support hyperlinks.
 
 ---
 
-# File References
+# Avoid Duplication
 
-File names are only used when creating links.
+Incorrect
 
-Example
+```text
+(repeating document naming rules)
+```
 
-[040 Document Reference Standard](040-document-reference-standard.md)
+Correct
 
-Never write:
+```text
+See 025 Document Naming Standard.
+```
 
-See 040-document-reference-standard.md.
+The Engineering Documentation System encourages one authoritative source for every concept.
 
 ---
 
 # Avoid Circular References
 
-Avoid creating navigation loops.
+References should help readers move forward through the knowledge system.
 
-Good
-
-001
- ├──020
- └──025
-
-Poor
-
-020 → 025 → 020
+Avoid documents that repeatedly point back to each other without adding new information.
 
 ---
 
-# Avoid Duplicate Content
+# Placement
 
-Do not copy another standard.
+Document references are typically placed near the end of the document.
 
-Instead, reference it.
+Recommended order:
 
-Incorrect
+1. Prerequisites
+2. Related
+3. Implements
+4. External References
+5. Companion
 
-(repeating naming rules)
-
-Correct
-
-See
-
-025 Document Naming Standard
+Maintaining a consistent order improves navigation across repositories.
 
 ---
 
-# Reference Placement
+# Relationship to AFK
 
-Document references belong near the end of the document.
+AFK encourages engineers to preserve understanding.
 
-Suggested order
+References preserve relationships between ideas.
 
-Required Reading
-
-Related
-
-Implements
-
-References
+Rather than rewriting existing knowledge, engineers connect readers to the appropriate source.
 
 ---
 
-# Future Automation
+# Relationship to EKS
 
-Because references are standardized, tooling may later generate:
+The Engineering Knowledge System views documentation as a knowledge graph.
 
-• dependency graphs
+Document references become the relationships that connect engineering concepts together.
 
-• documentation maps
-
-• backlinks
-
-• broken link reports
-
-• impact analysis
-
-without changing existing documents.
+Consistent references improve discoverability and future automation.
 
 ---
 
-# Summary
+# Frequently Asked Questions
 
-Every engineering document should act as one node
-within a larger documentation network.
+## Why not duplicate information?
 
-Reference documents instead of repeating them.
+Duplicated knowledge eventually diverges.
 
-Keep relationships explicit, predictable, and maintainable.
+References preserve a single source of truth.
+
+---
+
+## Should filenames appear in document text?
+
+No.
+
+Use document numbers and titles.
+
+Reserve filenames for hyperlinks.
+
+---
+
+## Why distinguish Required Reading from Related Documents?
+
+Required Reading establishes prerequisites.
+
+Related Documents expand understanding but are optional.
+
+---
+
+# Engineering Philosophy
+
+Documentation should resemble a network of ideas rather than isolated files.
+
+Every reference strengthens the Engineering Knowledge Repository by preserving relationships between concepts.
+
+---
+
+# Related Documents
+
+## Standard
+
+- 040 Document Reference Standard
+
+---
+
+## Related
+
+- 001 Documentation System Overview
+- 020 Document Template Standard
+- 035 Documentation Terminology Standard
+
+---
+
+## Metadata
+
+| Field | Value |
+|--------|-------|
+| Document | `040r-document-reference-standard.md` |
+| Category | Core Standards |
+| Type | 📖 Reference |
+| Companion Standard | `040-document-reference-standard.md` |
+| Status | 📦 Official *(or ✅ Accepted while under validation)* |
+| Version | 2.0 |
+| As Of | 07.29.2026 09:28 PHT |

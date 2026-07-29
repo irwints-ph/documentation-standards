@@ -1,24 +1,10 @@
-# 📖 Document Naming Standard (Reference)
-
----
-
-## Metadata
-
-**Document:** `025r-document-naming-standard.md`
-
-**Type:** 📖 Reference
-
-**Companion Standard:** [025-document-naming-standard.md](./025-document-naming-standard.md)
-
-**Owner:** Engineering
-
-**Version:** 1.0
+# 📘 Document Naming Standard
 
 ---
 
 ## Status
 
-**As of:** 07.25.2026 06:50 PHT
+**As of:** 07.25.2026 06:40 PHT
 
 ✅ Accepted
 
@@ -26,325 +12,169 @@
 
 # Purpose
 
-This document explains the philosophy, rationale, and evolution of the Engineering Document Naming Standard.
+Define the standard naming convention for engineering documentation.
 
-The companion Official document defines the required naming convention. This Reference document explains why the convention exists, the engineering decisions behind it, and the best practices for maintaining a consistent documentation system over time.
-
----
-
-# Why Standardize Document Names?
-
-Documentation is a long-term engineering asset.
-
-Over the lifetime of a project, hundreds or even thousands of documents may be created by different authors across multiple repositories. Without a consistent naming convention, documentation gradually becomes difficult to navigate and maintain.
-
-Common problems include:
-
-- Similar documents using different naming styles.
-- Multiple names for the same concept.
-- Inconsistent capitalization.
-- Duplicate documents that cannot be easily identified.
-- Poor search results.
-- Broken cross-references after renaming files.
-
-A standardized naming convention makes documentation predictable for both humans and automation.
+Consistent document names improve discoverability, readability, cross-referencing, automation, and long-term maintenance across engineering repositories.
 
 ---
 
-# Design Goals
+# Standard
 
-The naming standard was designed to achieve several objectives.
+All engineering documents shall follow a consistent file naming convention.
 
-- Make documents easy to locate.
-- Encourage consistent organization.
-- Improve readability.
-- Simplify cross-referencing.
-- Support documentation automation.
-- Improve compatibility across operating systems.
-- Provide stable filenames that rarely require renaming.
-- Produce AI-friendly document identifiers.
+General format:
 
----
+```text
+NNN-document-name.md
+```
 
-# Naming Philosophy
+Reference companion:
 
-A document name should communicate its purpose before the document is opened.
+```text
+NNNr-document-name.md
+```
 
-Good names are:
+Where:
 
-- concise
-- descriptive
-- predictable
-- stable
-- technology independent
-
-The filename should identify *what the document is*, not *who wrote it*, *when it was created*, or *what project it currently belongs to*.
+- `NNN` is the document sequence number.
+- `r` identifies the companion Reference document.
+- `document-name` is a short descriptive name.
+- `.md` is the Markdown file extension.
 
 ---
 
-# Numbering and Naming Work Together
+# Naming Rules
 
-The documentation system separates **ordering** from **description**.
+Document names shall:
 
-The numeric prefix defines the recommended reading sequence.
+- Use lowercase letters.
+- Use hyphens (`-`) to separate words.
+- Use descriptive names.
+- Be stable once published.
+- Match the document purpose.
 
-The descriptive name identifies the document's subject.
+---
+
+## Characters
+
+Use:
+
+```text
+a-z
+0-9
+-
+```
+
+Avoid:
+
+- Spaces
+- Underscores (`_`)
+- CamelCase
+- PascalCase
+- Special characters
+- Punctuation (except hyphens)
+
+---
+
+## Number Prefix
+
+Every Official document begins with a three-digit sequence.
 
 Example:
 
 ```text
 001-documentation-system-overview.md
+005-documentation-level-standard.md
 010-document-numbering-standard.md
 025-document-naming-standard.md
 ```
 
-Even if two documents have similar names, their numbering immediately identifies their place within the documentation system.
-
 ---
 
-# Why Lowercase?
+## Reference Documents
 
-Lowercase filenames improve consistency across different operating systems.
-
-Advantages include:
-
-- Easier typing.
-- Consistent appearance.
-- Reduced risk of case-sensitive file issues.
-- Cleaner URLs.
-- Simpler automation scripts.
-
-Using a single capitalization style also prevents accidental duplicates such as:
-
-```text
-Readme.md
-README.md
-readme.md
-```
-
----
-
-# Why Hyphens Instead of Spaces?
-
-The engineering standard uses hyphens (`-`) as the word separator.
-
-Advantages include:
-
-- Easier command-line usage.
-- Better URL compatibility.
-- Cleaner Markdown links.
-- Consistent behavior across operating systems.
-- Improved readability.
+Reference documents append an `r` immediately after the document number.
 
 Example:
 
 ```text
-document-status-lifecycle.md
+001r-documentation-system-overview.md
+015r-document-status-lifecycle.md
+025r-document-naming-standard.md
 ```
 
-instead of:
-
-```text
-Document Status Lifecycle.md
-```
-
-or
-
-```text
-document_status_lifecycle.md
-```
+The `r` indicates the file is the Reference companion to the corresponding Official document.
 
 ---
 
-# Why Avoid Underscores?
+## Templates
 
-Underscores are technically valid, but they reduce readability and create inconsistency when mixed with hyphenated names.
-
-For example:
-
-```text
-document_status_lifecycle.md
-```
-
-is generally harder to scan than:
-
-```text
-document-status-lifecycle.md
-```
-
-For consistency, the Engineering Documentation System reserves hyphens as the standard word separator.
-
----
-
-# Reference Documents
-
-Reference documents append the suffix `r` immediately after the document number.
+Templates follow the standard naming convention.
 
 Example:
 
 ```text
-020-document-template-standard.md
-020r-document-template-standard.md
+000-template-where-we-are-now.md
+020-template-engineering-standard.md
 ```
-
-This convention keeps the Official and Reference documents grouped together when sorted alphabetically while clearly identifying their relationship.
-
-The `r` suffix was chosen because it is:
-
-- short
-- recognizable
-- easy to type
-- visually distinct
-- simple to automate
 
 ---
 
-# Folder Naming
+## Snapshot Documents
 
-Folders follow the same philosophy as document names.
-
-Folder names should be:
-
-- lowercase
-- descriptive
-- hyphen-separated
-- stable
+Working dashboard documents use descriptive names.
 
 Example:
+
+```text
+000-where-we-are-now.md
+```
+
+---
+
+## Folder Names
+
+Documentation folders shall follow the same convention.
+
+Use:
 
 ```text
 engineering-history/
+git/
+templates/
 roadmaps/
 knowledge-base/
-templates/
-git/
 ```
 
-Avoid mixing naming styles within the same repository.
-
----
-
-# Renaming Documents
-
-Published documentation should be renamed only when necessary.
-
-Renaming a document may require updating:
-
-- internal links
-- repository indexes
-- README files
-- cross-references
-- automation scripts
-- AI context references
-
-When a rename is required:
-
-1. Update all links.
-2. Update related documentation.
-3. Update generated indexes.
-4. Verify navigation.
-5. Record significant renames in the project history if appropriate.
-
----
-
-# Common Mistakes
-
-Avoid the following naming patterns.
-
-Using spaces:
+Do not use:
 
 ```text
-Document Naming Standard.md
+Engineering History/
+EngineeringHistory/
+engineering_history/
 ```
 
-Using underscores:
+---
+
+# File Extensions
+
+Documentation files use:
 
 ```text
-document_naming_standard.md
+.md
 ```
 
-Using inconsistent capitalization:
+Supporting assets retain their native extensions.
+
+Examples:
 
 ```text
-Document-Naming-Standard.md
+png
+svg
+pdf
+csv
+xlsx
 ```
-
-Using version numbers in filenames:
-
-```text
-document-standard-v2.md
-```
-
-Using temporary filenames:
-
-```text
-new-document.md
-test.md
-draft-final.md
-```
-
-Temporary or experimental documents should instead be managed through the Document Status Lifecycle rather than by embedding workflow state into the filename.
-
----
-
-# Best Practices
-
-- Choose descriptive names.
-- Keep filenames short.
-- Use lowercase consistently.
-- Separate words with hyphens.
-- Preserve stable filenames.
-- Keep numbering independent from document titles.
-- Rename documents only when necessary.
-- Use the Reference companion instead of creating duplicate documents.
-
----
-
-# Future Evolution
-
-Future tooling may automatically validate:
-
-- filename format
-- numbering consistency
-- companion document relationships
-- duplicate filenames
-- broken cross-references
-
-Maintaining a predictable naming convention enables these automation capabilities without requiring repository-specific rules.
-
----
-
-# Frequently Asked Questions
-
-### Why not use spaces?
-
-Spaces complicate command-line operations, URLs, Markdown links, and automation. Hyphens provide a simple and consistent alternative.
-
----
-
-### Why not use underscores?
-
-Hyphens are generally more readable and have become the standard separator used throughout the Engineering Documentation System.
-
----
-
-### Why use the `r` suffix?
-
-The `r` suffix clearly identifies a Reference companion while keeping it adjacent to its Official document in directory listings.
-
----
-
-### Can filenames include version numbers?
-
-No.
-
-Document versions are managed through the Document Status Lifecycle and engineering history, not through filenames.
-
----
-
-### Can a published filename change?
-
-Yes, but only when there is a compelling engineering reason. Renaming should be rare because filenames become part of links, indexes, automation, and AI project context.
 
 ---
 
@@ -358,10 +188,22 @@ Yes, but only when there is a compelling engineering reason. Renaming should be 
 
 ## Related
 
-- [015-document-status-lifecycle.md](./015-document-status-lifecycle.md)
 - [020-document-template-standard.md](./020-document-template-standard.md)
 - [035-terminology-standard.md](./035-terminology-standard.md)
 
 ## Companion
 
-- [025-document-naming-standard.md](./025-document-naming-standard.md)
+- [025r-document-naming-standard.md](./025r-document-naming-standard.md)
+
+---
+## Metadata
+
+| Field | Value |
+|------|------|
+| Document | `025r-document-naming-standard.md` |
+| Type | 📘 Canonical Standard |
+| Companion Reference | `025-document-naming-standard.md` |
+| Owner | Engineering |
+| Version | 1.0 |
+| Status | ✅ Accepted |
+| As of | 07.25.2026 06:50 PHT |

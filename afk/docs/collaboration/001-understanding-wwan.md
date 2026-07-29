@@ -1,8 +1,10 @@
 # 📍 Understanding WWAN (Where We Are Now)
 
+> **WWAN preserves operational context so collaboration can continue naturally.**
+
 ---
 
-## Purpose
+# Purpose
 
 **WWAN (Where We Are Now)** is the operational snapshot of a project.
 
@@ -10,10 +12,10 @@ Its purpose is to rapidly synchronize a new collaborator—human or AI—with th
 
 Rather than reconstructing the project from discovery documents, implementation history, or conversation context, a collaborator should be able to read the WWAN and immediately understand:
 
-* what the project is currently doing,
-* where the project currently stands,
-* what is actively being worked on,
-* and what should happen next.
+- what the project is currently doing,
+- where the project currently stands,
+- what is actively being worked on,
+- and what should happen next.
 
 WWAN minimizes reconstruction and maximizes continuity.
 
@@ -35,173 +37,116 @@ It answers one simple question:
 
 ---
 
-# What WWAN Should Contain
+# Why WWAN Exists
 
-A WWAN should typically include:
+Engineering projects often span weeks, months, or years.
 
-## Current Status
+People change projects.
 
-The overall operational state of the project.
+Conversations end.
 
-Examples:
+Context windows expire.
 
-* 🚧 Discovery
-* 🚧 Build
-* 🚧 Validation
-* ✅ Completed
+Without a shared operational snapshot, collaborators spend valuable time reconstructing the current state before they can contribute.
 
----
+WWAN exists to eliminate that reconstruction effort.
 
-## Current Focus
-
-The single area receiving engineering attention.
-
-Only one primary focus should exist at any time.
+It captures only the information required to resume productive engineering work.
 
 ---
 
-## Active Wish
+# Relationship to EDS
 
-The current engineering wish driving the project.
+The **Engineering Documentation System (EDS)** defines **how a WWAN document is written**.
 
-WWAN should identify the active wish and its status.
+AFK explains **how collaborators should use a WWAN during engineering work**.
 
-Example:
+When creating or updating a WWAN, follow the Engineering Documentation System standard:
 
-```text
-Active Wish
+- [`eds/docs/engineering-standards/080-wwan-operational-context-standard.md](../../../eds/docs/engineering-standards/080-wwan-operational-context-standard.md)
 
-EKPP-W002
+The EDS standard defines:
 
-Status
+- required sections,
+- document structure,
+- writing conventions,
+- metadata,
+- lifecycle,
+- update guidance.
 
-🚧 Discovery
-```
+AFK focuses on collaboration.
 
----
-
-## Recently Completed Work
-
-Major milestones or wishes recently completed.
-
-This provides immediate context without requiring collaborators to read historical documentation.
-
----
-
-## Current State
-
-A concise summary of what currently exists.
-
-Examples include:
-
-* completed discovery,
-* completed implementation,
-* emerging observations,
-* validated architecture,
-* available evidence.
-
----
-
-## Current Objective
-
-The immediate engineering objective.
-
-This should answer:
-
-> "What are we trying to accomplish next?"
-
----
-
-## Next Step
-
-The smallest useful next action.
-
-WWAN should make it obvious where engineering should continue.
-
----
-
-## Recent Learnings
-
-Important discoveries that may influence future work.
-
-These are not historical details—they are operational knowledge that changes current engineering decisions.
-
----
-
-# What WWAN Should Not Contain
-
-WWAN should avoid becoming:
-
-* a design specification,
-* a discovery document,
-* an implementation guide,
-* or a project history.
-
-Those belong in their own documents.
-
-WWAN should summarize rather than replace them.
+EDS focuses on documentation standards.
 
 ---
 
 # How AI Collaborators Should Use WWAN
 
-When beginning a new collaboration session:
+At the beginning of every engineering session:
 
 1. Read the WWAN first.
 2. Understand the current operational state.
-3. Identify the active wish.
-4. Determine the immediate engineering objective.
+3. Identify the active objective or engineering wish.
+4. Review recently completed work.
 5. Continue from the preserved project understanding.
 
-WWAN should answer **where the project is**, not **how every system works**.
+The WWAN should answer **where the project is**.
+
+Detailed understanding should come from discovery documents, engineering standards, and implementation artifacts referenced by the WWAN.
 
 ---
 
-# Relationship to Other Documents
+# Updating WWAN
 
-WWAN works alongside the broader documentation ecosystem.
+WWAN should evolve alongside the project.
+
+After completing meaningful work, collaborators should ask:
+
+- Has the project focus changed?
+- Has a milestone been completed?
+- Has the active wish changed?
+- Has the next recommended step changed?
+- Has new operational knowledge been discovered?
+
+If the answer is yes, the WWAN should be updated before ending the session.
+
+---
+
+# Relationship to Other AFK Artifacts
+
+WWAN is one part of the Assisted Flow of Knowledge methodology.
 
 ```text
-Bootstrap
-
-↓
-
+Session Bootstrap
+        ↓
 Knowledge Package
-
-↓
-
+        ↓
 WWAN
-
-↓
-
+        ↓
 Active Wish
-
-↓
-
+        ↓
 Discovery
-
-↓
-
-Build
-
-↓
-
+        ↓
 Implementation
+        ↓
+WWAN Update
 ```
+
+Each artifact has a distinct responsibility.
 
 The Bootstrap prepares the collaboration.
 
-The Knowledge Package provides project understanding.
+The Knowledge Package builds understanding.
 
-WWAN synchronizes the current operational state.
+The WWAN synchronizes operational context.
 
-The remaining documents provide the detailed engineering knowledge required to continue.
+The remaining artifacts capture the engineering work itself.
 
 ---
 
 # Guiding Principle
 
-A collaborator should never need to reconstruct the current state of the project from conversation history.
+A collaborator should never need to reconstruct the current state of a project from conversation history.
 
 Reading the WWAN should provide enough operational understanding to continue engineering work naturally.
 
@@ -213,4 +158,17 @@ WWAN exists to answer one question quickly and accurately:
 
 > **"Where are we now?"**
 
-Once that question has been answered, collaboration can focus on moving the project forward rather than rediscovering where it left off.
+Once that question has been answered, collaboration can focus on creating value rather than rediscovering context.
+
+---
+
+## Metadata
+
+| Field | Value |
+|-------|-------|
+| Document | `001-understanding-wwan.md` |
+| Category | AFK Collaboration |
+| Type | Collaboration Guide |
+| Status | 🚧 Active Development |
+| Related Standard | `EDS → 080 — WWAN Operational Context Standard` |
+| Version | 2.0 |

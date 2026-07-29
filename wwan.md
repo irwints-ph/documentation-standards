@@ -1,219 +1,154 @@
-# 📍 Where We Are Now (WWAN)
+# 🧭 Where We Are Now (WWAN)
+
+> **Current operational context for the Engineering Knowledge Repository.**
 
 ---
+# Current Stage
 
-# Metadata
-
-| Field          | Value                            |
-| -------------- | -------------------------------- |
-| Project        | Engineering Knowledge Repository |
-| Repository     | Engineering Knowledge Repository |
-| Status         | 🚧 Active Discovery              |
-| As of          | 07.29.2026 07:73 PHT             |
-| Current Focus  | Repository Organization          |
-| Next Milestone | Repository Foundation Complete   |
-
----
-
-# Purpose
-
-This WWAN captures the current operational state of the **Engineering Knowledge Repository**.
-
-It exists to provide immediate context for future Human and AI collaborators without requiring reconstruction from previous conversations.
-
-This document describes the repository itself.
-
-Individual systems (AFK, EDS, EKS, EKPP) maintain their own operational context as required.
-
+Discovery
 ---
 
 # Current Objective
 
-Establish a unified repository that serves as the home for the Engineering Knowledge ecosystem.
+Continue evolving the Engineering Knowledge Repository into a reusable ecosystem for engineering collaboration, documentation, and knowledge preservation.
 
-Current systems include:
-
-* 🌊 Assisted Flow of Knowledge (AFK)
-* 📄 Engineering Documentation System (EDS)
-* 🧠 Engineering Knowledge System (EKS)
-
-Future system:
-
-* 🌐 Engineering Knowledge Publishing Portal (EKPP)
+Current work focuses on improving navigation, reducing onboarding friction, and strengthening the relationship between AFK, EDS, and EKS.
 
 ---
 
-# Current Repository Structure
+# Repository Overview
 
-```text
-/
+The repository is now organized into three primary systems:
 
-├── _collaboration/
-├── _docs/
-├── _tools/
+* 🤝 **AFK — Assisted Flow of Knowledge**
 
-├── afk/
-├── eds/
-├── eks/
+  * Human + AI collaboration methodology
+  * Journeys
+  * Playbooks
+  * Methodologies
+  * Culture
+  * Reference artifacts
 
-├── README.md
-└── wwan.md
-```
+* 📄 **EDS — Engineering Documentation System**
 
-The repository is transitioning from a collection of experimental documents into a structured engineering knowledge repository.
+  * Documentation standards
+  * Engineering standards
+  * Documentation navigation
 
----
+* 🧠 **EKS — Engineering Knowledge System**
 
-# Current Progress
+  * Knowledge foundations
+  * Engineering methodologies
+  * Engineering proposals
+  * Knowledge evolution
 
-## Repository Foundation
+Shared repository assets are maintained separately:
 
-Status
-
-🚧 In Progress
-
-Completed
-
-* Repository ecosystem defined
-* Root navigation designed
-* AFK landing page redesigned
-* EDS landing page redesigned
-* EKS landing page redesigned
-* Repository organization documented
-* Initial collaboration templates extracted
-* Project bootstrap tool created
-* Guided AFK journey created
-
-Remaining
-
-* Repository cleanup
-* Discovery registry for repository
-* Repository Grant Strategy
-* Repository Initial Architecture
-* Repository Build Plan
+* `_collaboration/`
+* `_docs/`
+* `_tools/`
 
 ---
 
-# Active Wish
-
-Repository Wish 001
-
-Improve and standardize the Engineering Knowledge Repository organization so it becomes the long-term home of AFK, EDS, EKS, and future engineering systems.
-
-Current Status
-
-🚧 Discovery
-
----
-
-# Current Decisions
-
-The following architectural decisions have been accepted.
+# Latest Milestone
 
 ## Repository Organization
 
-Repository-level operational artifacts
+Completed:
 
-* README.md
-* wwan.md
-
-Shared repository resources
-
-* _collaboration/
-* _docs/
-* _tools/
-
-Engineering systems remain independently organized beneath the repository root.
+* Repository reorganized into AFK / EDS / EKS
+* Shared collaboration assets moved into `_collaboration`
+* Shared tooling moved into `_tools`
+* Shared repository discovery moved into `_docs`
 
 ---
 
-## Engineering Ecosystem
+## Documentation Improvements
 
-Repository responsibilities are now clearly separated.
+Completed:
 
-AFK
+* Main repository README redesigned as an ecosystem entry point
+* AFK README rewritten to emphasize methodology
+* EDS README rewritten to emphasize documentation system
+* EKS README rewritten to emphasize engineering knowledge
 
-* Engineering collaboration methodology
+---
 
-EDS
+## AFK Improvements
 
-* Engineering documentation standards
+Completed:
 
-EKS
+* Existing Codebase Journey expanded
+* Existing Codebase Quick Start created
+* Existing Codebase Learning Path created
+* Existing Codebase Playbook created
+* Discovery methodology updated to reference reusable journeys and playbooks
 
-* Engineering knowledge methodologies
+---
 
-EKPP
+## Documentation Conventions
 
-* Engineering knowledge publishing platform (future)
+Established:
+
+* AFK documents emphasize readability before metadata.
+* Guiding principle appears near the top of each document.
+* Metadata is moving toward footer placement for AFK documents.
+* EDS standards retain specification-style metadata at the top.
 
 ---
 
 # Current Focus
 
-Repository organization.
+Improve the onboarding experience for engineers discovering AFK for the first time.
 
-The immediate goal is to stabilize the repository architecture before expanding individual systems.
+Areas currently under refinement:
 
-Current work emphasizes:
-
-* navigation
-* onboarding
-* collaboration
-* repository consistency
-
----
-
-# Next Steps
-
-1. Complete repository Discovery artifacts.
-2. Produce Repository Grant Strategy.
-3. Produce Repository Initial Architecture.
-4. Produce Repository Build Plan.
-5. Validate repository organization through GitHub publication.
-6. Review navigation from the published repository.
-7. Begin Repository Wish 002.
+- onboarding experience
+- reusable playbooks
+- learning paths
+- repository organization
+- collaboration assets
+- documentation consistency
 
 ---
 
-# Notes for Future Collaborators
+# Next Wishes
 
-This repository is itself being developed using AFK.
+Current discovery backlog:
 
-Repository changes follow the same lifecycle as engineering projects:
-
-Wish
-
-↓
-
-Discovery
-
-↓
-
-Understanding
-
-↓
-
-Build
-
-↓
-
-Observation
-
-↓
-
-Grant
-
-↓
-
-Next Wish
-
-Repository documentation should remain consistent with the methodologies it teaches.
+1. Continue standardizing AFK document layout.
+2. Review navigation across AFK, EDS, and EKS.
+3. Improve repository onboarding for new collaborators.
+4. Validate the ecosystem through external reviewer feedback.
+5. Continue evolving AFK through real engineering sessions.
 
 ---
 
 # Resume Point
 
-The repository foundation is largely complete.
+The next collaboration session should begin by reviewing:
 
-Next collaboration should continue from the Repository Discovery phase by producing the remaining discovery artifacts and validating the published repository structure.
+* `README.md`
+* `afk/docs/playbooks/`
+* `afk/docs/journeys/`
+
+before selecting the next engineering wish.
+
+---
+
+# Notes
+
+This WWAN represents the current operational state of the repository.
+
+It is intentionally concise and should be updated whenever the repository reaches a meaningful milestone.
+
+---
+
+## Metadata
+
+| Field          | Value                            |
+| -------------- | -------------------------------- |
+| Version        | 1.1                              |
+| Status         | 🚧 Active Discovery              |
+| As of          | 07.29.2026 08:49 PHT             |
+| Document  | `wwan.md`  |

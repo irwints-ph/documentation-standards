@@ -1,33 +1,22 @@
 # 📖 Document Icons and Statuses Reference
 
----
-
-## Metadata
-
-| Field | Value |
-|--------|-------|
-| Document | `030r-document-icons-and-statuses-standard.md` |
-| Category | Core Standards |
-| Type | Reference |
-| Status | ✅ Accepted |
-| Companion | `030-document-icons-and-statuses-standard.md` |
-| Version | 1.1 |
+> **Visual consistency reduces cognitive load and helps engineers recognize information before they read it.**
 
 ---
 
 # Purpose
 
-This document explains the philosophy, design decisions, and evolution of the **Document Icons and Statuses Standard**.
+This document explains the philosophy, rationale, and evolution of the Engineering Documentation System's visual language.
 
-While the companion standard defines the engineering rules, this reference explains why the visual language exists, how it evolved, and how it should continue to grow alongside the Engineering Documentation System (EDS).
+While the companion Standard defines **what icons and statuses shall be used**, this Reference explains **why** the visual language exists, how it evolved, and the principles that guide its continued growth.
 
 ---
 
 # Background
 
-As engineering documentation grows, navigating information becomes increasingly important.
+As engineering documentation grows, navigation becomes increasingly important.
 
-Before reading a document, engineers typically want to answer two questions:
+Before opening a document, engineers typically want to answer two questions:
 
 1. **What kind of document is this?**
 2. **How mature or trustworthy is it?**
@@ -36,8 +25,8 @@ The Engineering Documentation System answers these questions visually.
 
 Every document communicates:
 
-- its purpose through a **Document Icon**
-- its maturity through a **Lifecycle Status**
+- its **purpose** through a Document Icon
+- its **maturity** through a Lifecycle Status
 
 This allows engineers to quickly understand documentation before reading its contents.
 
@@ -45,23 +34,27 @@ This allows engineers to quickly understand documentation before reading its con
 
 # Design Philosophy
 
-The visual language of EDS follows a simple principle:
+The visual language follows a simple principle:
 
 > **Icons improve recognition—not decoration.**
 
 Icons exist to reduce cognitive effort.
 
-They should help engineers recognize documentation categories immediately while remaining simple, consistent, and reusable.
+They should quietly help engineers recognize documentation categories while allowing the content itself to remain the primary source of understanding.
 
 ---
 
 # Two Independent Concepts
 
-The Engineering Documentation System intentionally separates:
+The Engineering Documentation System intentionally separates two ideas.
 
 ## Document Purpose
 
 Represented by the **Document Icon**.
+
+The icon answers:
+
+> **"What is this document?"**
 
 Examples include:
 
@@ -72,168 +65,168 @@ Examples include:
 - 🛠️ Procedure
 - 🏛️ Architecture Finding
 
-The icon answers:
-
-> **What is this document?**
+Document purpose rarely changes.
 
 ---
 
 ## Document Lifecycle
 
-Represented by the **Status Icon**.
+Represented by the **Lifecycle Status**.
+
+The status answers:
+
+> **"How mature is this document?"**
 
 Examples include:
 
 - 📝 Planning
 - 🚧 In Progress
 - 👀 Under Review
-- 🧪 Experimental
 - ✅ Accepted
 - 📦 Official
 - 🗃️ Archived
 
-The status answers:
-
-> **How mature is this document?**
+Document maturity naturally evolves over time.
 
 ---
 
 # Why Separate Purpose and Status?
 
-A document's purpose rarely changes.
+A document's purpose usually remains constant throughout its lifetime.
 
-Its lifecycle naturally evolves.
-
-Example:
+Its maturity changes as engineering work progresses.
 
 ```text
 📘 Standard
 
 📝 Planning
-        ↓
+      ↓
 🚧 In Progress
-        ↓
+      ↓
 👀 Under Review
-        ↓
+      ↓
 ✅ Accepted
-        ↓
+      ↓
 📦 Official
 ```
 
-Separating these concepts allows readers to understand both the document category and its maturity without reading the document itself.
+Separating these concepts allows engineers to immediately understand both **what the document is** and **how much confidence they should place in it**.
 
 ---
 
 # Why One Primary Document Icon?
 
-Some documents could reasonably belong to multiple categories.
+Many documents could reasonably fit into multiple categories.
 
 For example:
 
-- A roadmap containing architecture ideas.
-- A procedure containing troubleshooting.
-- A discovery report documenting an API.
+- a roadmap discussing architecture,
+- a procedure containing troubleshooting guidance,
+- a discovery report documenting APIs.
 
-Assigning multiple document icons reduces consistency and increases visual noise.
+Assigning multiple document-purpose icons creates inconsistency and visual noise.
 
 Instead, every document identifies its **primary engineering purpose**.
 
 Additional context should be communicated through:
 
-- document title
-- metadata
-- folder structure
-- related documents
+- the document title,
+- metadata,
+- folder organization,
+- related documents.
 
 ---
 
 # Evolution of the Visual Language
 
-The original Engineering Documentation System primarily consisted of:
+The Engineering Documentation System originally consisted of only a few document types:
 
 - Standards
 - References
 - Procedures
 - Roadmaps
 
-As the framework matured through real engineering projects, additional document types naturally emerged.
+As real engineering work accumulated, new reusable document categories naturally emerged.
 
 Examples include:
 
-- WWAN (Where We Are Now)
+- WWAN
 - Folder Registries
 - Folder Validation
 - Component Documentation
 - Architecture Findings
 - Discovery Documentation
+- Knowledge Packages
 
-Rather than inventing icons in advance, the visual language continues to evolve through practical engineering use.
+Rather than designing an exhaustive taxonomy up front, the visual language continues to evolve through practical engineering experience.
 
-This reflects a broader EDS philosophy:
+This reflects a broader EDS principle:
 
-> Standards evolve through validated engineering practice.
-
----
-
-# Relationship to Metadata
-
-Earlier versions of the documentation framework placed lifecycle status in a dedicated **Status** section.
-
-As the framework matured, status became part of the standardized Metadata table.
-
-Example:
-
-```markdown
-## Metadata
-
-| Field | Value |
-|--------|-------|
-| Status | 🚧 Discovery In Progress |
-```
-
-This keeps operational information together while making documents easier to scan.
+> **Standards evolve through validated engineering practice.**
 
 ---
 
 # Relationship to the Document Template
 
-This document defines **which icons** should be used.
+The Engineering Documentation System intentionally separates responsibilities.
 
-The Document Template Standard defines **where they appear**.
+| Standard | Responsibility |
+|-----------|----------------|
+| 020 | Defines document structure |
+| 015 | Defines lifecycle states |
+| 030 | Defines the visual language |
 
-Responsibilities remain intentionally separated.
-
-- Document Template Standard → document structure
-- Document Icons Standard → visual language
-- Document Lifecycle Standard → lifecycle rules
-
----
-
-# Relationship to Discovery
-
-The Frontend Discovery project demonstrated that visual consistency becomes increasingly valuable as documentation expands.
-
-Document icons now help engineers distinguish between:
-
-- operational documents
-- engineering standards
-- discovery artifacts
-- reusable knowledge
-- architecture observations
-
-without relying solely on filenames.
+This separation keeps each standard focused and easier to maintain.
 
 ---
 
-# The Role of the Cheatsheet
+# Three-Document Model
 
-The companion Cheatsheet serves a different audience.
+The Document Icons and Statuses Standard follows the Engineering Documentation System's three-document model.
 
-The Standard defines engineering rules.
+## 📘 Standard
 
-The Cheatsheet provides quick copy-and-paste references for engineers producing documentation.
+Defines the engineering rules.
 
-Keeping them separate allows each document to remain focused.
+Answers:
+
+- Which icons are approved?
+- How should they be used?
+
+---
+
+## 📖 Reference *(this document)*
+
+Explains the engineering reasoning.
+
+Answers:
+
+- Why were these icons chosen?
+- How did the system evolve?
+- What design principles guide future additions?
+
+---
+
+## 📋 Quick Reference
+
+Provides fast day-to-day lookup.
+
+Supports engineers during documentation work without requiring them to read the full standard.
+
+---
+
+# Discovery and Real-World Validation
+
+The current icon system emerged through practical use across engineering activities, including:
+
+- legacy application discovery,
+- frontend documentation,
+- architecture reviews,
+- engineering standards development,
+- AFK methodology,
+- Engineering Knowledge System research.
+
+Every newly introduced document category was validated through repeated engineering use before becoming part of the standard.
 
 ---
 
@@ -241,16 +234,15 @@ Keeping them separate allows each document to remain focused.
 
 The visual language should continue evolving conservatively.
 
-Potential future categories may include:
+Potential future document categories include:
 
 - Security Reviews
 - Performance Analysis
-- Testing Documentation
 - Operational Runbooks
 - Engineering Playbooks
-- Knowledge Packages
+- Decision Records
 
-New icons should only be introduced after repeated use demonstrates that they represent a reusable engineering concept.
+New icons should only be introduced after repeated evidence demonstrates that they represent a reusable engineering concept rather than a project-specific need.
 
 ---
 
@@ -258,7 +250,7 @@ New icons should only be introduced after repeated use demonstrates that they re
 
 ## Why not rely on colors?
 
-Colors vary across editors, terminals, themes, and documentation viewers.
+Colors vary across editors, terminals, documentation generators, and accessibility settings.
 
 Icons remain recognizable regardless of presentation.
 
@@ -268,54 +260,71 @@ Icons remain recognizable regardless of presentation.
 
 Project-specific icons reduce consistency between repositories.
 
-The Engineering Documentation System encourages one shared visual language.
+The Engineering Documentation System promotes one shared visual language across projects.
 
 ---
 
-## Should every heading contain icons?
+## Why not use multiple icons?
 
-No.
+Every document should communicate one primary purpose.
 
-Icons are primarily intended for document identification.
-
-Using icons excessively reduces their usefulness.
+Multiple icons dilute meaning and reduce recognition speed.
 
 ---
 
-## Why maintain both a Standard and a Cheatsheet?
+## Why maintain both a Reference and a Quick Reference?
 
-The Standard explains the engineering rules.
+They serve different purposes.
 
-The Cheatsheet supports everyday engineering work.
+The Reference explains the reasoning.
 
-Separating them keeps both concise and easy to maintain.
+The Quick Reference supports everyday execution.
+
+Keeping them separate makes both more effective.
 
 ---
 
 # Engineering Philosophy
 
-The visual language of the Engineering Documentation System is intentionally minimal.
+Good documentation should reduce friction.
 
-Icons should never compete with content.
+The icon system exists to make engineering knowledge easier to navigate—not to decorate documents.
 
-They should quietly help engineers navigate knowledge while allowing the documentation itself to remain the primary source of understanding.
-
-Like the documentation framework itself, the icon system exists to reduce friction rather than create it.
+Like every Engineering Documentation System standard, the visual language should quietly improve understanding while remaining almost invisible during everyday engineering work.
 
 ---
 
 # Related Documents
 
-## Prerequisites
+## Standard
 
-- [001-documentation-system-overview.md](./001-documentation-system-overview.md)
-- [020-document-template-standard.md](./020-document-template-standard.md)
+- 030-document-icons-and-statuses-standard.md
+
+---
+
+## Quick Reference
+
+- 030a-document-icons-and-statuses-cheatsheet.md
+
+---
 
 ## Related
 
-- [015-document-status-lifecycle.md](./015-document-status-lifecycle.md)
+- 015-document-status-lifecycle.md
+- 020-document-template-standard.md
+- 025-document-naming-standard.md
 
-## Companion
+---
 
-- [030-document-icons-and-statuses-standard.md](./030-document-icons-and-statuses-standard.md)
-- [030a-document-icons-and-statuses-cheatsheet.md](./030a-document-icons-and-statuses-cheatsheet.md)
+## Metadata
+
+| Field | Value |
+|--------|-------|
+| Document | `030r-document-icons-and-statuses-standard.md` |
+| Category | Core Standards |
+| Type | 📖 Reference |
+| Companion Standard | `030-document-icons-and-statuses-standard.md` |
+| Quick Reference | `030a-document-icons-and-statuses-cheatsheet.md` |
+| Status | 📦 Official *(or ✅ Accepted)* |
+| Version | 2.0 |
+| As Of | YYYY-MM-DD HH:MM TZ |

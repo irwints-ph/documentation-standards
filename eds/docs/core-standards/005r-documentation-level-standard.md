@@ -1,250 +1,126 @@
-# 📖 Documentation Level Standard (Reference)
+# 📑 Documentation Level Standard — Reference
 
----
-
-## Metadata
-
-**Document:** `005r-documentation-level-standard.md`
-
-**Type:** 📖 Reference
-
-**Companion Standard:** [005-documentation-level-standard.md](./005-documentation-level-standard.md)
-
-**Owner:** Engineering
-
-**Version:** 1.0
-
----
-
-## Status
-
-**As of:** 07.25.2026 06:55 PHT
-
-✅ Accepted
+> **Quick guide for using Documentation Levels within the Engineering Documentation System.**
 
 ---
 
 # Purpose
 
-Explain the reasoning behind the documentation levels used throughout the Engineering Documentation System.
+Provide a concise operational reference for applying Documentation Levels throughout the Engineering Documentation System (EDS).
 
-This document describes why the documentation is divided into Official and Reference levels, the problems this solves, and the principles that guide their use.
+For the complete explanation, philosophy, and rationale, see:
 
----
-
-# Why Documentation Levels Exist
-
-Engineering documentation serves multiple audiences.
-
-An engineer returning after several months usually needs only a quick reminder of the current standard.
-
-A new team member may need historical background, design rationale, examples, and implementation guidance.
-
-AI assistants perform best when provided with concise, focused context rather than lengthy discussions.
-
-Attempting to satisfy all of these audiences with a single document often results in documentation that is too long for quick reference and too brief for effective learning.
-
-To address this, the Engineering Documentation System separates documentation into two complementary levels.
+**`005-documentation-level-standard.md`**
 
 ---
 
-# Official Documents
+# Documentation Levels
 
-Official documents define engineering standards.
-
-They are intended to answer one question:
-
-> **"What is the current engineering standard?"**
-
-Official documents intentionally avoid unnecessary explanation.
-
-Instead, they focus on the information required to correctly implement or follow the standard.
-
-Typical contents include:
-
-* Purpose
-* Rules
-* Required structure
-* Naming conventions
-* Short examples
-* Related documents
-
-Official documents should remain concise enough to be reviewed quickly and should generally fit within one or two pages.
-
-Because of their size and structure, they are also suitable for use as AI project context.
+| Level | Purpose |
+|--------|---------|
+| 📘 Engineering Standard | Learn and understand the standard. |
+| 📑 Reference | Quickly implement the standard. |
 
 ---
 
-# Reference Documents
+# When to Use Each
 
-Reference documents explain the engineering standard.
+## 📘 Engineering Standard
 
-They answer questions such as:
+Read when you need to:
 
-* Why was this standard created?
-* What problems does it solve?
-* How has it evolved?
-* What alternatives were considered?
-* What lessons have been learned?
-
-Reference documents intentionally have no practical length limit.
-
-Their goal is preservation of engineering knowledge rather than quick implementation.
-
-Typical contents include:
-
-* Design rationale
-* Historical evolution
-* Migration guidance
-* Frequently asked questions
-* Extended examples
-* Best practices
-* Lessons learned
+- Learn a new standard.
+- Understand the rationale.
+- Review examples.
+- Extend or improve the framework.
+- Understand engineering decisions.
 
 ---
 
-# Relationship Between Levels
+## 📑 Reference
 
-The two documentation levels are complementary.
+Use when you need to:
 
-The Official document defines the standard.
-
-The Reference document explains the standard.
-
-The Reference document must never replace or contradict the Official document.
-
-If additional explanation becomes necessary, it belongs in the Reference document rather than expanding the Official document unnecessarily.
+- Apply the standard.
+- Follow a checklist.
+- Copy a template.
+- Confirm required rules.
+- Quickly refresh your memory.
 
 ---
 
-# When a Reference Document Is Needed
+# Decision Guide
 
-Not every Official document requires a companion Reference.
+```text
+Need to understand?
 
-A Reference document should be created when the topic benefits from additional explanation that is expected to remain valuable over time.
+        │
+       Yes
+        │
+        ▼
+Read the Engineering Standard
 
-Examples include:
-
-* Complex engineering standards
-* Architectural decisions
-* Design philosophies
-* Migration strategies
-* Frequently misunderstood concepts
-
-Short or self-explanatory standards may not require a companion Reference document.
-
----
-
-# Benefits of Two Documentation Levels
-
-## Faster Navigation
-
-Experienced engineers can quickly locate the current standard without reading historical discussion.
+        │
+       No
+        │
+        ▼
+Use the Reference
+```
 
 ---
 
-## Better AI Context
+# Rules
 
-Official documents are intentionally optimized for AI-assisted engineering by minimizing unnecessary context.
+✅ Every engineering standard has one authoritative Engineering Standard.
 
----
+✅ References summarize the standard.
 
-## Easier Maintenance
+✅ References do not introduce new rules.
 
-Most engineering changes affect only the Official document.
-
-Supporting rationale remains stable within the Reference document.
+✅ If there is a conflict, the Engineering Standard always takes precedence.
 
 ---
 
-## Historical Preservation
+# Naming Convention
 
-Engineering knowledge, discussions, and lessons learned remain available without cluttering the current standard.
+| Type | Example |
+|------|---------|
+| Engineering Standard | `005-documentation-level-standard.md` |
+| Reference | `005r-documentation-level-standard.md` |
 
----
-
-## Consistency Across Repositories
-
-Using the same documentation levels across all repositories creates a predictable documentation experience for engineers regardless of project size or technology.
-
----
-
-# Common Misunderstandings
-
-### Is an Official document a summary?
-
-No.
-
-An Official document is the complete engineering standard.
-
-It is concise because unnecessary explanation has been moved to the companion Reference document.
+The `r` suffix identifies the companion operational reference.
 
 ---
 
-### Is a Reference document optional?
+# Related Standards
 
-Yes.
+Core Standards
 
-Reference documents should be created only when they provide long-term value.
-
-Many simple standards can be fully documented using only an Official document.
-
----
-
-### Can engineers update only the Reference document?
-
-Yes, provided the engineering standard itself does not change.
-
-Historical notes, examples, FAQs, and implementation guidance may evolve independently of the Official document.
-
-If the engineering standard changes, the Official document must be updated first.
+- `001` Documentation System Overview
+- `010` Document Numbering
+- `020` Document Template
+- `025` Document Naming
+- `040` Document References
 
 ---
 
-### Which document takes precedence?
+# Companion Standard
 
-The Official document always represents the current engineering standard.
+For the complete explanation, see:
 
-If a conflict exists between the two documents, the Official document is considered authoritative.
-
----
-
-# Design Principles
-
-The documentation level model follows several guiding principles.
-
-* Standards should be easy to find.
-* Standards should be easy to read.
-* Historical knowledge should never be lost.
-* AI context should remain concise.
-* Documentation should grow without becoming difficult to maintain.
-* The documentation system should remain consistent across all engineering repositories.
+**`005-documentation-level-standard.md`**
 
 ---
 
-# Related Documents
+## Metadata
 
-## Prerequisite
-
-* [001-documentation-system-overview.md](./)
-* [005-documentation-level-standard.md](./)
-
-## Related
-
-* [010-document-numbering-standard.md](./010-document-numbering-standard.md)
-* [015-document-status-lifecycle.md](./015-document-status-lifecycle.md)
-* [020-document-template-standard.md](./020-document-template-standard.md)
-* [025-document-naming-standard.md](./025-document-naming-standard.md)
-* [035-terminology-standard.md](./035-terminology-standard.md)
-
-## Companion
-
-* 005-documentation-level-standard.md
-
----
-
-# Revision Notes
-
-This Reference document explains the philosophy behind the two-level documentation model.
-
-Future revisions should preserve the underlying design principles while allowing the companion Official document to remain concise, implementation-focused, and suitable for use as AI project context.
+| Field | Value |
+|------|------|
+| Document | `005r-documentation-level-standard.md` |
+| Category | Engineering Documentation System |
+| Type | 📑 Reference |
+| Companion | `005-documentation-level-standard.md` |
+| Version | 2.0 |
+| Status | ✅ Accepted |
+| As Of | 07.29.2026 |
+| Owner | Engineering |

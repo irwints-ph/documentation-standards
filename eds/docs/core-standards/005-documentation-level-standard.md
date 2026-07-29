@@ -1,124 +1,166 @@
 # 📘 Documentation Level Standard
 
----
-
-## Metadata
-
-**Document:** `005-documentation-level-standard.md`
-
-**Type:** 📘 Official Standard
-
-**Companion Reference:** [005r-documentation-level-standard.md](./005r-documentation-level-standard.md)
-
-**Owner:** Engineering
-
-**Version:** 1.0
-
----
-
-## Status
-
-**As of:** 07.25.2026 06:45 PHT
-
-✅ Accepted
+> **Different documents serve different purposes. Separate learning from execution.**
 
 ---
 
 # Purpose
 
-Define the standard documentation levels used throughout the Engineering Documentation System.
+Define the documentation levels used throughout the Engineering Documentation System (EDS).
 
-Documentation levels organize information according to its intended purpose, ensuring standards remain concise while supporting detailed reference material.
+Documentation levels ensure engineering knowledge remains easy to learn while also being efficient to apply during day-to-day engineering work.
 
----
-
-# Standard
-
-The Engineering Documentation System defines two documentation levels.
-
-## Level 1 — Official
-
-Official documents define the current engineering standard.
-
-Characteristics
-
-* Concise and implementation-focused
-* AI optimized
-* Human quick reference
-* Readable in under 30 seconds
-* Contains only the current standard
-* May be used directly as AI project context
-
-Official documents answer:
-
-* What is the standard?
-* How should it be implemented?
-* Where can additional information be found?
+The Engineering Documentation System intentionally separates **understanding** from **implementation**.
 
 ---
 
-## Level 2 — Reference
+# Documentation Levels
 
-Reference documents provide supporting information for an Official document.
+EDS defines two complementary documentation levels.
+
+```text
+Engineering Standard
+
+│
+
+├── 📘 Standard
+│       Learn
+│
+└── 📑 Reference
+        Implement
+```
+
+Both documents describe the same engineering standard but serve different audiences and purposes.
+
+---
+
+# 📘 Engineering Standard
+
+The Engineering Standard is the authoritative engineering document.
+
+Its purpose is to explain the standard completely.
 
 Characteristics
 
-* Human optimized
-* No practical length limit
-* Explains rationale and historical context
-* Includes examples and implementation guidance
-* Supplements, but never replaces, the Official document
+- Authoritative source
+- Human-readable
+- AI-readable
+- Explains concepts
+- Documents rationale
+- May include examples
+- Evolves with engineering practice
 
-Reference documents answer:
+The Engineering Standard answers questions such as:
 
-* Why was this standard created?
-* How did it evolve?
-* What alternatives were considered?
-* What implementation patterns are recommended?
+- What is this standard?
+- Why does it exist?
+- How should it be applied?
+- What should engineers understand?
+
+---
+
+# 📑 Reference
+
+The Reference is the operational companion.
+
+Its purpose is to support implementation with minimal reading.
+
+Characteristics
+
+- Quick lookup
+- Implementation-focused
+- AI-friendly
+- Checklist-oriented
+- Template-oriented
+- Copy-and-use friendly
+
+The Reference answers questions such as:
+
+- What do I need to do?
+- Which template should I use?
+- What are the required rules?
+- What should I copy into my project?
 
 ---
 
 # Rules
 
-* Every engineering standard shall be defined only in an Official document.
-* A Reference document may accompany an Official document when additional explanation provides long-term value.
-* Reference documents shall not introduce or modify engineering standards.
-* If a conflict exists, the Official document always takes precedence.
-* Some Official documents may not require a companion Reference document.
+The Engineering Documentation System follows these principles:
+
+- Every engineering standard shall have one authoritative Engineering Standard document.
+- A Reference document may accompany the Engineering Standard.
+- References summarize the standard but do not redefine it.
+- References shall not introduce new engineering rules.
+- If a conflict exists, the Engineering Standard always takes precedence.
+- Some standards may not require a companion Reference when the Standard is already sufficiently concise.
 
 ---
 
 # Naming Convention
 
-Official document
+Engineering Standard
 
 ```text
 005-documentation-level-standard.md
 ```
 
-Reference document
+Reference
 
 ```text
 005r-documentation-level-standard.md
 ```
 
-The `r` suffix identifies the companion Reference document.
+The `r` suffix identifies the companion operational reference.
 
 ---
 
-# Related Documents
+# Why Two Levels?
 
-## Prerequisite
+Engineers have different needs depending on context.
 
-* [001-documentation-system-overview.md](./001-documentation-system-overview.md)
+When learning a framework:
 
-## Related
+- understanding is more important than speed.
 
-* [010-document-numbering-standard.md](./010-document-numbering-standard.md)
-* [015-document-status-lifecycle.md](./015-document-status-lifecycle.md)
-* [020-document-template-standard.md](./020-document-template-standard.md)
-* [025-document-naming-standard.md](./025-document-naming-standard.md)
+When implementing a framework:
 
-## Companion
+- speed is more important than explanation.
 
-* [005r-documentation-level-standard.md](./005r-documentation-level-standard.md)
+Separating Standards and References allows documentation to support both activities without compromising either.
+
+---
+
+# Relationship to Other Standards
+
+This standard establishes how documentation itself is structured.
+
+Related Standards include:
+
+- Documentation System Overview
+- Document Numbering
+- Document Template
+- Document Naming
+- Document References
+
+---
+
+# Companion Reference
+
+For quick implementation guidance, see:
+
+**`005r-documentation-level-standard.md`**
+
+---
+
+## Metadata
+
+| Field | Value |
+|------|------|
+| Document | `005-documentation-level-standard.md` |
+| Category | Engineering Documentation System |
+| Type | 📘 Engineering Standard |
+| Companion | `005r-documentation-level-standard.md` |
+| Version | 2.0 |
+| Status | ✅ Accepted |
+| As Of | 07.29.2026 |
+| Owner | Engineering |

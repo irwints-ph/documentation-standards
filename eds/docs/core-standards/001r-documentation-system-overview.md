@@ -1,239 +1,130 @@
-# 📖 Documentation System Overview (Reference)
+# 📑 Documentation System Overview — Reference
 
----
-
-## Metadata
-
-**Document:** `001r-documentation-system-overview.md`
-
-**Type:** 📖 Reference
-
-**Companion Standard:** [001-documentation-system-overview.md](./001-documentation-system-overview.md)
-
-**Owner:** Engineering
-
-**Version:** 1.0
-
----
-
-## Status
-
-**As of:** 07.25.2026 06:30 PHT
-
-✅ Accepted
+> **Quick guide to understanding the Engineering Documentation System (EDS).**
 
 ---
 
 # Purpose
 
-Explain the philosophy, goals, and evolution of the Engineering Documentation System.
+Provide a concise reference for navigating and applying the Engineering Documentation System.
 
-Unlike the companion Official document, this reference provides the rationale, historical context, and supporting guidance behind the documentation standards.
+For the complete philosophy, rationale, and design principles, see:
 
----
-
-# Why This Documentation System Exists
-
-Engineering documentation naturally expands as projects evolve.
-
-Without a defined system, repositories tend to accumulate:
-
-* Duplicate information
-* Outdated guides
-* Inconsistent naming
-* Missing context
-* Undocumented decisions
-* Knowledge retained only by individual developers
-
-The Engineering Documentation System addresses these problems by providing a consistent structure that is maintainable, discoverable, and useful for both engineers and AI assistants.
+**`001-documentation-system-overview.md`**
 
 ---
 
-# Design Goals
+# Documentation Structure
 
-The documentation system is designed to:
+Every Engineering Documentation Standard consists of two companion documents.
 
-* Preserve engineering knowledge
-* Reduce repeated explanations
-* Shorten onboarding time
-* Keep documentation aligned with development
-* Encourage reusable standards across repositories
-* Support AI-assisted engineering workflows
-* Preserve historical decisions without cluttering current standards
+| Document | Purpose |
+|----------|---------|
+| 📘 Standard | Explains the standard, rationale, philosophy, and examples. |
+| 📑 Reference | Provides quick lookup, checklists, templates, and implementation guidance. |
 
 ---
 
-# Documentation Model
+# Naming Convention
 
-The documentation system separates standards into two complementary document levels.
+| Type | Example |
+|------|---------|
+| Standard | `001-documentation-system-overview.md` |
+| Reference | `001r-documentation-system-overview.md` |
 
-## Official Documents
-
-Official documents define the current engineering standard.
-
-They are intentionally concise and contain only the information required to correctly implement or follow the standard.
-
-Typical contents include:
-
-* Purpose
-* Rules
-* Naming conventions
-* Required structure
-* Brief examples
-* Related documents
-
-Official documents should generally be readable in under 30 seconds and may be used directly as AI project context.
+The `r` suffix identifies the companion operational reference.
 
 ---
 
-## Reference Documents
-
-Reference documents expand upon the Official standard.
-
-They provide the engineering reasoning and supporting information that would otherwise make the Official document unnecessarily long.
-
-Reference documents commonly include:
-
-* Design rationale
-* Historical evolution
-* Alternative approaches
-* Migration guidance
-* Frequently asked questions
-* Extended examples
-* Lessons learned
-
----
-
-# Benefits of the Two-Level Model
-
-## Faster Navigation
-
-Experienced engineers can quickly review the current standard without searching through historical discussion.
-
----
-
-## Better AI Context
-
-Short Official documents provide focused, high-quality context for AI assistants while conserving context window space.
-
----
-
-## Historical Preservation
-
-Engineering decisions remain available without making current standards difficult to read.
-
----
-
-## Easier Maintenance
-
-Most updates affect only the Official document.
-
-Reference documents evolve primarily when additional explanation or historical context becomes valuable.
-
----
-
-## Consistent Documentation
-
-Every repository follows the same documentation structure regardless of project size or technology stack.
-
----
-
-# Relationship Between Documents
-
-An Official document may have one companion Reference document.
-
-Example
+# Engineering Documentation Model
 
 ```text
-035-document-icon-standard.md
-035r-document-icon-standard.md
+Engineering Documentation Standard
+
+│
+
+├── 📘 Standard
+│       Learn
+│
+└── 📑 Reference
+        Implement
 ```
 
-The Official document defines the standard.
+---
 
-The Reference document explains the standard.
+# Reading Order
 
-If a conflict exists, the Official document always takes precedence.
+When learning the framework for the first time:
+
+1. Read the Engineering Standard.
+2. Use the Reference during implementation.
+
+When already familiar with the framework:
+
+1. Go directly to the Reference.
+2. Return to the Standard only when additional explanation is needed.
 
 ---
 
-# Future Evolution
+# Repository Navigation
 
-The documentation system is intended to evolve while maintaining its core philosophy.
+The Engineering Documentation System is organized as follows:
 
-Potential future additions include:
+```text
+docs/
 
-* Documentation automation
-* Documentation validation
-* Architecture indexing
-* Roadmap generation
-* Glossary generation
-* AI-assisted documentation updates
-* Engineering documentation metrics
-
-These enhancements should extend the documentation system without changing its fundamental principles.
-
----
-
-# Frequently Asked Questions
-
-### Why not place everything in one document?
-
-Concise standards are easier to maintain, easier to search, and significantly more effective as AI context. Detailed explanations remain available in the companion Reference document.
+├── core-standards/
+│
+├── engineering-standards/
+│
+├── documentation-system-navigation.md
+│
+├── roadmap.md
+│
+└── wwan.md
+```
 
 ---
 
-### Should every Official document have a Reference document?
+# Related Standards
 
-No.
+Core Standards
 
-Reference documents are created only when additional explanation provides lasting value.
+- `001` Documentation System Overview
+- `005` Documentation Levels
+- `010` Document Numbering
+- `015` Document Status Lifecycle
+- `020` Document Template
+- `025` Document Naming
+- `030` Document Icons & Status
+- `035` Terminology
+- `040` Document References
+- `045` Git Workflow
 
-Some standards are sufficiently clear without a companion Reference.
+Engineering Standards
 
----
-
-### Can a Reference document define standards?
-
-No.
-
-Only Official documents define engineering standards.
-
-Reference documents explain, illustrate, justify, and preserve history.
-
----
-
-### Why use both "Official" and "canonical"?
-
-**Official** is the preferred term used throughout this documentation system because it is clearer to most readers.
-
-**Canonical** is the equivalent software engineering term and is documented in the Terminology Standard for consistency with industry literature.
+- `050` Source Documentation Naming
+- `080` WWAN Operational Context
 
 ---
 
-# Related Documents
+# Companion Standard
 
-## Prerequisite
+For complete explanations and design philosophy, see:
 
-* 000-where-we-are-now.md
-
-## Companion
-
-* 001-documentation-system-overview.md
-
-## Related
-
-* [005-documentation-level-standard.md](./005-documentation-level-standard.md)
-* [010-document-numbering-standard.md](./010-document-numbering-standard.md)
-* [015-document-status-lifecycle.md](./015-document-status-lifecycle.md)
-* [030-document-template-standard.md](./030-document-template-standard.md)
-* [040-document-naming-standard.md](./040-document-naming-standard.md)
-* [045-terminology-standard.md](./045-terminology-standard.md)
+**`001-documentation-system-overview.md`**
 
 ---
 
-# Revision Notes
+## Metadata
 
-This Reference document exists to explain the reasoning behind the Engineering Documentation System.
-
-Future revisions should preserve historical context and design decisions while allowing the companion Official document to remain concise, implementation-focused, and suitable for use as AI project context.
+| Field | Value |
+|------|------|
+| Document | `001r-documentation-system-overview.md` |
+| Category | Engineering Documentation System |
+| Type | 📑 Reference |
+| Companion | `001-documentation-system-overview.md` |
+| Version | 2.0 |
+| Status | ✅ Accepted |
+| As Of | 07.29.2026 |
+| Owner | Engineering |

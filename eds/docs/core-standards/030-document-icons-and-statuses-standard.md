@@ -1,5 +1,157 @@
 # 📘 Document Icons and Statuses Standard
 
+> **A consistent visual language helps engineers recognize information before they read it.**
+
+---
+
+# Purpose
+
+Define the standard visual language used throughout the Engineering Documentation System (EDS).
+
+This standard establishes the approved document icons and lifecycle status icons used across engineering repositories to improve navigation, readability, and consistency for both human engineers and AI collaborators.
+
+---
+
+# Standard
+
+Every engineering document shall communicate two independent concepts:
+
+1. **Document Purpose**
+2. **Document Lifecycle**
+
+These concepts shall be represented using standardized icons.
+
+---
+
+# Document Purpose
+
+Every document shall use **one primary document icon**.
+
+The document icon identifies the document's primary engineering purpose.
+
+## Core Documents
+
+| Icon | Document Type |
+|------|---------------|
+| 📄 | README |
+| 📘 | Standard |
+| 📖 | Reference |
+| 📍 | WWAN |
+| 🗺️ | Roadmap |
+| 🛠️ | Procedure |
+
+---
+
+## Discovery Documents
+
+| Icon | Document Type |
+|------|---------------|
+| 🔍 | Discovery |
+| 📂 | Folder Registry |
+| 📊 | Folder Validation |
+| 🧩 | Component Documentation |
+| 🌐 | API Documentation |
+| ⚙️ | Configuration Documentation |
+| 🏛️ | Architecture Finding |
+
+---
+
+## Knowledge Documents
+
+| Icon | Document Type |
+|------|---------------|
+| 💡 | Knowledge Package |
+| 🆘 | Knowledge Base |
+| 📋 | Checklist |
+
+---
+
+# Document Lifecycle
+
+Every document shall include **one lifecycle status**.
+
+The lifecycle status represents the current maturity of the document.
+
+| Icon | Status |
+|------|--------|
+| 📝 | Planning |
+| 🚧 | In Progress |
+| 👀 | Under Review |
+| 🧪 | Experimental |
+| ⏸️ | On Hold |
+| ⚠️ | Blocked |
+| ✅ | Accepted |
+| 📦 | Official |
+| 🔄 | Superseded |
+| ❌ | Cancelled |
+| 🗃️ | Archived |
+
+Lifecycle meanings are defined in:
+
+**015 — Document Status Lifecycle Standard**
+
+---
+
+# Rules
+
+## Document Icons
+
+- Every document shall use one primary document icon.
+- The icon shall appear in the document title.
+- The icon shall represent the document's primary engineering purpose.
+- Multiple document-purpose icons shall not be combined.
+
+---
+
+## Lifecycle Status
+
+- Every document shall contain one lifecycle status.
+- The lifecycle status shall reflect the document's current maturity.
+- Lifecycle definitions are governed by the Document Status Lifecycle Standard.
+
+---
+
+# Three-Document Model
+
+Engineering standards may be supported by three complementary documents.
+
+| Layer | Purpose |
+|--------|---------|
+| 📘 Standard | Defines the engineering rule. |
+| 📖 Reference | Explains the reasoning, philosophy, and evolution. |
+| 📋 Quick Reference | Provides a practical everyday guide. |
+
+Each document serves a different audience while remaining synchronized.
+
+---
+
+# Related Documents
+
+## Prerequisites
+
+- 001 — Documentation System Overview
+- 015 — Document Status Lifecycle
+- 020 — Document Template Standard
+
+---
+
+## Related
+
+- 025 — Document Naming Standard
+- 035 — Terminology Standard
+
+---
+
+## Companion Documents
+
+### Reference
+
+- 030r-document-icons-and-statuses-standard.md
+
+### Quick Reference
+
+- 030a-document-icons-and-statuses-cheatsheet.md
+
 ---
 
 ## Metadata
@@ -8,151 +160,9 @@
 |--------|-------|
 | Document | `030-document-icons-and-statuses-standard.md` |
 | Category | Core Standards |
-| Type | Canonical Standard |
-| Status | ✅ Accepted |
+| Type | 📘 Standard |
+| Status | 📦 Official *(or ✅ Accepted if not yet promoted)* |
 | Companion | `030r-document-icons-and-statuses-standard.md` |
-| Version | 1.1 |
-
----
-
-# Purpose
-
-Define the standardized document icons and lifecycle status icons used throughout the Engineering Documentation System (EDS).
-
-The visual language improves recognition, navigation, and consistency while remaining simple enough to be reused across projects, repositories, and engineering disciplines.
-
----
-
-# Standard
-
-## One Primary Document Icon
-
-Every document shall have **one primary document icon**.
-
-The icon identifies the document's primary engineering purpose.
-
-Example
-
-```markdown
-# 📘 Document Template Standard
-```
-
----
-
-## One Lifecycle Status
-
-Every document shall contain **one lifecycle status**.
-
-The lifecycle status communicates the document's current engineering maturity.
-
-Example
-
-```markdown
-## Metadata
-
-| Field | Value |
-|--------|-------|
-| Status | ✅ Accepted |
-```
-
-Lifecycle definitions are maintained by:
-
-```text
-015-document-status-lifecycle.md
-```
-
----
-
-## Placement
-
-Document icons shall appear in the document title.
-
-Lifecycle status shall appear within the Metadata table.
-
-| Element | Standard |
-|----------|----------|
-| Document Title | Primary Document Icon |
-| Metadata | Lifecycle Status |
-| Tables | Optional where helpful |
-| Body Text | Optional where helpful |
-
----
-
-## Icon Categories
-
-The Engineering Documentation System defines two categories of icons.
-
-### Document Icons
-
-Document icons identify the primary purpose of a document.
-
-Examples include:
-
-- README
-- Standard
-- Reference
-- WWAN
-- Roadmap
-- Procedure
-- Discovery
-- Architecture Finding
-
----
-
-### Lifecycle Status Icons
-
-Lifecycle status icons communicate document maturity.
-
-Examples include:
-
-- Planning
-- In Progress
-- Under Review
-- Experimental
-- Accepted
-- Official
-- Archived
-
----
-
-## Standardized Icon Set
-
-Only standardized document icons and lifecycle status icons shall be used.
-
-The complete reference is maintained in:
-
-```text
-030a-document-icons-and-statuses-cheatsheet.md
-```
-
----
-
-# Principles
-
-Engineering documentation shall follow these principles.
-
-- One primary document icon per document.
-- One lifecycle status per document.
-- Icons communicate purpose—not decoration.
-- Icons improve recognition and navigation.
-- Do not combine multiple primary document icons.
-- Do not invent project-specific icons.
-- Maintain consistent icon usage across EDS, EKS, AFK, and all discovery projects.
-
----
-
-# Related Documents
-
-## Prerequisites
-
-- [020-document-template-standard.md](./020-document-template-standard.md)
-- [015-document-status-lifecycle.md](./015-document-status-lifecycle.md)
-
-## Related
-
-- [001-documentation-system-overview.md](./001-documentation-system-overview.md)
-
-## Companion
-
-- [030a-document-icons-and-statuses-cheatsheet.md](./030a-document-icons-and-statuses-cheatsheet.md)
-- [030r-document-icons-and-statuses-standard.md](./030r-document-icons-and-statuses-standard.md)
+| Quick Reference | `030a-document-icons-and-statuses-cheatsheet.md` |
+| Version | 2.0 |
+| As Of | YYYY-MM-DD HH:MM TZ |

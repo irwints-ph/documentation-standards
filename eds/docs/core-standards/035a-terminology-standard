@@ -1,0 +1,116 @@
+# 📋 Documentation Terminology Quick Reference
+
+> **One concept. One preferred name.**
+
+---
+
+# Purpose
+
+Provide a concise reference for the preferred terminology used throughout the Engineering Documentation System (EDS).
+
+Use this document while writing documentation to maintain consistency across repositories.
+
+---
+
+# Core Documentation Terms
+
+| Preferred Term | Use For |
+|----------------|---------|
+| Standard | Defines engineering rules and requirements. |
+| Reference | Explains the reasoning, philosophy, and evolution behind a Standard. |
+| Quick Reference | Concise, task-oriented guide for everyday use. |
+| Procedure | Step-by-step operational instructions. |
+| Template | Starting point for creating consistent documents. |
+| Roadmap | Future direction and planned work. |
+| WWAN | *Where We Are Now* — current operational state. |
+
+---
+
+# AFK Terms
+
+| Preferred Term | Use For |
+|----------------|---------|
+| Journey | Guided learning experience. |
+| Learning Path | Recommended sequence for learning. |
+| Playbook | Repeatable engineering workflow. |
+| Methodology | Reusable engineering approach. |
+| Discovery | Structured investigation before modification. |
+
+---
+
+# EKS Terms
+
+| Preferred Term | Use For |
+|----------------|---------|
+| Knowledge Package | Reusable engineering knowledge. |
+| Architecture Finding | Validated architectural observation. |
+| Organizational Knowledge | Knowledge preserved beyond individuals. |
+
+---
+
+# Lifecycle Terms
+
+| Preferred Term | Meaning |
+|----------------|---------|
+| Planning | Proposed work. |
+| In Progress | Active development. |
+| Under Review | Awaiting review. |
+| Accepted | Approved baseline ready for adoption. |
+| Official | Mature, validated engineering guidance. |
+| Superseded | Replaced by a newer document. |
+| Archived | Historical reference only. |
+
+---
+
+# Business vs Engineering
+
+| Business Term | Preferred Engineering Term |
+|---------------|----------------------------|
+| Feature | Capability |
+| Screen | Page / View |
+| Customer | User |
+| Issue | Defect / Bug |
+
+---
+
+# Legacy Terminology
+
+| Legacy | Preferred |
+|---------|-----------|
+| Canonical | Standard |
+| Official Standard | Standard |
+| Companion Guide | Quick Reference |
+
+---
+
+# Quick Rules
+
+✅ Use the preferred terminology consistently.
+
+✅ Prefer clarity over jargon.
+
+✅ Use one name for one concept.
+
+✅ Update terminology through the Terminology Standard before adopting new vocabulary.
+
+---
+
+# Need More Context?
+
+- 📘 **Standard:** `035-terminology-standard.md`
+- 📖 **Reference:** `035r-terminology-standard.md`
+
+---
+
+## Metadata
+
+| Field | Value |
+|--------|-------|
+| Document | `035a-terminology-quick-reference.md` |
+| Category | Core Standards |
+| Type | 📋 Quick Reference |
+| Companion Standard | `035-terminology-standard.md` |
+| Companion Reference | `035r-terminology-standard.md` |
+| Status | 📦 Official *(or ✅ Accepted while under validation)* |
+| Version | 2.0 |
+| As Of | 07.29.2026 09:28 PHT |

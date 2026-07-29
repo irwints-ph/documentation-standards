@@ -1,90 +1,260 @@
 # 📘 Document Reference Standard
 
----
-
-## Metadata
-
-**Document:** `040-document-reference-standard.md`
-
-**Type:** 📘 Canonical Standard
-
-**Companion Reference:** [040r-document-reference-standard.md](./040r-document-reference-standard.md)
-
-**Owner:** Engineering
-
-**Version:** 1.0
+> **Knowledge grows through connections, not duplication.**
 
 ---
 
-## Status
+# Purpose
 
-**As of:** 07.25.2026 07:20 PHT
+Define the standard for creating relationships between engineering documents.
 
-✅ Accepted
+Consistent references transform documentation from isolated files into a connected engineering knowledge system that is easier to navigate, maintain, and evolve.
 
 ---
 
-## Purpose
+# Goals
 
-Define the standard for referencing related engineering documents.
+The Engineering Documentation System reference model shall:
 
-Consistent document references improve navigation, reduce duplication, and establish relationships between engineering standards.
+- Reduce duplicated information.
+- Encourage reuse of existing standards.
+- Keep documents focused on a single responsibility.
+- Make navigation predictable.
+- Support future documentation automation.
 
 ---
 
 # Standard
 
-Every engineering document shall include a **Related Documents** section.
+Engineering documents should contain only the information necessary for their intended purpose.
 
-The section identifies documents that are directly related to the current document.
+When additional information already exists elsewhere, reference the appropriate document instead of duplicating its contents.
 
-Reference documents instead of duplicating their content.
+Good documentation is connected.
+
+Not repeated.
 
 ---
 
 # Reference Types
 
-## Related
+## Required Reading
 
-Documents closely associated with the current document.
+Documents that should be understood before reading the current document.
 
-## Companion
+Example
 
-The matching Reference document for a Canonical standard.
+- 005 Documentation Level Standard
+- 020 Document Template Standard
 
-## Parent
+---
 
-The higher-level document from which the current document derives.
+## Related Documents
 
-## Children
+Documents that complement or expand the current topic.
 
-Documents that extend or specialize the current document.
+Example
+
+- 025 Document Naming Standard
+- 035 Documentation Terminology Standard
+
+---
+
+## Implements
+
+Engineering documents or project artifacts that implement this standard.
+
+Example
+
+- Frontend Documentation Guide
+- Backend Documentation Guide
+
+---
+
+## External References
+
+Authoritative resources maintained outside the Engineering Documentation System.
+
+Examples include:
+
+- Python Documentation
+- React Documentation
+- RFC Documents
+- Microsoft Documentation
+
+---
+
+## Supersedes
+
+Identifies previous guidance replaced by the current document.
+
+---
+
+## Superseded By
+
+Identifies the document that replaces the current guidance.
+
+---
+
+## Parent Document
+
+Identifies the higher-level document from which this document derives.
+
+Example
+
+- 001 Documentation System Overview
+
+---
+
+## Child Documents
+
+Documents that expand upon this standard.
+
+Example
+
+- 040a Examples
+- 040b Best Practices
+- 040c Frequently Asked Questions
 
 ---
 
 # Reference Format
 
-Use repository-relative Markdown links.
+Within document text, references should use the document number followed by the document title.
 
 Example
 
-```md
-- 010-document-numbering-standard.md
+- 040 Document Reference Standard
+- 025 Document Naming Standard
+- 035 Documentation Terminology Standard
+
+Avoid referring to filenames within explanatory text.
+
+---
+
+# File References
+
+Filenames should only be used when creating hyperlinks.
+
+Example
+
+```markdown
+[040 Document Reference Standard](040-document-reference-standard.md)
 ```
 
-Reference documents by filename only.
+Avoid writing:
 
-Avoid inline URLs unless referencing external resources.
+> See `040-document-reference-standard.md`.
+
+Instead write:
+
+> See **040 Document Reference Standard**.
+
+---
+
+# Avoid Circular References
+
+Document relationships should remain hierarchical whenever possible.
+
+Good
+
+```text
+001
+ ├──020
+ └──025
+```
+
+Avoid
+
+```text
+020 → 025 → 020
+```
+
+---
+
+# Avoid Duplicate Content
+
+Do not copy guidance already maintained elsewhere.
+
+Instead, reference the authoritative source.
+
+Instead of repeating naming rules, write:
+
+> See **025 Document Naming Standard**.
+
+---
+
+# Reference Placement
+
+Document references should appear near the end of a document.
+
+Recommended order:
+
+1. Required Reading
+2. Related Documents
+3. Implements
+4. External References
+
+---
+
+# Future Automation
+
+A standardized reference model enables future tooling to generate:
+
+- documentation dependency graphs,
+- knowledge maps,
+- backlinks,
+- broken reference reports,
+- impact analysis,
+- navigation aids,
+
+without modifying existing documentation.
+
+---
+
+# Engineering Philosophy
+
+Engineering knowledge should behave like a network rather than a collection of isolated documents.
+
+Each document should contribute one idea while clearly pointing readers toward related knowledge.
+
+References preserve context without introducing duplication.
 
 ---
 
 # Related Documents
 
+## Prerequisites
+
+- 001 Documentation System Overview
+- 005 Documentation Level Standard
+
+---
+
 ## Related
 
-- [001-documentation-system-overview.md](./001-documentation-system-overview.md)
-- [025-document-naming-standard.md](./025-document-naming-standard.md)
+- 020 Document Template Standard
+- 025 Document Naming Standard
+- 035 Documentation Terminology Standard
+
+---
 
 ## Companion
 
-- [040r-document-reference-standard.md](./040r-document-reference-standard.md)
+- 040r-document-reference-standard.md
+- 040a-document-reference-cheat-sheet.md *(if applicable)*
+
+---
+
+## Metadata
+
+| Field | Value |
+|--------|-------|
+| Document | `040-document-reference-standard.md` |
+| Category | Core Standards |
+| Type | 📘 Standard |
+| Companion Reference | `040r-document-reference-standard.md` |
+| Companion Quick Reference | `040a-document-reference-cheat-sheet.md` *(optional)* |
+| Status | 📦 Official *(or ✅ Accepted while under validation)* |
+| Version | 2.0 |
+| As Of | 07.29.2026 09:28 PHT |

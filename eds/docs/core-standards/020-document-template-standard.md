@@ -1,461 +1,351 @@
-# 📘 Document Template Standard
+# 📄 Document Template Standard
 
----
-
-## Metadata
-
-| Field     | Value                                |
-| --------- | ------------------------------------ |
-| As of     | 07.26.2026 23:15 PHT                 |
-| Document  | `020-document-template-standard.md`  |
-| Category  | Core Standards                       |
-| Type      | Canonical Standard                   |
-| Status    | ✅ Accepted                           |
-| Companion | `020r-document-template-standard.md` |
-| Version   | 2.0                                  |
+> **Good documentation communicates purpose before administration.**
 
 ---
 
 # Purpose
 
-Define the standard structure used for engineering documentation.
+This standard defines the recommended structure for engineering documentation within the Engineering Documentation System (EDS).
 
-This standard establishes a consistent document layout and metadata model across the Engineering Documentation System, improving readability, navigation, maintainability, automation, and AI-assisted workflows.
+The objective is to produce documentation that is:
+
+- Easy to read
+- Easy to navigate
+- Easy to maintain
+- Human-friendly
+- AI-friendly
+- Consistent across repositories
+
+The template should support engineering understanding first, while remaining flexible enough to accommodate different document types.
 
 ---
 
-# Standard
+# Documentation Philosophy
 
-Every official document shall follow a consistent structure appropriate to its document type.
+Documentation exists to improve understanding.
 
-All documents begin with:
+Administrative information supports the document—it should not become the document.
+
+A reader should immediately understand:
+
+- What this document is about.
+- Why it exists.
+- How it can help.
+
+Only after that should metadata, lifecycle information, and administrative details be presented.
+
+---
+
+# Document Categories
+
+Engineering documentation generally falls into two categories.
+
+```text
+Engineering Documentation
+
+│
+
+├── Specification Documents
+│
+│   Standards
+│   Policies
+│   Procedures
+│   References
+│
+└── Knowledge Documents
+
+    Guides
+    Journeys
+    Playbooks
+    Learning Paths
+    WWAN
+```
+
+Each category has different priorities and therefore may use different template layouts.
+
+---
+
+# Specification Documents
+
+Specification documents define reusable engineering rules.
+
+Examples include:
+
+- Standards
+- Policies
+- Procedures
+- Reference specifications
+
+These documents typically prioritize governance, lifecycle, and version management.
+
+Recommended structure:
 
 ```text
 Title
+
+↓
 
 Metadata
 
+↓
+
 Purpose
-```
 
-The remaining sections are determined by the document type.
+↓
 
-This allows different engineering artifacts to expose the information they require while maintaining a consistent overall structure.
+Content
 
----
+↓
 
-# Metadata Standard
-
-Every official document begins with a Metadata section.
-
-Metadata describes the artifact being documented rather than the document itself.
-
-The Metadata section shall use the following format.
-
-```markdown
-## Metadata
-
-| Field | Value |
-|--------|-------|
-| ... | ... |
-```
-
-The table structure remains consistent throughout the documentation system.
-
-Individual document types use only the fields applicable to that artifact.
-
----
-
-# Standard Metadata Fields
-
-The following metadata fields are standardized throughout the documentation system.
-
-| Field     | Purpose                                       |
-| --------- | --------------------------------------------- |
-| As of     | Date and time of the current revision         |
-| Document  | Documentation filename                        |
-| File      | Source implementation filename                |
-| Scope     | Folder, subsystem, or module being documented |
-| Category  | Documentation family or engineering domain    |
-| Component | Logical subsystem                             |
-| Type      | Classification of the artifact                |
-| Status    | Lifecycle status                              |
-| Companion | Associated companion document                 |
-| Version   | Document revision                             |
-
-Not every document requires every field.
-
-Only applicable fields should be included.
-
----
-
-# Document Templates
-
-## Canonical Standard
-
-```markdown
-# Title
-
----
-
-## Metadata
-
-| Field | Value |
-|--------|-------|
-| As of | |
-| Document | |
-| Category | |
-| Type | |
-| Status | |
-| Companion | |
-| Version | |
-
----
-
-# Purpose
-
-...
-
----
-
-# Standard
-
-...
-
----
-
-# Related Documents
-
-...
+References
 ```
 
 ---
 
-## Companion Reference
+# Knowledge Documents
 
-```markdown
-# Title
+Knowledge documents primarily support learning, collaboration, and operational continuity.
 
----
+Examples include:
 
-## Metadata
+- Guides
+- Journeys
+- Playbooks
+- Learning Paths
+- WWAN
 
-| Field | Value |
-|--------|-------|
-| As of | |
-| Document | |
-| Category | |
-| Type | Companion Reference |
-| Status | |
-| Related Standard | |
-| Version | |
+These documents prioritize readability and should minimize interruption during reading.
 
----
-
-# Purpose
-
-...
-
----
-
-# Background
-
-...
-
----
-
-# Examples
-
-...
-
----
-
-# References
-
-...
-```
-
----
-
-## Folder Registry
-
-```markdown
-# Title
-
----
-
-## Metadata
-
-| Field | Value |
-|--------|-------|
-| As of | |
-| Scope | |
-| Category | |
-| Type | Folder Registry |
-| Status | |
-
----
-
-# Purpose
-
-...
-
----
-
-# Folder Responsibility
-
-...
-
----
-
-# Current Contents
-
-...
-
----
-
-# Assessment
-
-...
-```
-
----
-
-## Source Documentation
-
-```markdown
-# Title
-
----
-
-## Metadata
-
-| Field | Value |
-|--------|-------|
-| As of | |
-| File | |
-| Category | |
-| Component | |
-| Type | |
-| Status | |
-
----
-
-# Purpose
-
-...
-
----
-
-# Responsibilities
-
-...
-
----
-
-# Dependencies
-
-...
-
----
-
-# Assessment
-
-...
-```
-
----
-
-## Architecture Finding
-
-```markdown
-# Title
-
----
-
-## Metadata
-
-| Field | Value |
-|--------|-------|
-| As of | |
-| Finding | |
-| Category | |
-| Type | |
-| Status | |
-
----
-
-# Observation
-
-...
-
----
-
-# Evidence
-
-...
-
----
-
-# Assessment
-
-...
-```
-
----
-
-# Section Definitions
-
-## Title
-
-Titles should describe the subject for human readers.
-
-Titles should not simply repeat filenames.
-
-Example
+Recommended structure:
 
 ```text
-📘 Document Template Standard
-```
-
----
-
-## Metadata
-
-Metadata identifies the engineering artifact.
-
-It should provide enough information for both humans and tools to classify the artifact without inspecting the remainder of the document.
-
----
-
-## Purpose
-
-The Purpose section explains why the artifact exists.
-
-It should answer:
-
-* What is this artifact?
-* Why does it exist?
-
----
-
-## Standard
-
-Canonical Standards define engineering rules.
-
-They should:
-
-* define current engineering practices
-* avoid historical discussion
-* remain concise
-* provide implementation guidance
-
-Background information belongs in companion reference documents.
-
----
-
-## Assessment
-
-Discovery documents may include assessment sections describing observations made during discovery.
-
-Assessments should remain implementation-neutral.
-
-Recommendations belong in separate engineering discussions or future standards.
-
----
-
-# Template Principles
-
-Engineering documentation should be:
-
-* Consistent
-* Easy to scan
-* Human friendly
-* AI friendly
-* Repository independent
-* Language independent
-* Maintainable
-* Automation ready
-
-The document structure should remain predictable regardless of artifact type.
-
----
-
-# Metadata Principles
-
-Metadata exists to identify the engineering artifact.
-
-Good metadata should be:
-
-* concise
-* structured
-* machine-readable
-* human-readable
-* stable over time
-
-Metadata should avoid duplication whenever possible.
-
----
-
-# Naming Convention
-
-Document titles identify artifacts for human readers.
-
-Filenames uniquely identify artifacts within the repository.
-
-Example
-
-Filename
-
-```text
-020-document-template-standard.md
-```
-
 Title
 
-```text
-📘 Document Template Standard
+↓
+
+Guiding Principle
+
+↓
+
+Purpose
+
+↓
+
+Content
+
+↓
+
+Notes
+
+↓
+
+Metadata
 ```
 
-Companion documents follow the companion naming standard.
+---
 
-Example
+# Guiding Principle
+
+Knowledge-oriented documents should include a short guiding principle immediately after the title.
+
+The guiding principle communicates the central idea of the document in one sentence.
+
+Example:
+
+> Understanding is the first deliverable.
+
+The guiding principle helps both humans and AI quickly establish context before reading the document.
+
+---
+
+# Metadata Placement
+
+Two metadata placements are supported.
+
+## Header Metadata
+
+Recommended for:
+
+- Standards
+- Procedures
+- Policies
+- Reference documents
+
+Example:
 
 ```text
-020r-document-template-standard.md
+Metadata
+
+Version
+Status
+Owner
+Approved
+Last Updated
 ```
+
+---
+
+## Footer Metadata
+
+Recommended for:
+
+- Guides
+- Journeys
+- Playbooks
+- Learning Paths
+- WWAN
+
+Example:
+
+```text
+Metadata
+
+Document
+Version
+Status
+Last Updated
+```
+
+Footer metadata allows the document to begin immediately with its purpose.
+
+---
+
+# Reader-First Structure
+
+Whenever practical, documents should follow this reading flow.
+
+```text
+Title
+
+↓
+
+Guiding Principle
+
+↓
+
+Purpose
+
+↓
+
+Main Content
+
+↓
+
+Related Documents
+
+↓
+
+Metadata
+```
+
+This ordering reduces onboarding friction and allows readers to immediately understand the intent of the document.
+
+---
+
+# Reusable Documentation
+
+Documents should avoid duplicating information already maintained elsewhere.
+
+Instead, related artifacts should reference one another.
+
+Example:
+
+```text
+Journey
+
+↓
+
+Learning Path
+
+↓
+
+Playbook
+
+↓
+
+Supporting Standards
+```
+
+This keeps documentation easier to maintain while improving discoverability.
 
 ---
 
 # Related Documents
 
-## Prerequisites
+Documents should provide links to relevant supporting documentation when appropriate.
 
-* 001-documentation-system-overview.md
-* 005-documentation-level-standard.md
-* 010-document-numbering-standard.md
-* 015-document-status-lifecycle.md
+Examples include:
 
----
+- Standards
+- Procedures
+- Journeys
+- Learning Paths
+- Playbooks
+- Reference documents
 
-## Related
-
-* 025-document-naming-standard.md
-* 030-document-icons-and-statuses-standard.md
-* 040-document-reference-standard.md
+Navigation should encourage progressive learning rather than overwhelming the reader.
 
 ---
 
-## Companion
+# Template Selection Guide
 
-* 020r-document-template-standard.md
+| Document Type | Primary Goal | Recommended Metadata |
+|---------------|--------------|----------------------|
+| Standard | Define reusable rules | Header |
+| Procedure | Execute repeatable work | Header |
+| Policy | Define governance | Header |
+| Reference | Provide authoritative information | Header |
+| Guide | Explain | Footer |
+| Journey | Learn | Footer |
+| Playbook | Reuse | Footer |
+| Learning Path | Navigate | Footer |
+| WWAN | Operational continuity | Footer |
 
 ---
 
-# Notes
+# Design Principles
 
-This standard defines the common structure used throughout the Engineering Documentation System.
+Engineering documentation should:
 
-Individual document types may extend the template with additional sections as appropriate, but every document begins with a standardized Metadata section and follows the same overall organizational principles.
+- Communicate purpose before administration.
+- Optimize for understanding.
+- Support progressive learning.
+- Minimize duplicated information.
+- Encourage reusable documentation.
+- Remain consistent across repositories.
+- Be equally useful to humans and AI collaborators.
 
-The objective is to make documentation predictable for engineers, maintainable for teams, and easily consumable by automation and AI-assisted workflows.
+---
+
+# Relationship to AFK
+
+The Assisted Flow of Knowledge (AFK) methodology applies this standard to collaborative engineering activities.
+
+AFK extends the template by introducing:
+
+- Journeys
+- Learning Paths
+- Playbooks
+- Operational Context (WWAN)
+
+These artifacts follow the Knowledge Document template described in this standard.
+
+---
+
+# Relationship to EKS
+
+The Engineering Knowledge System (EKS) studies how engineering knowledge evolves.
+
+This standard defines how that knowledge should be documented once it has been discovered and validated.
+
+---
+
+## Metadata
+
+| Field | Value |
+|------|------|
+| Document | `020-document-template-standard.md` |
+| Version | 2.0 |
+| Status | Active |
+| Last Updated | 2026-07-29 |

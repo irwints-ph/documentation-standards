@@ -1,264 +1,124 @@
-# 📖 Documentation Terminology Standard (Reference)
+# 📘 Documentation Terminology Standard
 
----
-
-## Metadata
-
-**Document:** `035r-terminology-standard.md`
-
-**Type:** 📖 Reference
-
-**Companion Standard:** [035-terminology-standard.md](./035-terminology-standard.md)
-
-**Owner:** Engineering
-
-**Version:** 1.0
-
----
-
-## Status
-
-**As of:** 07.25.2026 07:30 PHT
-
-✅ Accepted
+> **Shared language creates shared understanding.**
 
 ---
 
 # Purpose
 
-This document explains the philosophy, rationale, and evolution of the Documentation Terminology Standard.
+Define the standard terminology used throughout the Engineering Documentation System (EDS).
 
-Unlike the Official standard, this reference document provides guidance for maintaining a shared engineering language, bridging communication between technical and non-technical stakeholders, and ensuring terminology remains consistent across repositories and AI-assisted workflows.
-
----
-
-# Why a Terminology Standard?
-
-Engineering projects naturally develop their own vocabulary over time.
-
-Different teams, business stakeholders, and software tools often describe the same concept using different words.
-
-Without a shared terminology, documentation gradually becomes inconsistent, leading to misunderstandings, duplicated concepts, and unnecessary translation between teams.
-
-The Terminology Standard establishes a common language that allows documentation to remain clear, predictable, and maintainable over many years.
+Using consistent terminology improves communication, reduces ambiguity, and ensures documentation remains understandable across projects, engineering teams, business stakeholders, and AI collaborators.
 
 ---
 
-# Design Goals
+# Standard
 
-The Terminology Standard was designed to:
+Engineering documentation shall use the standardized terminology defined by this document.
 
-- Establish a common engineering vocabulary.
-- Reduce ambiguity across documentation.
-- Improve communication between business and engineering teams.
-- Support AI-assisted development with consistent terminology.
-- Make documentation easier to search and maintain.
-- Preserve historical terminology while defining preferred terms.
-
----
-
-# Multiple Audiences
-
-Engineering documentation is read by many different audiences.
-
-These include:
-
-- Software engineers
-- Architects
-- Project managers
-- Business analysts
-- Product owners
-- Technical writers
-- Future maintainers
-- AI assistants
-
-Each audience may interpret the same word differently.
-
-The terminology standard provides a common reference that minimizes these differences.
-
----
-
-# Business Language vs Engineering Language
-
-Business users and engineers often describe the same concept using different terminology.
-
-For example:
-
-| Business | Engineering |
-|----------|-------------|
-| Feature | Capability |
-| Screen | Page / View |
-| Customer | User |
-| Request | Requirement |
-| Problem | Defect / Bug |
-
-Neither vocabulary is inherently correct.
-
-Documentation should acknowledge both perspectives while clearly identifying the preferred engineering terminology.
-
-This approach allows documentation to remain accessible without sacrificing technical precision.
+Where multiple terms exist for the same concept, one preferred term shall be adopted for consistency.
 
 ---
 
 # Preferred Terminology
 
-The Engineering Documentation System intentionally selects one preferred term whenever multiple commonly used terms exist.
+The following terms are the preferred terms within the Engineering Documentation System.
 
-For example:
-
-```text
-Official
-    instead of
-Canonical
-```
-
-This decision reflects readability rather than technical correctness.
-
-"Official" is generally easier to understand for engineers, business stakeholders, and new contributors.
-
-The engineering term "Canonical" remains valid and may appear in technical discussions, academic literature, or external tools.
-
----
-
-# Canonical vs Official
-
-One of the earliest terminology decisions in the documentation system was replacing the user-facing term **Canonical** with **Official**.
-
-The reasons included:
-
-- easier for non-engineers to understand
-- more intuitive for new contributors
-- simpler AI prompts
-- reduced need for explanation
-
-However, "Canonical" remains part of the engineering vocabulary and is documented as an equivalent term rather than being eliminated.
-
-This preserves compatibility with existing engineering literature while improving the readability of the documentation system.
+| Preferred Term | Description |
+|----------------|-------------|
+| Standard | Defines engineering rules and requirements. |
+| Reference | Explains the reasoning, philosophy, and evolution of a Standard. |
+| Quick Reference | Provides a concise, practical guide for day-to-day usage. |
+| Accepted | Approved engineering guidance ready for adoption and validation. |
+| Official | Mature engineering guidance validated through practical use. |
+| Procedure | Step-by-step operational instructions. |
+| Journey | Guided learning experience from discovery to implementation. |
+| Learning Path | Recommended sequence for learning a topic. |
+| Playbook | Repeatable engineering workflow. |
+| Methodology | Reusable engineering approach or philosophy. |
+| Discovery | Structured investigation to understand an existing system. |
+| Architecture Finding | A validated architectural observation discovered during engineering analysis. |
+| Knowledge Package | Reusable engineering knowledge extracted from practical experience. |
+| WWAN | *Where We Are Now* — the current operational state of a project or repository. |
+| Roadmap | Future direction and planned evolution. |
+| Template | A reusable starting point for creating consistent artifacts. |
 
 ---
 
-# A Living Vocabulary
+# Business and Engineering Terms
 
-Terminology should evolve as the documentation framework matures.
+Some concepts are described differently by business stakeholders and engineers.
 
-When introducing new terminology:
+Where appropriate, documentation may acknowledge both while adopting one preferred engineering term.
 
-- define it before widespread adoption
-- avoid creating synonyms unnecessarily
-- document deprecated terminology
-- update the Terminology Standard before updating multiple repositories
-
-This keeps terminology changes deliberate rather than accidental.
-
----
-
-# Project-Specific Terminology
-
-Projects may define additional terminology when needed.
-
-Examples include:
-
-- domain-specific business concepts
-- product-specific terminology
-- industry abbreviations
-- internal acronyms
-
-Project-specific terminology should supplement, not replace, the Engineering Documentation System terminology.
-
-Whenever possible, project glossaries should reference this standard rather than redefining common engineering terms.
+| Business Term | Preferred Engineering Term |
+|--------------|----------------------------|
+| Feature | Capability |
+| Screen | Page / View |
+| Customer | User |
+| Issue | Defect / Bug |
 
 ---
 
-# AI-Assisted Engineering
+# Legacy Terminology
 
-Consistent terminology significantly improves AI-assisted development.
+Some terms remain technically correct but are no longer preferred within EDS.
 
-Stable terminology helps AI systems:
+| Legacy Term | Preferred Term |
+|-------------|----------------|
+| Canonical | Standard |
+| Official Standard | Standard |
+| Companion Guide | Quick Reference |
+| ADR (Architecture Decision Record) | Architecture Document *(when appropriate for the audience)* |
 
-- interpret documentation consistently
-- generate reusable documents
-- understand project context
-- reduce conflicting terminology across conversations
-- produce more predictable responses
-
-The concise Official standard serves as efficient AI context, while this reference document provides the additional background needed for long-term understanding.
-
----
-
-# Future Evolution
-
-The terminology framework is expected to grow alongside the documentation system.
-
-Possible future additions include:
-
-- engineering glossary generation
-- business-to-engineering terminology mapping
-- domain-specific vocabulary packages
-- multilingual terminology support
-- AI terminology validation
-- repository-wide terminology consistency checks
-
-These enhancements should extend the terminology framework without changing its core principles.
+Legacy terminology may still appear when discussing historical documentation, external frameworks, or existing engineering literature.
 
 ---
 
-# Frequently Asked Questions
+# Terminology Evolution
 
-### Why not allow teams to use whatever terminology they prefer?
+Engineering language naturally evolves.
 
-Teams may develop local terminology, but shared engineering documentation benefits from a common language.
+When terminology changes:
 
-Standard terminology improves consistency, onboarding, and cross-project collaboration.
-
----
-
-### Can business terminology appear in engineering documentation?
-
-Yes.
-
-Business terminology should be recognized when it improves communication, especially when collaborating with non-technical stakeholders.
-
-When different terms describe the same concept, the preferred engineering term should also be identified.
+- New documents shall adopt the updated terminology.
+- Existing documents should be updated when practical.
+- Historical documents may retain their original wording when historical accuracy is important.
+- Terminology changes should be introduced through this standard before widespread adoption.
 
 ---
 
-### Should historical documents be updated when terminology changes?
+# Principles
 
-Not necessarily.
+The Engineering Documentation System promotes terminology that is:
 
-Historical documents should generally remain unchanged unless corrections are required.
+- Consistent
+- Human-friendly
+- AI-friendly
+- Easy to understand
+- Stable over time
+- Independent of programming language or framework
 
-New documents should adopt the current terminology standard.
+When choosing terminology:
 
----
-
-### Is "Canonical" incorrect?
-
-No.
-
-"Canonical" is an established engineering term.
-
-Within this documentation framework, **Official** is simply the preferred user-facing term because it is easier for a broader audience to understand.
-
----
-
-### Who approves new terminology?
-
-New terminology should be reviewed as part of the documentation standards process before becoming the preferred term across repositories.
+- Prefer clarity over jargon.
+- Avoid multiple names for the same concept.
+- Define new terminology before widespread use.
+- Keep terminology consistent across AFK, EDS, and EKS.
 
 ---
 
-# Lessons Learned
+# Relationship to the Engineering Ecosystem
 
-Several terminology decisions were made while developing this documentation framework.
+Shared terminology enables seamless navigation across the Engineering Knowledge Repository.
 
-Key lessons include:
+The same language should be used consistently throughout:
 
-- Familiar language is often more effective than technically precise language.
-- Consistency is more valuable than perfect wording.
-- One preferred term reduces ambiguity.
-- Documentation should be understandable by both engineers and business users.
-- AI-assisted workflows benefit from stable, well-defined terminology.
+- 🤝 Assisted Flow of Knowledge (AFK)
+- 📄 Engineering Documentation System (EDS)
+- 🧠 Engineering Knowledge System (EKS)
+
+A common vocabulary reduces cognitive load and improves collaboration across repositories and engineering disciplines.
 
 ---
 
@@ -266,15 +126,32 @@ Key lessons include:
 
 ## Prerequisites
 
-- [001-documentation-system-overview.md](./001-documentation-system-overview.md)
-- [005-documentation-level-standard.md](./005-documentation-level-standard.md)
+- 001 — Documentation System Overview
+
+---
 
 ## Related
 
-- [020-document-template-standard.md](./020-document-template-standard.md)
-- [025-document-naming-standard.md](./025-document-naming-standard.md)
-- [030-document-icons-and-statuses-standard.md](./030-document-icons-and-statuses-standard.md)
+- 020 — Document Template Standard
+- 025 — Document Naming Standard
+- 030 — Document Icons and Statuses Standard
+
+---
 
 ## Companion
 
-- [035-terminology-standard.md](./035-terminology-standard.md)
+- 035r-documentation-terminology-standard.md
+
+---
+
+## Metadata
+
+| Field | Value |
+|--------|-------|
+| Document | `035r-terminology-standard.md` |
+| Category | Core Standards |
+| Type | 📘 Standard |
+| Status | 📦 Official *(or ✅ Accepted if still under validation)* |
+| Companion | `035-documentation-terminology-standard.md` |
+| Version | 2.0 |
+| As Of | 07.29.2026 09:28 PHT |
