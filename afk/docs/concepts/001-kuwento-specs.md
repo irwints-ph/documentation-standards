@@ -4,13 +4,15 @@
 
 ---
 
-# Purpose
+## Purpose
 
 Kuwento Specs defines how project context should be communicated between humans and AI collaborators.
 
-It provides the information needed to establish a shared understanding before technical discovery begins.
+Rather than beginning with architecture, source code, or implementation details, the collaboration begins by understanding the project's story.
 
-The objective is not to document every detail, but to tell the project's story clearly enough that both collaborators understand the problem they are trying to solve.
+The objective is not to document every detail, but to establish enough shared understanding for productive engineering work to begin.
+
+Kuwento Specs serves as the collaborative process used to build the **Project Foundation**.
 
 ---
 
@@ -18,17 +20,18 @@ The objective is not to document every detail, but to tell the project's story c
 
 A good Kuwento should:
 
-- Begin with the business problem.
-- Explain the project before the implementation.
-- Capture today's objective.
-- Be conversational rather than technical.
-- Grow naturally as understanding improves.
+* Begin with the business problem.
+* Explain the project before the implementation.
+* Capture today's engineering context.
+* Be conversational rather than technical.
+* Grow naturally as understanding improves.
+* End with a shared understanding of the first engineering wish.
 
 ---
 
 # Typical Flow
 
-A Kuwento usually covers:
+A Kuwento naturally explores the project one topic at a time.
 
 ## 1. The Story
 
@@ -38,37 +41,71 @@ Why does it exist?
 
 Who benefits from it?
 
+What problem is it trying to solve?
+
 ---
 
 ## 2. The Current Situation
 
 Where is the project today?
 
-What is already known?
+What already exists?
 
-What constraints exist?
+What is currently known?
 
 ---
 
-## 3. Today's Wish
+## 3. Constraints
 
-What do you want to accomplish during this collaboration session?
+What limitations exist?
 
-Keep the wish focused and achievable.
+Examples:
+
+* business constraints
+* technical constraints
+* time
+* architecture
+* external dependencies
 
 ---
 
 ## 4. Success Criteria
 
-How will you know the session was successful?
+At the end of today's collaboration:
+
+What would make the session successful?
+
+---
+
+## 5. First Engineering Wish
+
+Once enough shared understanding has been established, derive the **First Engineering Wish**.
+
+The wish should represent the smallest meaningful engineering objective that naturally follows from the story.
+
+Examples:
+
+> I wish I could better understand this existing codebase.
+
+> I wish I could document the authentication flow.
+
+> I wish I could identify the API boundaries.
+
+The wish is **not** the first question.
+
+It is the outcome of understanding the project.
 
 ---
 
 # Engineering Notes
 
-The AI collaborator should guide this conversation naturally.
+The AI collaborator should guide the conversation naturally.
 
 Questions should adapt to the project rather than following a rigid questionnaire.
+
+Only ask the next question needed to improve shared understanding.
+
+Avoid long interviews.
 
 If information is unknown, continue and discover it later during engineering discovery.
 
@@ -76,14 +113,39 @@ If information is unknown, continue and discover it later during engineering dis
 
 # Output
 
-The Kuwento should provide enough information to create or update:
+A completed Kuwento should provide enough understanding to create or update:
 
-- Project Foundation
-- Discovery Plan
-- Session Objective
-- Initial Engineering Context
+* Project Foundation
+* First Engineering Wish
+* Initial WWAN (Where We Are Now)
+* Discovery Plan
+* Session Objective
 
-It should not attempt to replace technical discovery.
+Kuwento does not replace technical discovery.
+
+It prepares the collaboration for discovery.
+
+---
+
+# Relationship to AFK
+
+Within AFK, Kuwento Specs is the first collaborative activity after the collaboration bootstrap.
+
+```text
+Bootstrap
+      ↓
+Kuwento Specs
+      ↓
+Project Foundation
+      ↓
+First Engineering Wish
+      ↓
+Initial WWAN
+      ↓
+Engineering Journey
+      ↓
+Discovery
+```
 
 ---
 
@@ -91,13 +153,15 @@ It should not attempt to replace technical discovery.
 
 > **Understand the story before understanding the system.**
 
+The first engineering wish should emerge naturally from the story—not precede it.
+
 ---
 
 ## Metadata
 
-| Field | Value |
-|-------|-------|
+| Field    | Value                  |
+| -------- | ---------------------- |
 | Document | `001-kuwento-specs.md` |
-| Type | Collaboration |
-| Version | 0.1 |
-| Status | 🚧 Draft |
+| Type     | Collaboration Concept  |
+| Version  | 0.2                    |
+| Status   | 🚧 Draft               |
