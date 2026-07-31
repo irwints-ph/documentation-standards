@@ -1,29 +1,42 @@
 # 🤝 Project Foundation
 
-> **Every engineering session begins by understanding the project before understanding the code.**
+> **Every engineering session begins by reconstructing the project's engineering state before understanding its implementation.**
 
 ---
 
 # Purpose
 
-The Project Foundation establishes a shared understanding of the project between engineers and AI collaborators.
+The Project Foundation establishes the initial **engineering state** shared between Human Collaborators (HC) and AI Collaborators (AC).
 
 Before reading source code, both collaborators should understand:
 
-- why the project exists,
-- who it serves,
-- what it currently does,
-- what it is trying to achieve.
+* why the project exists;
+* who it serves;
+* what it currently does;
+* what engineering work is currently being performed;
+* what is already known.
 
-This creates a common engineering context that makes later discovery significantly more effective.
+This creates the initial engineering context that allows future discovery, design, implementation, validation, and knowledge capture to build upon a common understanding.
 
 ---
 
 # Objective
 
-Capture the minimum information required to begin collaborating on an existing project.
+Capture the minimum engineering understanding required to begin collaborating on an existing project.
 
-The goal is **shared understanding**, not complete documentation.
+The objective is **engineering state reconstruction**, not complete documentation.
+
+---
+
+# Engineering State Reconstruction
+
+AFK does **not** attempt to preserve conversations.
+
+AFK preserves **engineering state**.
+
+Engineering state allows any Human or AI Collaborator to safely continue engineering work without requiring access to previous conversations.
+
+The Project Foundation establishes the first layer of that engineering state.
 
 ---
 
@@ -35,11 +48,11 @@ Describe the project at a high level.
 
 Examples:
 
-- Internal business application
-- Customer-facing website
-- API service
-- Shared component library
-- Mobile application
+* Internal business application
+* Customer-facing website
+* API service
+* Shared component library
+* Mobile application
 
 ---
 
@@ -57,43 +70,47 @@ Who uses the system?
 
 Examples:
 
-- Customers
-- Internal users
-- Administrators
-- Engineers
-- External systems
+* Customers
+* Internal users
+* Administrators
+* Engineers
+* External systems
 
 ---
 
-## Current Objective
+## Current Engineering Objective
 
-What is the current engineering objective?
+Describe the current engineering objective.
 
 Examples:
 
-- Understand the existing implementation
-- Validate architecture
-- Fix production issues
-- Prepare for migration
-- Add new functionality
+* Understand the existing implementation
+* Validate architecture
+* Continue engineering
+* Improve maintainability
+* Add new functionality
+* Prepare for migration
+
+This describes the engineering mission rather than a specific wish.
 
 ---
 
 ## Technology Stack
 
-Record only the technologies that are immediately relevant.
+Record only technologies immediately relevant to engineering.
 
 Examples:
 
-- React
-- Angular
-- Vue
-- .NET
-- Java
-- Node.js
-- PostgreSQL
+* React
+* Angular
+* Vue
+* TypeScript
+* .NET
+* Java
+* Node.js
+* PostgreSQL
 
-Detailed technical discovery happens later.
+Detailed technical discovery belongs to Journey 1.
 
 ---
 
@@ -103,11 +120,28 @@ Capture important information already known.
 
 Examples:
 
-- Legacy system
-- Production application
-- Active users
-- Tight deadlines
-- Regulatory requirements
+* Legacy system
+* Production application
+* Active users
+* Active development
+* Regulatory requirements
+* Performance requirements
+
+---
+
+## Current Engineering State
+
+Summarize what is already known.
+
+Examples:
+
+* Discovery has begun.
+* Architecture is partially documented.
+* Engineering is performed incrementally.
+* Bootstrap migration is partially complete.
+* Repository documentation framework is established.
+
+This section provides continuity between engineering sessions.
 
 ---
 
@@ -134,9 +168,9 @@ Provide operational staff with a unified interface for managing customer workflo
 
 ---
 
-## Current Objective
+## Current Engineering Objective
 
-Understand the existing implementation before proposing architectural improvements.
+Incrementally improve and document the system while preserving production behavior.
 
 ---
 
@@ -154,6 +188,14 @@ Understand the existing implementation before proposing architectural improvemen
 - Large existing codebase
 - Production system
 - Active development
+
+---
+
+## Current Engineering State
+
+- Incremental engineering workflow established.
+- Discovery performed one Engineering Unit at a time.
+- Documentation evolves alongside engineering.
 ```
 
 ---
@@ -164,48 +206,53 @@ Keep this document concise.
 
 Avoid documenting:
 
-- implementation details
-- architecture
-- APIs
-- folder structures
-- components
+* implementation details;
+* architecture;
+* APIs;
+* folder structures;
+* components;
+* execution flows.
 
-Those belong to discovery.
+Those belong to Discovery.
 
 The Project Foundation answers one question:
 
-> **"What kind of project are we about to explore?"**
+> **"What engineering state are we entering?"**
 
 ---
 
 # Relationship to Other Documents
 
-After completing the Project Foundation:
+The Project Foundation establishes the initial engineering state.
+
+After completing it:
 
 ➡ Read the project's WWAN (if available)
 
 Then continue with:
 
-- Existing Codebase Playbook
-- Existing Codebase Learning Path
-- Discovery Methodology
+* Repository Structure
+* Engineering Context
+* Engineering Unit Discovery
 
 ---
 
-# Guiding Principle
+# Guiding Principles
 
-> **Understand the project before understanding the implementation.**
+> **Understand the engineering state before understanding the implementation.**
 
-A shared understanding of the project creates better engineering conversations and better AI collaboration.
+> **AFK preserves engineering state, not conversations.**
+
+A reconstructed engineering state allows any collaborator to safely continue engineering work, even in a completely new session.
 
 ---
 
 ## Metadata
 
-| Field | Value |
-|-------|-------|
+| Field    | Value                       |
+| -------- | --------------------------- |
 | Document | `010-project-foundation.md` |
-| Type | Collaboration |
-| Version | 2.0 |
-| Status | ✅ Active |
-| As of | 07.29.2026 |
+| Type     | Collaboration               |
+| Version  | 3.0                         |
+| Status   | ✅ Active                    |
+| As of    | 07.31.2026                  |

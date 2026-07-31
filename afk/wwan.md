@@ -1,195 +1,148 @@
-# 📍 Where We Are Now (WWAN)
+# 📍 Where We Are Now
 
 ---
 
-## Metadata
+## Status
 
-**Project:** Assisted Flow of Knowledge (AFK)
+**As of:** 07.30.2026 PHT
 
-**Status:** 🚧 Growing
-
-**Current Phase:** Operational Validation
-
-**Last Updated:** 2026-07-28
+🚧 In Progress
 
 ---
 
 # Current Focus
 
-AFK is currently validating its Build methodology through the Engineering Knowledge Publishing Portal (EKPP).
+## AFK Framework Evolution
 
-The objective is not to prove the methodology correct.
+The framework is currently being refined through real engineering experiments.
 
-The objective is to observe how collaboration naturally evolves and preserve the resulting engineering knowledge.
+Rather than designing the process theoretically, AFK is evolving from actual engineering collaboration sessions.
 
----
-
-# Current Milestone
-
-## Milestone — Build Methodology Validation
-
-**Status:** 🚧 In Progress
-
-Operational validation continues using real engineering work rather than isolated theoretical examples.
+Recent experiments have focused on defining the transition between Discovery and Engineering.
 
 ---
 
-# Current State
+# Latest Completed
 
-The following Build artifacts have now been created and validated.
+## Engineering Context Standard
 
-## Build Documents
+The following collaboration documents have been completed:
 
-* ✅ Build Bootstrap
-* ✅ Build Knowledge Package
+- ✅ 020-engineering-context-prompt-guide.md
+- ✅ 020a-engineering-context-template.md
+- ✅ 020e-engineering-context-example-datatable.md
 
-These documents now form the foundation of an AFK Build session.
-
----
-
-## Reference Artifacts
-
-The operational evolution of the methodology has been preserved.
-
-* 📖 001-build-bootstrap-reference-session.md
-* 📖 002-build-knowledge-package.md
-* 📖 003-build-knowledge-package-experiment-2.md
-
-These artifacts capture how AFK learned rather than prescribing how AFK should behave.
+These establish the standard for producing an Engineering Context before engineering begins.
 
 ---
 
-# Current Discoveries
+# Latest Finding
 
-## Discovery
+Journey 1 should not attempt to completely document an entire repository before engineering starts.
 
-Engineering collaboration appears to progress through distinct operational stages.
+Instead, Journey 1 should establish only the engineering understanding required for the selected Engineering Unit.
 
-Current observed flow:
+The Engineering Context now acts as the formal handoff artifact between Discovery and Engineering.
 
-```text
-Role
+Current understanding suggests the workflow is:
+
+Engineering Context
 
 ↓
 
-Understanding
+Shared Understanding
 
 ↓
 
-Operational Context
+Engineering Unit Discovery
 
 ↓
 
-Authorization
+Engineering Design
 
 ↓
 
 Implementation
-```
 
-This remains an operational observation and has not yet become accepted methodology.
+↓
 
----
+Validation
 
-## Discovery
+↓
 
-Collaboration quality appears to depend more upon preserved engineering understanding than prompt complexity.
-
-Operational evidence supporting this observation continues to grow.
+Knowledge Capture
 
 ---
 
-## Discovery
+# Current Experiment
 
-Operational authorization appears to transition collaboration from analysis into implementation.
+## Experiment 002
 
-Evidence currently exists from multiple Build validation sessions.
+Engineering Unit
 
-Additional validation is planned before standardization.
+Data Table
 
----
+Wish
 
-## Discovery
+WL-002
 
-Methodology evolves more reliably through operational evidence than through theoretical design.
+Objective
 
-AFK continues to reinforce its own philosophy by observing before concluding.
+Enable automatic Card View on mobile devices while preserving the existing desktop table experience.
 
----
+Research Goal
 
-# Emerging Practices
+Continue refining Journey 1 by determining the minimum engineering context required before Journey 2 begins.
 
-Current emerging practices include:
+The experiment will also evaluate:
 
-* Collaborative First Draft
-* Collaboration Bootstrap
-
-These practices remain under observation until additional operational evidence has been collected.
-
----
-
-# Current Observations
-
-Today's validation demonstrated an important engineering behavior.
-
-A collaborator possessing sufficient understanding did not automatically begin implementation.
-
-Implementation naturally followed only after explicit operational authorization.
-
-This observation may influence future AFK methodology.
+- Engineering Context quality
+- AI onboarding process
+- Engineering Unit discovery
+- Artifact handoff
+- Documentation requirements
+- Long-term architecture documentation strategy
 
 ---
 
-# Parking Lot
+# Current Questions
 
-The following ideas have emerged but intentionally remain outside the current methodology.
+The following questions are currently being investigated:
 
-* AI-readable Engineering Knowledge Publishing Portal (EKPP).
-* Published engineering knowledge as operational context for AI collaborators.
-* Generated Knowledge Bundles for Build sessions.
-* Formal treatment of Operational Authorization as a collaboration stage.
-
-These ideas remain preserved as future discoveries rather than current methodology.
-
----
-
-# Next Planned Work
-
-Continue operational validation through real engineering projects.
-
-Current priorities are:
-
-* Continue validating Build methodology.
-* Compare future Build sessions against current observations.
-* Determine whether Operational Authorization should become formal methodology.
-* Continue preserving discoveries as Reference Artifacts.
-* Allow methodology to evolve through accumulated operational evidence.
+- What is the minimum documentation required before engineering can safely begin?
+- Which documents belong to Journey 1?
+- Which documents should evolve alongside engineering?
+- What information should be permanent project documentation versus temporary engineering context?
+- How should Engineering Context evolve into long-term Architecture documentation?
 
 ---
 
-# Exit Condition
+# Next Planned Activity
 
-AFK does not pause because it has reached certainty.
+Continue Experiment 002 using the Data Table Engineering Unit.
 
-It pauses because sufficient observations have been preserved for future collaborators to continue the investigation.
+Observe:
 
-The next collaborator should begin by reviewing:
+- AI onboarding behavior
+- Missing engineering information
+- Required Discovery artifacts
+- Journey 1 improvements
+- Journey 2 readiness
 
-* Current WWAN
-* Current Methodology
-* Current Emerging Practices
-* Current Reference Artifacts
-
-before continuing operational validation.
+Results from the experiment will be used to further refine the AFK Engineering Collaboration Framework.
 
 ---
 
-# Closing Thought
+# Milestone
 
-AFK did not spend today proving a methodology.
+Current Milestone
 
-It spent today learning from one.
+Framework Refinement
 
-Every preserved observation reduces future assumptions.
+Status
 
-And every future collaborator begins a little further along the path of understanding.
+🚧 Active
+
+Objective
+
+Produce a stable and reusable Discovery → Engineering workflow based on validated engineering practice.
