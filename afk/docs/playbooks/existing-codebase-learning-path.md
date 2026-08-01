@@ -41,7 +41,7 @@ Establish the collaboration mindset before beginning engineering work.
 
 📖 Read:
 
-- `../methodology/000-afk-session-bootstrap.md`
+- [`../methodology/000-afk-session-bootstrap.md`](../methodology/000-afk-session-bootstrap.md)
 
 Learn:
 
@@ -60,7 +60,7 @@ Clearly identify what you want to accomplish before exploring the system.
 
 📖 Read:
 
-- `../future-concepts/001-wish-engineering.md`
+- [`../future-concepts/001-wish-engineering.md`](../future-concepts/001-wish-engineering.md)
 
 Learn:
 

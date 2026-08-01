@@ -4,7 +4,21 @@ Engineering knowledge is more than documentation.
 
 It is understanding preserved over time.
 
-This repository contains the systems used to collaboratively create, document, organize, and evolve engineering knowledge.
+This repository contains the systems used to collaboratively create, document, organize, preserve, reconstruct, and continuously evolve engineering knowledge.
+
+> **Preserving Engineering State is a gift to our future selves.**
+
+Every document, engineering artifact, design decision, validation report, and knowledge package exists for one purpose:
+
+To help future collaborators continue engineering without starting from zero.
+
+Sometimes those collaborators are other engineers.
+
+Sometimes they are AI collaborators.
+
+Most often...
+
+They are ourselves.
 
 ---
 
@@ -52,7 +66,9 @@ How engineering knowledge is documented.
 
 **Engineering Knowledge System**
 
-How engineering knowledge is organized and related.
+How engineering knowledge is organized, related, and preserved.
+
+A repository dedicated to preserving engineering understanding for those who come after us—even when that future engineer is ourselves.
 
 ---
 
@@ -64,4 +80,10 @@ How engineering knowledge is presented to readers.
 
 ---
 
-> *Understand first. Build second. Learn always.*
+> **Understand first.**
+>
+> **Build second.**
+>
+> **Preserve Engineering State.**
+>
+> **Learn always.**

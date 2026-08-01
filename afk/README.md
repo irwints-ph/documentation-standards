@@ -14,11 +14,11 @@
 
 # Welcome
 
-**Assisted Flow of Knowledge (AFK)** is an emerging methodology for engineering collaboration between Humans and AI.
+**Assisted Flow of Knowledge (AFK)** is an emerging methodology for disciplined engineering collaboration between Humans and AI.
 
-Rather than treating AI as a code generator, AFK treats AI as an engineering collaborator whose purpose is to help discover, understand, preserve, reconstruct, and continuously improve engineering knowledge.
+Rather than treating AI as a code generator, AFK treats AI as an engineering collaborator whose purpose is to help discover, understand, preserve, reconstruct, validate, and continuously improve engineering knowledge.
 
-AFK is evolving through real engineering projects and validated collaboration experiments.
+AFK is evolving through real engineering projects, practical collaboration, and validated engineering experience.
 
 ---
 
@@ -29,6 +29,24 @@ AFK exists to enable **Engineering State Reconstruction**.
 The objective is not to preserve conversations.
 
 The objective is to preserve enough engineering understanding so that any Human or AI Collaborator can safely continue engineering work, regardless of previous session history.
+
+---
+
+# Engineering Memory
+
+Human memory naturally changes over time.
+
+Engineering memory can be recalled.
+
+Engineering memory can also be reconstructed.
+
+AFK encourages both.
+
+Engineering recollection is valuable.
+
+Engineering evidence provides confidence.
+
+> **Engineering memory can be recalled, but engineering understanding is strengthened through evidence.**
 
 ---
 
@@ -46,6 +64,7 @@ This guided journey introduces:
 * collaborating with an AI Engineer;
 * Engineering Discovery;
 * Engineering Context;
+* Engineering Replay;
 * WWAN;
 * Engineering Design;
 * incremental engineering.
@@ -66,10 +85,22 @@ Browse the documentation.
 
 ## Collaboration
 
+* Engineering Replay
 * Understanding WWAN
 * Build Bootstrap
 * Collaboration Commands
 * Engineering Context Prompt Guide
+
+## Engineering Artifacts
+
+* Project Foundation
+* Engineering Context
+* Engineering Replay
+* WWAN
+* Discovery
+* Engineering Design
+* Validation
+* Knowledge Capture
 
 ## Culture
 
@@ -104,7 +135,11 @@ Engineering understanding is the product.
 
 ---
 
-> AFK preserves engineering state, not conversations.
+> AFK preserves Engineering State, not conversations.
+
+---
+
+> Engineering memory can be recalled, but engineering understanding is strengthened through evidence.
 
 ---
 
@@ -112,24 +147,81 @@ Engineering understanding is the product.
 
 ---
 
-# Engineering State Reconstruction
+> Every engineering session should leave the engineering state better than it was before.
 
-Engineering work should never depend on remembering previous conversations.
+---
 
-Instead, AFK incrementally produces engineering artifacts that reconstruct the current engineering state.
+# Engineering State
 
-Typical engineering state includes:
+Engineering State is **not documentation**.
+
+Engineering State is the minimum validated engineering understanding required for engineering to safely continue.
+
+Engineering State is reconstructed from engineering evidence rather than conversation history.
+
+Engineering State evolves continuously as new discoveries are made.
+
+Typical Engineering State includes:
 
 * Project Foundation
-* Repository Structure
-* WWAN
+* Engineering Replay
+* Where We Are Now (WWAN)
 * Engineering Context
+* Discovery
 * Engineering Design
-* Current Progress
+* Implementation
 * Validation
 * Knowledge Capture
 
-Together these artifacts allow engineering to continue safely in a completely new collaboration session.
+Together these artifacts allow engineering to continue safely in completely new collaboration sessions.
+
+---
+
+# Engineering Evidence
+
+Evidence is the permanent memory of engineering.
+
+Documents, source code, validation artifacts, implementation plans, operational procedures, architectural decisions, runtime observations, and engineering outputs collectively become the foundation from which Engineering State can always be reconstructed.
+
+Engineering artifacts summarize.
+
+Evidence supports.
+
+Confidence comes from both.
+
+---
+
+# Engineering Replay
+
+Engineering Replay explains how today's architecture came to exist.
+
+Replay answers:
+
+> **How did today's architecture become today's architecture?**
+
+Replay complements WWAN.
+
+WWAN answers:
+
+> **Where are we now?**
+
+Replay answers:
+
+> **How did we get here?**
+
+Together they preserve both operational continuity and architectural continuity.
+
+---
+
+# Engineering State Reconstruction
+
+Engineering work should never depend solely upon remembering previous conversations.
+
+Instead, AFK incrementally produces engineering artifacts that preserve validated engineering understanding.
+
+Engineering conversations remain temporary.
+
+Engineering State remains reconstructable.
 
 ---
 
@@ -137,6 +229,14 @@ Together these artifacts allow engineering to continue safely in a completely ne
 
 ```text
 Wish
+
+↓
+
+Replay (if available)
+
+↓
+
+Project Foundation
 
 ↓
 
@@ -156,7 +256,7 @@ Design
 
 ↓
 
-Build
+Implementation
 
 ↓
 
@@ -168,6 +268,10 @@ Knowledge Capture
 
 ↓
 
+Engineering Replay
+
+↓
+
 Updated Engineering State
 
 ↓
@@ -175,23 +279,33 @@ Updated Engineering State
 Next Wish
 ```
 
-Engineering is continuous because Engineering State is continuously improved.
+Engineering becomes continuous because Engineering State continuously improves.
 
 ---
 
 # Relationship to EDS
 
-EDS defines **how engineering artifacts are documented.**
+**Engineering Documentation System (EDS)** defines:
 
-AFK defines **how engineering understanding is discovered, preserved, reconstructed, and evolved.**
+> **How engineering artifacts are documented.**
+
+AFK defines:
+
+> **How engineering understanding is discovered, preserved, reconstructed, validated, and evolved.**
+
+EDS preserves documentation.
+
+AFK preserves engineering understanding.
 
 ---
 
 # Relationship to EKS
 
-EKS studies **how engineering knowledge evolves.**
+**Engineering Knowledge Systems (EKS)** studies how engineering knowledge evolves over time.
 
-AFK provides one practical engineering collaboration methodology within that broader vision.
+AFK provides one practical collaboration methodology within that broader vision.
+
+Knowledge produced through AFK may eventually become reusable engineering knowledge within EKS.
 
 ---
 
@@ -200,12 +314,15 @@ AFK provides one practical engineering collaboration methodology within that bro
 AFK is currently being validated through:
 
 * Documentation Standards
-* Engineering Knowledge Systems
-* AI Collaboration
+* Engineering Documentation System (EDS)
+* Engineering Knowledge Systems (EKS)
 * Legacy Modernization
-* Repository Design
+* Existing Codebase Discovery
+* Resume Engineering
+* Engineering Evidence Architecture
+* AI Collaboration
 * Operational Continuity
-* Engineering Discovery
+* Financial Freedom Architecture
 * Engineering State Reconstruction
 
 Every completed engineering activity strengthens the methodology.
@@ -221,6 +338,7 @@ Every engineering session should leave the project in a better engineering state
 If a project teaches something new:
 
 * preserve it;
+* validate it;
 * document it;
 * improve the framework.
 
@@ -240,13 +358,22 @@ That shared understanding becomes Engineering State.
 
 Engineering State allows future engineering to begin without repeating previous conversations.
 
+AFK therefore values:
+
+* curiosity over assumptions;
+* evidence over recollection;
+* collaboration over isolation;
+* continuous improvement over perfect documentation.
+
 ---
 
 # Closing Thought
 
-We don't know yet.
-
-Let's AFK it together.
+> **We don't claim AFK is correct.**
+>
+> **We invite you to experience it, challenge it, improve it, and help evolve it.**
+>
+> **Let's AFK together.**
 
 ---
 
@@ -256,6 +383,6 @@ Let's AFK it together.
 | --------- | -------------------------------- |
 | Document  | `README.md`                      |
 | Framework | Assisted Flow of Knowledge (AFK) |
-| Version   | 2.0                              |
+| Version   | **3.0**                          |
 | Status    | 🚧 Research & Validation         |
-| As of     | 07.30.2026                       |
+| As Of     | 2026-08-01                       |

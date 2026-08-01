@@ -1,19 +1,19 @@
 # 💡 Proposal — Engineering Replay
 
-> **Capture how today's architecture came to exist.**
+> **Capture engineering state so work can continue without reconstructing the past.**
 
 ---
 
 # Metadata
 
-| Field    | Value                         |
-| -------- | ----------------------------- |
-| Document | `002-engineering-replay.md`   |
-| Category | Emerging Engineering Concepts |
-| Type     | Proposal                      |
-| Status   | 🚧 Draft                      |
-| Owner    | Engineering                   |
-| Version  | 0.1                           |
+| Field    | Value                              |
+| -------- | ---------------------------------- |
+| Document | `002-engineering-replay.md`        |
+| Category | Emerging Engineering Concepts      |
+| Type     | Proposal                           |
+| Status   | 🚧 Draft *(Validated in Practice)* |
+| Owner    | Engineering                        |
+| Version  | 0.2                                |
 
 ---
 
@@ -21,11 +21,11 @@
 
 This proposal introduces the concept of an **Engineering Replay**.
 
-An Engineering Replay is a concise engineering narrative that explains how the current architecture evolved from the previous major engineering milestone.
+An Engineering Replay is a concise engineering narrative that captures the current engineering state after a significant milestone.
 
-Unlike a project history or implementation log, a Replay intentionally summarizes only the architectural changes necessary for future engineers and AI collaborators to understand the current system.
+Its purpose is to allow a future engineer—or AI collaborator—to continue engineering work without needing the original conversations or manually reconstructing historical context.
 
-Its objective is to minimize context reconstruction after significant project evolution.
+Unlike project history or implementation logs, Replay intentionally summarizes only the engineering knowledge necessary to continue work confidently.
 
 ---
 
@@ -33,18 +33,18 @@ Its objective is to minimize context reconstruction after significant project ev
 
 During long-running engineering projects, software naturally evolves.
 
-Major refactors, migrations, architectural improvements, and production releases often leave behind a large collection of valuable engineering artifacts:
+Major discoveries, architectural refactors, migrations, production hardening, and implementation work generate numerous engineering artifacts:
 
 * discovery documents
 * architecture documents
-* implementation notes
 * validation reports
+* implementation notes
 * source code
 * tests
 
-Although these artifacts preserve engineering decisions, understanding the current system may still require reading dozens of documents.
+Although these preserve engineering decisions, reconstructing the current engineering state may still require reading dozens of documents.
 
-This creates unnecessary reconstruction effort for both humans and AI collaborators.
+Replay exists to remove that reconstruction effort.
 
 ---
 
@@ -56,21 +56,27 @@ WWAN answers:
 
 Replay answers:
 
-> **How did today's architecture become today's architecture?**
+> **How did we get here, and what engineering state should I assume now?**
 
 These are different engineering questions.
 
-WWAN provides operational continuity.
+WWAN preserves operational continuity.
 
-Replay provides architectural continuity.
+Replay preserves engineering continuity.
 
 ---
 
 # Proposed Definition
 
-An **Engineering Replay** is a concise architectural narrative that explains how the current system evolved from the previous major engineering milestone.
+An **Engineering Replay** is a concise engineering artifact that captures:
 
-Rather than documenting every engineering event, Replay summarizes only the changes that shaped the architecture that exists today.
+* how the current engineering state emerged,
+* why major engineering decisions were made,
+* what engineering assumptions are now accepted,
+* where supporting evidence exists,
+* and how the next collaborator should continue.
+
+Replay transfers engineering state rather than engineering history.
 
 ---
 
@@ -78,29 +84,32 @@ Rather than documenting every engineering event, Replay summarizes only the chan
 
 An Engineering Replay should:
 
-* remain concise
-* focus on architectural evolution
-* explain *why* major changes occurred
-* avoid implementation detail inside the document
-* reference supporting engineering artifacts
-* serve as the primary onboarding narrative for the current architecture
+* remain concise,
+* focus on engineering evolution,
+* explain why significant decisions occurred,
+* summarize rather than duplicate documentation,
+* reference supporting engineering artifacts,
+* provide a continuation point for future collaborators.
 
-Replay is intended to reduce reading effort rather than increase documentation volume.
+Replay reduces onboarding effort rather than increasing documentation volume.
 
 ---
 
 # Engineering Philosophy
 
-Replay is **not** intended to replace engineering documentation.
+Replay does **not** replace engineering documentation.
 
-Instead, it connects existing documentation into a coherent engineering story.
+Documentation preserves detail.
 
-A Replay should explain:
+Replay preserves understanding.
 
-* what changed
-* why it changed
-* what emerged
-* where supporting evidence can be found
+A Replay should answer:
+
+* What changed?
+* Why did it change?
+* What engineering state now exists?
+* What evidence supports it?
+* What should happen next?
 
 ---
 
@@ -110,30 +119,33 @@ Replay summarizes.
 
 Artifacts provide the evidence.
 
-Every major Replay section should reference the supporting engineering artifacts.
+Every major Replay section should reference supporting artifacts.
 
-Examples include:
+Examples
 
 ## Documentation
 
-* Architecture documents
-* Discovery reports
-* Validation reports
+* Architecture
+* Discovery
+* Validation
 * Standards
+* Roadmaps
 
 ## Source
 
-* Major source folders
-* Refactored components
 * Entry points
+* Major components
+* Refactored modules
 
 ## Verification
 
 * Tests
 * Benchmarks
-* Validation evidence
+* Validation reports
 
-Replay becomes the navigation layer rather than the implementation itself.
+Replay becomes the navigation layer.
+
+Artifacts remain the evidence.
 
 ---
 
@@ -145,14 +157,16 @@ WWAN answers:
 
 Replay answers:
 
-> **How did today's architecture become today's architecture?**
+> **How did today's engineering state become today's engineering state?**
 
-A collaborator typically consumes them in this order:
+Typical continuation flow:
 
 ```text
 Latest Replay
         ↓
 Current WWAN
+        ↓
+Supporting Artifacts
         ↓
 Continue Engineering
 ```
@@ -161,21 +175,21 @@ Continue Engineering
 
 # Relationship to AFK
 
-Within AFK, Replay supports collaboration continuity after major engineering evolution.
+Within AFK, Replay provides **session-independent engineering continuity**.
 
-Instead of reconstructing months of engineering work from conversation history or scattered documentation, collaborators begin with the latest Replay.
+Rather than depending on conversational memory, collaborators resume work using documented engineering state.
 
-Replay provides shared understanding before operational work resumes.
+Replay allows engineering understanding to survive beyond individual sessions.
 
 ---
 
 # Relationship to EKS
 
-Replay may eventually become one mechanism for engineering knowledge extraction.
+Replay is a potential knowledge extraction mechanism.
 
-Rather than preserving every engineering event, Replay captures the architectural lessons that remain valuable after implementation.
+Rather than preserving every engineering activity, Replay captures the engineering understanding that remains valuable after implementation.
 
-Potential future flow:
+Potential flow:
 
 ```text
 Engineering Work
@@ -202,6 +216,20 @@ This relationship remains under evaluation.
 # Proposed Lifecycle
 
 ```text
+Proposal
+        ↓
+Experiment
+        ↓
+Validation
+        ↓
+Accepted Standard
+```
+
+Replay itself evolves as engineering matures.
+
+Example:
+
+```text
 Replay 001
         ↓
 Major Engineering Evolution
@@ -213,32 +241,63 @@ Major Engineering Evolution
 Replay 003
 ```
 
-Each Replay builds upon the previous Replay rather than attempting to document the project's entire history.
+Each Replay replaces the need to reconstruct previous engineering context.
+
+---
+
+# Validation
+
+This proposal has now been validated through practical application.
+
+## Validation Project
+
+Rosary Web Application Engine
+
+## Observed Results
+
+* Engineering context transferred successfully.
+* Discovery did not need to be repeated.
+* Runtime understanding remained intact.
+* Production readiness planning resumed immediately.
+* Fresh AI collaborator could continue from documented engineering state.
+
+These observations support the viability of Engineering Replay as an engineering practice.
+
+---
+
+# Reference Implementations
+
+Current implementation examples:
+
+* Rosary Web Application Engine — `engineering-replay.md`
+
+Future projects should expand this reference list.
 
 ---
 
 # Potential Triggers
 
-An Engineering Replay may be created after:
+Engineering Replay should be considered after:
 
-* major production release
-* significant architectural refactor
-* migration completion
-* platform transition
-* major capability expansion
-* other engineering milestones that materially change the architecture
+* major production release,
+* significant architectural refactor,
+* migration completion,
+* platform transition,
+* capability expansion,
+* engineering handover,
+* completion of Discovery before Implementation.
 
 ---
 
 # Non-Goals
 
-Replay is not intended to become:
+Replay is **not** intended to become:
 
-* project history
-* implementation guide
-* meeting minutes
-* discovery journal
-* architecture specification
+* project history,
+* implementation guide,
+* meeting minutes,
+* discovery journal,
+* architecture specification.
 
 Those artifacts continue to exist independently.
 
@@ -248,26 +307,28 @@ Replay summarizes them.
 
 # Open Questions
 
-The following areas require practical validation before standardization:
+Areas requiring additional validation:
 
-* Recommended document size
+* Standard template
 * Naming convention
-* Folder location
+* Repository location
 * Versioning strategy
 * Relationship with Knowledge Packages
 * Relationship with Canon Events
-* Whether Replay belongs primarily to AFK, EKS, or EDS
+* Promotion criteria into Engineering Documentation Standards
 
 ---
 
 # Current Assessment
 
-Engineering Replay appears to complement existing AFK concepts by preserving architectural understanding after significant project evolution.
+Engineering Replay has successfully demonstrated its value through practical implementation.
 
-Additional validation across multiple engineering projects is recommended before promoting this concept into an official framework.
+Additional validation across multiple engineering projects is recommended before promotion into an official Engineering Documentation Standard.
 
 ---
 
-# Guiding Principle
+# Guiding Principles
 
 > **Replay tells the story. Artifacts prove the story.**
+
+> **Engineering state should be transferred through evidence, not memory.**
