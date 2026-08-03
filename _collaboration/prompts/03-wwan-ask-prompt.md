@@ -4,7 +4,7 @@ Thank you. Can you prepare the **Where We Are Now (WWAN)** document before we pr
 
 Please follow the WWAN standard:
 
-`https://github.com/irwints-ph/documentation-standards/blob/main/afk/docs/collaboration/001-understanding-wwan.md`
+`https://github.com/irwints-ph/documentation-standards/blob/main/afk/framework/001-understanding-wwan.md`
 
 ---
 

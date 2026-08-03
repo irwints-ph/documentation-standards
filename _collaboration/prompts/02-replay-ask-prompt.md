@@ -4,7 +4,7 @@ Thank you. Can you prepare the Engineering Replay document for this session.
 
 Please follow the Engineering Replay proposal:
 
-`https://github.com/irwints-ph/documentation-standards/blob/main/_knowledge/proposals/002-engineering-replay.md`
+`https://github.com/irwints-ph/documentation-standards/blob/main/afk/framework/004-replay-document-creation-guide.md`
 
 ## Instructions
 
