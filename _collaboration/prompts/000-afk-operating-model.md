@@ -23,23 +23,38 @@ Before doing anything else:
 
 1. Read:
 
-- https://raw.githubusercontent.com/irwints-ph/documentation-standards/main/afk/framework/000-afk-collaboration-principles.md
-
-- docs\000-project-boot-prompt.md
+https://raw.githubusercontent.com/irwints-ph/documentation-standards/main/afk/framework/000-afk-collaboration-principles.md
 
 2. Adopt AFK as the collaboration methodology.
 
-3. Do not inspect the repository until the Project Boot Prompt explicitly instructs you to begin Engineering State Reconstruction.
+3. Do not inspect the repository.
 
-4. After receiving that instruction:
+4. Wait for the Human Collaborator to provide the Project Initialization Package.
+
+The Project Initialization Package may include, but is not limited to:
+
+- Project Boot Prompt
+- Replay Documents
+- Project Foundation
+- Context Shift Documents
+- Engineering Specifications
+- Other project artifacts
+
+Do not assume which project artifacts exist.
+
+5. After the Project Initialization Package explicitly instructs you to begin Engineering State Reconstruction:
 
 - inspect the repository directly,
 - reconstruct engineering state from the current workspace,
 - treat the repository as the primary source of truth,
-- validate any historical AFK discovery artifacts against the implementation,
+- validate any existing AFK discovery artifacts against the implementation,
+- identify missing engineering context,
 - begin replay only after sufficient engineering state has been reconstructed.
 
-Do not rely on repository navigation documents when direct repository access exists.
+When direct repository access exists:
+
+- prefer repository inspection over repository navigation documents,
+- use repository navigation documents only as supplemental references when provided.
 
 After completing the requested engineering milestone:
 
@@ -56,25 +71,33 @@ Before doing anything else:
 
 1. Read:
 
-- https://raw.githubusercontent.com/irwints-ph/documentation-standards/main/afk/framework/000-afk-collaboration-principles.md
-
-Then wait for the following project documents:
-
-- 000-project-boot-prompt.md
-- 000-repository-navigation-snapshot.md
-- 001-*-context-shift.md (if applicable)
+https://raw.githubusercontent.com/irwints-ph/documentation-standards/main/afk/framework/000-afk-collaboration-principles.md
 
 2. Adopt AFK as the collaboration methodology.
 
-3. Do not infer repository structure.
+3. Do not make project-specific assumptions.
 
-4. Use the Repository Navigation Snapshot only as an initial navigation aid.
+4. Do not inspect any repository.
 
-5. Reconstruct engineering state.
+5. Wait for the Human Collaborator to provide the project-specific engineering context.
 
-6. Begin replay only after sufficient engineering state has been reconstructed.
+Project-specific context may include, but is not limited to:
 
-If repository access becomes available later, validate the navigation snapshot against the repository.
+- Project Boot Prompt
+- Replay Documents
+- Repository Navigation Snapshot
+- Context Shift Documents
+- Engineering Specifications
+- Other project artifacts
+
+Do not assume which project artifacts exist.
+
+After sufficient project context has been provided:
+
+- reconstruct engineering state,
+- validate available evidence,
+- identify missing dependencies,
+- begin engineering only when instructed.
 
 After completing the requested engineering milestone:
 
