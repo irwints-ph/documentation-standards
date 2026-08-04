@@ -50,42 +50,40 @@ Copy the following prompt into a new AI conversation.
 Replace placeholders where appropriate.
 
 ```text
-I would like to begin an engineering collaboration using the Assisted Flow of Knowledge (AFK) framework.
+I would like to begin an engineering collaboration using the **Assisted Flow of Knowledge (AFK)** framework.
 
-Before doing anything else, please read and adopt the AFK collaboration principles documented here:
+Before doing anything else, read and adopt the AFK Collaboration Principles:
 
 https://github.com/irwints-ph/documentation-standards/blob/main/afk/framework/000-afk-collaboration-principles.md
 
-Once you understand those principles:
+After reading them:
 
-• adopt AFK as the collaboration methodology,
-• reconstruct engineering state before proposing implementation,
-• distinguish observations from conclusions,
-• distinguish evidence from assumptions,
-• preserve engineering state throughout the collaboration,
-• avoid making project assumptions before sufficient context has been established.
+* adopt AFK as the collaboration methodology,
+* follow the collaboration principles throughout this session,
+* preserve engineering context,
+* do not assume any project-specific context.
 
-Our collaboration follows incremental engineering.
+The next document I will provide is the **Project Boot Prompt**.
 
-Please:
+The Project Boot Prompt defines:
 
-• explain your reasoning,
-• ask questions whenever evidence is insufficient,
-• avoid jumping directly into implementation,
-• validate shared understanding before making recommendations,
-• recommend implementation only when sufficient engineering state has been reconstructed.
+* the project identity,
+* the implementation under review (if applicable),
+* the replay sequence,
+* the current collaboration objective.
 
-The next document I will provide is the Project Boot Prompt.
+Until the Project Boot Prompt is provided:
 
-The Project Boot Prompt contains the project-specific replay sequence.
+* do not inspect the repository,
+* do not infer project structure,
+* do not make implementation recommendations.
 
-Do not assume any project context until it has been provided.
+After receiving the Project Boot Prompt:
 
-After reading the Project Boot Prompt:
-
-• follow the replay sequence exactly,
-• reconstruct the project's engineering state,
-• and HOLD until sufficient context has been reconstructed or the next collaboration command is given.
+* execute the replay sequence exactly as documented,
+* reconstruct the engineering state incrementally,
+* ask for clarification whenever evidence is insufficient,
+* HOLD whenever instructed by the replay sequence or after completing the requested phase.
 ```
 
 ---

@@ -1,608 +1,153 @@
-# 📄 AFK Discovery Artifact Creation Guide
+# Proposed Additions to `060-discovery-artifact-creation-guide.md`
+
+## New Section — Discovery vs Migration
+
+### Discovery
+
+Discovery inspects the current system and produces new engineering knowledge.
+
+Discovery activities include:
+
+* inspecting source code,
+* observing runtime behavior,
+* identifying architectural patterns,
+* documenting engineering findings.
+
+### Migration
+
+Migration does **not** create new engineering knowledge.
+
+Migration converts historical discovery documents into AFK Discovery Artifacts while preserving their meaning.
+
+Migration activities include:
+
+* preserving historical identity,
+* normalizing document structure,
+* improving traceability,
+* improving navigation,
+* preserving engineering intent.
+
+Migration must never reinterpret the historical discovery.
 
 ---
 
-# Metadata
+# New Section — Migration Source of Truth
 
-| Field | Value |
-| --- | --- |
-| Document | `060-discovery-and-finding-creation-guide.md` |
-| Category | AFK Framework |
-| Type | Discovery Standard |
-| Status | 🟢 Active |
-| Version | 2.0 |
-| As Of | 2026-08-03 |
+When performing a migration:
 
----
+The historical discovery documents are the authoritative source.
 
-# Purpose
-
-This document defines how engineering discovery artifacts are created, classified, migrated, and maintained within the Assisted Flow of Knowledge (AFK) framework.
-
-Its purpose is to ensure that engineering understanding is captured from evidence rather than assumptions.
-
-AFK Discovery answers:
-
-> **"What is currently true about the engineering system?"**
-
-before answering:
-
-> **"What should change?"**
-
----
-
-# What is Discovery?
-
-Discovery is the engineering process of understanding an existing system.
-
-Discovery captures:
-
-- implementation reality,
-- architectural patterns,
-- runtime behavior,
-- component responsibilities,
-- relationships between systems,
-- engineering observations.
-
-Discovery does not:
-
-- implement changes,
-- redesign architecture,
-- enforce intended structure,
-- replace engineering decisions.
-
----
-
-# Discovery Philosophy
-
-AFK separates:
+Example:
 
 ```text
-Current Reality
+client/_discovery/
+```
 
-from
+The current implementation may only be consulted:
 
-Intended Architecture
+* to validate an existing historical observation,
+* to verify links,
+* to confirm file locations.
 
-from
-
-Future Improvement
-````
-
-A discovery artifact must clearly identify which category information belongs to.
+The current implementation must never replace or rewrite historical engineering understanding.
 
 ---
 
-# Discovery Principles
+# New Section — Migration Rules
 
-## 1. Evidence Before Interpretation
+During migration the AI shall:
 
-All discovery begins with evidence.
+* preserve document identity,
+* preserve document subject,
+* preserve engineering intent,
+* preserve historical traceability,
+* normalize formatting,
+* improve navigation,
+* improve references.
+
+The AI shall **not**:
+
+* invent new discoveries,
+* rename findings because they "sound better",
+* merge unrelated discovery artifacts,
+* create implementation tasks,
+* reinterpret historical findings,
+* replace historical conclusions with newly inferred ones.
+
+---
+
+# New Section — Historical Identity
+
+Historical document identity must remain recognizable.
 
 Example:
 
-Evidence:
+Historical
 
-```
-client/src/main.tsx renders App.
-```
-
-Observation:
-
-```
-main.tsx is the frontend entry point.
+```text
+F001-domain-namespace.md
 ```
 
-Interpretation:
+AFK
 
-```
-The application uses a centralized application composition root.
-```
-
-These must remain distinguishable.
-
----
-
-# 2. Discovery Is Not Implementation
-
-A discovery artifact may identify:
-
-* architectural drift,
-* missing boundaries,
-* duplicated responsibilities,
-* improvement opportunities.
-
-However:
-
-Discovery does not automatically create implementation tasks.
-
-Example:
-
-Observation:
-
-```
-Pages are not grouped under a domain namespace.
-```
-
-Correct:
-
-```
-The current structure differs from the intended namespace design.
-```
-
-Incorrect:
-
-```
-Move all pages immediately.
-```
-
----
-
-# 3. Historical Documents Are Evidence
-
-Existing documentation should not be discarded.
-
-Historical discoveries should be:
-
-* preserved,
-* reviewed,
-* classified,
-* migrated when appropriate.
-
-Old documentation is evidence of previous engineering understanding.
-
-It is not automatically the current truth.
-
----
-
-# Discovery Artifact Categories
-
-AFK Discovery artifacts are classified by purpose.
-
----
-
-# 1. Architecture Findings
-
-Purpose:
-
-Capture architectural observations and patterns.
-
-Examples:
-
-```
+```text
 001-domain-namespace.md
-002-composition-root.md
-003-responsibility-pattern.md
 ```
 
-Location:
+The number may change to AFK numbering.
 
-```
-01-discovery/
-
-client/
-
-architecture/
-```
+The engineering subject shall not.
 
 ---
 
-## Finding Template
+# New Section — Historical Traceability
 
-```markdown
-# Discovery Finding: <Title>
+Every migrated artifact shall include:
 
----
+## Historical Source
 
-## Status
+Original document path.
 
-🚧 Discovery
-
----
-
-## Summary
-
-Short description of the observation.
-
----
-
-## Historical Context
-
-(Optional)
-
-Previous architectural intent or related documentation.
-
----
-
-## Observation
-
-What was directly observed.
-
----
-
-## Evidence
-
-Files, folders, configurations,
-or runtime behavior supporting the observation.
-
----
-
-## Validation
-
-How the observation was confirmed.
-
----
-
-## Engineering Interpretation
-
-Possible meaning of the observation.
-
----
-
-## Impact
-
-Potential engineering implications.
-
----
-
-## Recommendation
-
-Possible future consideration.
-
-Not an implementation instruction.
-
----
-
-## Related Documents
-
-References.
-```
-
----
-
-# 2. Component Registry Discovery
-
-Purpose:
-
-Document existing components and their responsibilities.
-
-Examples:
-
-```
-api-client.md
-auth-context.md
-route-utils.md
-```
-
-Location:
-
-```
-01-discovery/
-
-client/
-
-registry/
-```
-
----
-
-## Registry Template
-
-```markdown
-# Component Registry: <Component>
-
----
-
-## Status
-
-🚧 Discovery
-
----
-
-## Location
-
-Source location.
-
----
-
-## Purpose
-
-Observed responsibility.
-
----
-
-## Evidence
-
-Files inspected.
-
----
-
-## Dependencies
-
-Known dependencies.
-
----
-
-## Consumers
-
-Known consumers.
-
----
-
-## Runtime Role
-
-Where this component participates.
-
----
-
-## Related Components
-
-References.
-```
-
----
-
-# 3. Structure Discovery
-
-Purpose:
-
-Document physical organization.
-
-Examples:
-
-```
-001-current-api-folder.md
-001-current-routing-folder.md
-```
-
-Captures:
-
-* folders,
-* modules,
-* packages,
-* boundaries.
-
----
+## Migration Context
 
 Example:
 
-```text
-01-discovery/
-
-client/
-
-structure/
-
-001-folder-structure.md
-```
+> Normalized from historical discovery documentation into the AFK Discovery Artifact format.
 
 ---
 
-# 4. Runtime Flow Discovery
+# New Section — Artifact Generation Policy
 
-Purpose:
+Migration shall only produce one of the following:
 
-Document execution behavior.
+* migrated historical artifacts,
+* navigation documents (README),
+* migration summary.
 
-Examples:
+Navigation documents must clearly identify themselves as AFK-generated indexes.
 
-* application startup,
-* authentication flow,
-* request flow,
-* initialization sequence.
-
-Example:
-
-```
-runtime/
-
-001-frontend-startup-flow.md
-001-api-startup-flow.md
-```
+They are not discovery artifacts.
 
 ---
 
-# 5. Configuration Discovery
-
-Purpose:
-
-Document configuration behavior.
-
-Examples:
-
-* environment variables,
-* application configuration,
-* build configuration,
-* deployment settings.
-
-Example:
-
-```
-configuration/
-
-001-environment.md
-002-vite-config.md
-```
-
----
-
-# 6. UI / Feature Discovery
-
-Purpose:
-
-Document UI structures and responsibilities.
-
-Examples:
-
-* layouts,
-* pages,
-* components,
-* workflows.
-
-Example:
-
-```
-components/
-
-layout/
-
-header.md
-sidebar.md
-```
-
----
-
-# Historical Discovery Migration
-
-When migrating an existing discovery system into AFK:
-
-Do not copy documents directly.
-
-Instead:
-
-```text
-Historical Document
-
-↓
-
-Identify Knowledge Type
-
-↓
-
-Apply AFK Artifact Template
-
-↓
-
-Create New Discovery Artifact
-
-↓
-
-Preserve Historical Reference
-```
-
----
-
-# Historical Document Classification
-
-| Existing Document Type | AFK Artifact             |
-| ---------------------- | ------------------------ |
-| Architecture findings  | Discovery Findings       |
-| Folder validation      | Structure Discovery      |
-| API documentation      | Component Registry       |
-| Configuration notes    | Configuration Discovery  |
-| Startup notes          | Runtime Discovery        |
-| UI documentation       | UI / Feature Discovery   |
-| Recommendations        | Engineering Observations |
-
----
-
-# Discovery Folder Convention
-
-Recommended structure:
-
-```text
-afk-docs/
-
-01-discovery/
-
-    api/
-
-        architecture/
-
-        registry/
-
-        runtime/
-
-        configuration/
-
-
-    client/
-
-        architecture/
-
-        registry/
-
-        runtime/
-
-        configuration/
-
-        components/
-```
-
----
-
-# Discovery Relationship With Replay
-
-Discovery answers:
-
-> What do we know about the system?
-
-Replay answers:
-
-> What context is required to continue collaboration?
-
-Relationship:
-
-```text
-Discovery
-
-↓
-
-Engineering Context
-
-↓
-
-Replay Documents
-
-↓
-
-New Session
-```
-
----
-
-# AI Collaborator Rules During Discovery
-
-The AI collaborator should:
-
-* inspect before concluding,
-* cite evidence,
-* preserve previous knowledge,
-* classify discoveries correctly,
-* separate facts from interpretation,
-* identify uncertainty.
-
-The AI collaborator should not:
-
-* refactor during discovery,
-* assume intended architecture is current architecture,
-* convert observations into tasks automatically,
-* remove historical documentation.
-
----
-
-# Discovery Completion Criteria
-
-Discovery is complete when:
-
-* relevant areas have been inspected,
-* evidence is recorded,
-* artifacts are classified,
-* assumptions are identified,
-* open questions are preserved,
-* future improvements are separated from current reality.
-
----
-
-# Guiding Principle
-
-> **Discovery creates engineering understanding. Implementation creates engineering change. AFK requires understanding before change.**
+# New Section — Migration Completion Checklist
+
+Before completing a migration, verify:
+
+* historical documents preserved,
+* migrated artifacts created,
+* historical traceability included,
+* navigation updated,
+* links validated,
+* remaining historical documents listed,
+* remaining discovery gaps identified,
+* no implementation tasks created,
+* no undocumented discoveries invented.
 
 ---
 
 # Revision History
 
-| Version | Date       | Description                                                                                                                                     |
-| ------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1.0     | 2026-08-03 | Initial discovery finding guide.                                                                                                                |
-| 2.0     | 2026-08-03 | Expanded into AFK Discovery Artifact Creation Guide covering findings, registries, runtime, structure, configuration, and historical migration. |
+| Version | Date       | Description                                                                                                                                                                                                                                                                         |
+| ------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 3.0     | 2026-08-04 | Added explicit separation between Discovery and Migration, established historical documents as the migration source of truth, defined migration rules, historical identity preservation, traceability requirements, artifact generation policy, and migration completion checklist. |
